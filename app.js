@@ -38,12 +38,12 @@ function labelForImportance(level) {
 }
 
 function isRelevant(rel) {
-  return (rel.summary?.hitCounts?.relevant || 0) > 0 || (rel.items || []).some(i => i.labels?.includes('relevant'));
+  return rel.summary?.filterLabels?.includes('relevant') || false;
 }
 
 function matchesChip(rel, chip) {
   if (!chip) return true;
-  return (rel.items || []).some(i => i.labels?.includes(chip));
+  return rel.summary?.filterLabels?.includes(chip) || false;
 }
 
 function baseVisibleReleases() {
@@ -185,7 +185,7 @@ function renderCompare() {
   const newer = Math.min(fromIndex, toIndex);
   const span = stable.slice(newer, older + 1);
   const top = [...span].sort(scoreSort).slice(0, 5);
-  const security = span.filter(r => (r.summary?.hitCounts?.security || 0) > 0).length;
+  const security = span.filter(r => r.summary?.filterLabels?.includes('security')).length;
   const relevant = span.filter(isRelevant).length;
   output.innerHTML = `
     <p><strong>${span.length}</strong> stable releases included, from <strong>${stable[older].tag}</strong> through <strong>${stable[newer].tag}</strong>. ${security} security-sensitive, ${relevant} likely relevant to Jacob's setup.</p>
