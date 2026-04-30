@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OpenClaw Release Radar</title>
+  <meta name="description" content="Track OpenClaw releases, security-sensitive changes, and updates relevant to your setup.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div>
+      <p class="eyebrow">OpenClaw utility</p>
+      <h1>OpenClaw Release Radar</h1>
+      <p class="lede">A fast, static tracker for understanding what changed, what matters, and which OpenClaw updates deserve attention.</p>
+    </div>
+    <nav class="header-links" aria-label="Related links">
+      <a href="https://github.com/openclaw/openclaw/releases">OpenClaw releases</a>
+      <a href="https://github.com/thecobb/openclaw-release-tracker">Source</a>
+      <a href="https://tools.simonwillison.net/">Inspired by SimonW tools</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="panel status-panel" aria-live="polite">
+      <div>
+        <h2>Release data</h2>
+        <p id="load-status">Loading local release index…</p>
+      </div>
+      <div class="status-actions">
+        <button id="load-default" type="button">Last 3 months</button>
+        <button id="load-all" type="button">Load all releases</button>
+        <button id="refresh-live" type="button" title="Attempts a direct GitHub API refresh in this browser; the bundled local index remains the fallback.">Try live refresh</button>
+      </div>
+    </section>
+
+    <section class="summary-grid" id="summary-grid" hidden>
+      <article class="stat-card">
+        <span class="stat-label">Latest</span>
+        <strong id="latest-version">—</strong>
+        <span id="latest-date">—</span>
+      </article>
+      <article class="stat-card">
+        <span class="stat-label">Showing</span>
+        <strong id="showing-count">—</strong>
+        <span id="showing-mode">—</span>
+      </article>
+      <article class="stat-card high">
+        <span class="stat-label">High attention</span>
+        <strong id="high-count">—</strong>
+        <span>security/platform/relevance signals</span>
+      </article>
+      <article class="stat-card medium">
+        <span class="stat-label">Relevant to Jacob</span>
+        <strong id="relevant-count">—</strong>
+        <span>Telegram, gateway, browser, agents, tools…</span>
+      </article>
+    </section>
+
+    <section class="controls panel" id="controls" hidden>
+      <div class="control-row">
+        <label>
+          Search releases
+          <input id="search" type="search" placeholder="gateway, Telegram, security, Codex…">
+        </label>
+        <label>
+          Importance
+          <select id="importance-filter">
+            <option value="all">All</option>
+            <option value="high">High attention</option>
+            <option value="medium">Medium or higher</option>
+            <option value="routine">Routine only</option>
+          </select>
+        </label>
+        <label>
+          Release type
+          <select id="release-type">
+            <option value="stable">Stable releases</option>
+            <option value="all">Stable + prereleases</option>
+            <option value="prerelease">Prereleases only</option>
+          </select>
+        </label>
+      </div>
+      <div class="chips" role="group" aria-label="Quick filters">
+        <button class="chip" data-filter="security" type="button">Security-sensitive</button>
+        <button class="chip" data-filter="relevant" type="button">Likely relevant to me</button>
+        <button class="chip" data-filter="platform" type="button">Platform / migration</button>
+        <button class="chip" data-filter="quality" type="button">Reliability / UX</button>
+        <button class="chip clear" data-filter="clear" type="button">Clear chips</button>
+      </div>
+    </section>
+
+    <section class="panel digest" id="digest" hidden>
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Prioritized digest</p>
+          <h2>What I would look at first</h2>
+        </div>
+        <p>Ranked by security wording, platform churn, broad usefulness, and Jacob-specific setup keywords.</p>
+      </div>
+      <div id="digest-list" class="digest-list"></div>
+    </section>
+
+    <section class="panel compare" id="compare" hidden>
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Compare</p>
+          <h2>Changes between releases</h2>
+        </div>
+        <p>Pick two tags to see releases after the older tag up through the newer tag.</p>
+      </div>
+      <div class="compare-controls">
+        <label>From <select id="compare-from"></select></label>
+        <label>To <select id="compare-to"></select></label>
+      </div>
+      <div id="compare-output" class="compare-output"></div>
+    </section>
+
+    <section class="release-list" id="release-list" hidden aria-label="OpenClaw releases"></section>
+  </main>
+
+  <footer>
+    <p>Built as a GitHub Pages-safe remake of a Claude artifact: local JSON first, live GitHub fetch optional.</p>
+  </footer>
+
+  <template id="release-template">
+    <article class="release-card">
+      <div class="release-main">
+        <div class="release-title-line">
+          <h3><a class="release-link"></a></h3>
+          <span class="importance-badge"></span>
+          <span class="pre-badge" hidden>prerelease</span>
+        </div>
+        <p class="release-meta"></p>
+        <p class="headline"></p>
+        <div class="reason-list"></div>
+      </div>
+      <details>
+        <summary>Top changes and signals</summary>
+        <ul class="top-items"></ul>
+      </details>
+    </article>
+  </template>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>
