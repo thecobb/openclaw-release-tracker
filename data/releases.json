@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-06T11:22:22.726Z",
+  "generatedAt": "2026-05-07T11:21:05.850Z",
   "source": {
     "owner": "openclaw",
     "repo": "openclaw",
@@ -9,15 +9,15 @@
   },
   "defaults": {
     "months": 3,
-    "since": "2026-02-06T09:00:55.000Z"
+    "since": "2026-02-06T17:51:03.000Z"
   },
-  "releaseCount": 137,
-  "stableCount": 88,
+  "releaseCount": 138,
+  "stableCount": 89,
   "latest": {
-    "tag": "v2026.5.5",
-    "version": "2026.5.5",
-    "publishedAt": "2026-05-06T09:00:55Z",
-    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.5"
+    "tag": "v2026.5.6",
+    "version": "2026.5.6",
+    "publishedAt": "2026-05-06T17:51:03Z",
+    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.6"
   },
   "keywords": {
     "jacobKeywords": [
@@ -82,6 +82,208 @@
     ]
   },
   "releases": [
+    {
+      "tag": "v2026.5.6",
+      "version": "2026.5.6",
+      "versionParts": {
+        "year": 2026,
+        "month": 5,
+        "patch": 6,
+        "suffix": ""
+      },
+      "name": "openclaw 2026.5.6",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.6",
+      "apiUrl": "https://api.github.com/repos/openclaw/openclaw/releases/318547856",
+      "publishedAt": "2026-05-06T17:51:03Z",
+      "createdAt": "2026-05-06T16:58:58Z",
+      "prerelease": false,
+      "draft": false,
+      "bodyExcerpt": "2026.5.6 Fixes - Doctor/OpenAI Codex: revert the 2026.5.5 doctor --fix repair that rewrote valid openai-codex/ ChatGPT/Codex OAuth routes to openai/, which could break OAuth-only GPT-5.5 setups or accidentally move users onto the OpenAI API-key route. If 2026.5.5 already changed your default model, run openclaw models set openai-codex/gpt-5.5 && openclaw config validate to switch the default agent back to the Codex OAuth PI route. Fixes 78407. - Plugins/runtime fetch: drop third-party symbol met",
+      "summary": {
+        "title": "openclaw 2026.5.6",
+        "headline": "Web fetch: bound guarded dispatcher cleanup after request timeouts so timed-out fetches return tool errors instead of leaving Gateway tool lanes active. (78439) Thanks @obviyus.",
+        "importance": "routine",
+        "score": 42,
+        "topItems": [
+          {
+            "section": "Fixes",
+            "text": "Web fetch: bound guarded dispatcher cleanup after request timeouts so timed-out fetches return tool errors instead of leaving Gateway tool lanes active. (78439) Thanks @obviyus.",
+            "score": 15,
+            "labels": [
+              "platform",
+              "relevant",
+              "quality"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [
+                "gateway/service"
+              ],
+              "relevant": [
+                "gateway"
+              ],
+              "quality": [
+                "fix"
+              ]
+            }
+          },
+          {
+            "section": "Fixes",
+            "text": "Doctor/OpenAI Codex: revert the 2026.5.5 doctor --fix repair that rewrote valid openai-codex/ ChatGPT/Codex OAuth routes to openai/, which could break OAuth-only GPT-5.5 setups or accidentally move users onto the OpenAI API-key route. If 2026.5.5 already changed your default model, run openclaw models set openai-codex/gpt-5.5 && openclaw config validate to switch the default agent back to the Codex OAuth PI route. Fixes 78407.",
+            "score": 14,
+            "labels": [
+              "relevant",
+              "quality"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [],
+              "relevant": [
+                "codex/acp",
+                "config/update"
+              ],
+              "quality": [
+                "fix",
+                "diagnostics"
+              ]
+            }
+          },
+          {
+            "section": "Fixes",
+            "text": "Plugins/runtime fetch: drop third-party symbol metadata from plain request header dictionaries before passing them into native fetch or Headers, so SDK and guarded/proxy fetch paths do not reject otherwise valid plugin requests. Fixes 77846. Thanks @shakkernerd.",
+            "score": 10,
+            "labels": [
+              "platform",
+              "quality"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [
+                "runtime/protocol"
+              ],
+              "relevant": [],
+              "quality": [
+                "fix"
+              ]
+            }
+          },
+          {
+            "section": "Fixes",
+            "text": "Debug proxy: normalize captured fetch header dictionaries before replaying requests so symbol metadata from caller-owned header objects cannot make debug-proxy fetches fail.",
+            "score": 3,
+            "labels": [
+              "quality"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [],
+              "relevant": [],
+              "quality": [
+                "fix"
+              ]
+            }
+          }
+        ],
+        "reasons": [
+          "matches your setup: codex/acp, config/update, gateway",
+          "platform change signals: runtime/protocol, gateway/service",
+          "quality/reliability: fix, diagnostics"
+        ],
+        "filterLabels": [],
+        "labelItemCounts": {
+          "security": 0,
+          "platform": 2,
+          "relevant": 2,
+          "quality": 4
+        },
+        "hitCounts": {
+          "security": 0,
+          "platform": 2,
+          "relevant": 3,
+          "quality": 2
+        }
+      },
+      "items": [
+        {
+          "section": "Fixes",
+          "text": "Doctor/OpenAI Codex: revert the 2026.5.5 doctor --fix repair that rewrote valid openai-codex/ ChatGPT/Codex OAuth routes to openai/, which could break OAuth-only GPT-5.5 setups or accidentally move users onto the OpenAI API-key route. If 2026.5.5 already changed your default model, run openclaw models set openai-codex/gpt-5.5 && openclaw config validate to switch the default agent back to the Codex OAuth PI route. Fixes 78407.",
+          "score": 14,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "codex/acp",
+              "config/update"
+            ],
+            "quality": [
+              "fix",
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Plugins/runtime fetch: drop third-party symbol metadata from plain request header dictionaries before passing them into native fetch or Headers, so SDK and guarded/proxy fetch paths do not reject otherwise valid plugin requests. Fixes 77846. Thanks @shakkernerd.",
+          "score": 10,
+          "labels": [
+            "platform",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Debug proxy: normalize captured fetch header dictionaries before replaying requests so symbol metadata from caller-owned header objects cannot make debug-proxy fetches fail.",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Web fetch: bound guarded dispatcher cleanup after request timeouts so timed-out fetches return tool errors instead of leaving Gateway tool lanes active. (78439) Thanks @obviyus.",
+          "score": 15,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [
+              "gateway"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        }
+      ]
+    },
     {
       "tag": "v2026.5.5",
       "version": "2026.5.5",
