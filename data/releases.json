@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-15T11:31:11.251Z",
+  "generatedAt": "2026-05-16T10:39:14.277Z",
   "source": {
     "owner": "openclaw",
     "repo": "openclaw",
@@ -9,15 +9,15 @@
   },
   "defaults": {
     "months": 3,
-    "since": "2026-02-15T11:11:27.000Z"
+    "since": "2026-02-16T01:33:32.000Z"
   },
-  "releaseCount": 156,
+  "releaseCount": 157,
   "stableCount": 91,
   "latest": {
-    "tag": "v2026.5.14-beta.2",
-    "version": "2026.5.14-beta.2",
-    "publishedAt": "2026-05-15T11:11:27Z",
-    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.14-beta.2"
+    "tag": "v2026.5.16-beta.1",
+    "version": "2026.5.16-beta.1",
+    "publishedAt": "2026-05-16T01:33:32Z",
+    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.16-beta.1"
   },
   "keywords": {
     "jacobKeywords": [
@@ -82,6 +82,1354 @@
     ]
   },
   "releases": [
+    {
+      "tag": "v2026.5.16-beta.1",
+      "version": "2026.5.16-beta.1",
+      "versionParts": {
+        "year": 2026,
+        "month": 5,
+        "patch": 16,
+        "suffix": "beta.1"
+      },
+      "name": "openclaw 2026.5.16-beta.1",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.16-beta.1",
+      "apiUrl": "https://api.github.com/repos/openclaw/openclaw/releases/323557381",
+      "publishedAt": "2026-05-16T01:33:32Z",
+      "createdAt": "2026-05-16T00:18:25Z",
+      "prerelease": true,
+      "draft": false,
+      "bodyExcerpt": "Changes - Maintainer tooling: route Crabbox skill defaults through the repo brokered AWS config, leaving Blacksmith Testbox as an explicit opt-in instead of the broad-proof default. - CLI/onboarding: localize the setup wizard and bundled channel setup flows for English, Simplified Chinese, and Traditional Chinese. (80645) Thanks @GaosCode. - Agents/skills: cache hydrated resolvedSkills across warm gateway turns while keying reuse by the redacted effective config, reducing redundant skill snapsho",
+      "summary": {
+        "title": "openclaw 2026.5.16-beta.1",
+        "headline": "Gateway/approvals: treat turnSourceTo as optional in canBridgeNoDeviceChatApprovalFromBackend, matching the existing optional handling of turnSourceAccountId and turnSourceThreadId. Channels without a recipient concept (webchat, control-ui) leave turnSourceTo null on both the approval snapshot and the replay params, so the prior required-string check rejected every backend replay with APPROVALCLIENTMISMATCH. Cross-channel replay is still gated by the required turnSourceChannel and sessionKey checks. Fixes 82132. (82136) Thanks @ottodeng.",
+        "importance": "routine",
+        "score": 635,
+        "topItems": [
+          {
+            "section": "Fixes",
+            "text": "Gateway/approvals: treat turnSourceTo as optional in canBridgeNoDeviceChatApprovalFromBackend, matching the existing optional handling of turnSourceAccountId and turnSourceThreadId. Channels without a recipient concept (webchat, control-ui) leave turnSourceTo null on both the approval snapshot and the replay params, so the prior required-string check rejected every backend replay with APPROVALCLIENTMISMATCH. Cross-channel replay is still gated by the required turnSourceChannel and sessionKey checks. Fixes 82132. (82136) Thanks @ottodeng.",
+            "score": 27,
+            "labels": [
+              "platform",
+              "relevant",
+              "quality"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [
+                "gateway/service",
+                "channel/platform"
+              ],
+              "relevant": [
+                "gateway",
+                "tools/exec"
+              ],
+              "quality": [
+                "fix",
+                "ux/ui"
+              ]
+            }
+          },
+          {
+            "section": "Fixes",
+            "text": "Codex/Lossless: keep Codex explicit compaction on native app-server threads while allowing Lossless through the context-engine slot; openclaw doctor --fix now migrates legacy compaction.provider: \"lossless-claw\" config to plugins.slots.contextEngine.",
+            "score": 26,
+            "labels": [
+              "platform",
+              "relevant",
+              "quality"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [
+                "migration"
+              ],
+              "relevant": [
+                "codex/acp",
+                "config/update"
+              ],
+              "quality": [
+                "fix",
+                "diagnostics"
+              ]
+            }
+          },
+          {
+            "section": "Fixes",
+            "text": "Telegram: mark isolated polling ingress unhealthy when a spooled inbound backlog stalls while Bot API polling still succeeds, so gateway/channel health no longer stays green after Telegram DM processing wedges. Fixes 82175. Thanks @shellyrocklobster.",
+            "score": 25,
+            "labels": [
+              "platform",
+              "relevant",
+              "quality"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [
+                "gateway/service",
+                "channel/platform"
+              ],
+              "relevant": [
+                "telegram",
+                "gateway"
+              ],
+              "quality": [
+                "fix"
+              ]
+            }
+          },
+          {
+            "section": "Fixes",
+            "text": "Config/doctor: copy fallback-enabled channel allowFrom entries into explicit groupAllowFrom allowlists during openclaw doctor --fix, preserving current group access without adding runtime fallback-transition flags.",
+            "score": 24,
+            "labels": [
+              "platform",
+              "relevant",
+              "quality"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [
+                "runtime/protocol",
+                "channel/platform"
+              ],
+              "relevant": [
+                "config/update"
+              ],
+              "quality": [
+                "fix",
+                "diagnostics",
+                "fallback/retry"
+              ]
+            }
+          },
+          {
+            "section": "Fixes",
+            "text": "Codex app-server/MCP: scope user MCP servers to specific OpenClaw agent ids through an optional mcp.servers.<name.codex.agents list and accept codex.defaultToolsApprovalMode (auto/prompt/approve) for native Codex approval defaults; OpenClaw strips the codex block before handing mcpservers config to Codex. (82180) Thanks @sercada.",
+            "score": 23,
+            "labels": [
+              "platform",
+              "relevant",
+              "quality"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [
+                "runtime/protocol"
+              ],
+              "relevant": [
+                "tools/exec",
+                "codex/acp",
+                "config/update"
+              ],
+              "quality": [
+                "fix"
+              ]
+            }
+          }
+        ],
+        "reasons": [
+          "matches your setup: config/update, gateway, telegram, sessions, tools/exec, codex/acp, media/pdf, memory",
+          "platform change signals: channel/platform, gateway/service, runtime/protocol, plugin registry, deprecation, migration, config/schema",
+          "quality/reliability: fix, fallback/retry, diagnostics, compatibility, ux/ui, reliability"
+        ],
+        "filterLabels": [],
+        "labelItemCounts": {
+          "security": 0,
+          "platform": 24,
+          "relevant": 34,
+          "quality": 57
+        },
+        "hitCounts": {
+          "security": 0,
+          "platform": 7,
+          "relevant": 10,
+          "quality": 6
+        }
+      },
+      "items": [
+        {
+          "section": "Changes",
+          "text": "Maintainer tooling: route Crabbox skill defaults through the repo brokered AWS config, leaving Blacksmith Testbox as an explicit opt-in instead of the broad-proof default.",
+          "score": 3,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "config/update"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "CLI/onboarding: localize the setup wizard and bundled channel setup flows for English, Simplified Chinese, and Traditional Chinese. (80645) Thanks @GaosCode.",
+          "score": 5,
+          "labels": [
+            "platform"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "channel/platform"
+            ],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Agents/skills: cache hydrated resolvedSkills across warm gateway turns while keying reuse by the redacted effective config, reducing redundant skill snapshot rebuilds without crossing config-gated skill boundaries. (81451) Thanks @solodmd.",
+          "score": 15,
+          "labels": [
+            "platform",
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [
+              "gateway",
+              "config/update"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Telegram/group chat: add opt-in messages.groupChat.ambientTurns: \"roomevent\" handling so always-on ambient chatter can run as quiet room context and speak visibly only via the message tool. (81317) Thanks @obviyus.",
+          "score": 5,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "telegram"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Release tooling: align the published launcher Node floor, npm start, package script checks, sharded lint locking, Vitest root project coverage, and plugin-SDK declaration build cache metadata so release/package validation does not silently skip or ship stale surfaces.",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Cron/agents: honor configured subagent model fallbacks for isolated scheduled runs and forward that fallback policy into embedded agent timeout failover. Fixes 74985. Thanks @chrisgwynne.",
+          "score": 10,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "sessions"
+            ],
+            "quality": [
+              "fix",
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Codex app-server/MCP: scope user MCP servers to specific OpenClaw agent ids through an optional mcp.servers.<name.codex.agents list and accept codex.defaultToolsApprovalMode (auto/prompt/approve) for native Codex approval defaults; OpenClaw strips the codex block before handing mcpservers config to Codex. (82180) Thanks @sercada.",
+          "score": 23,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [
+              "tools/exec",
+              "codex/acp",
+              "config/update"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Agents/OpenAI Responses: clamp inputtokens - cachedtokens at zero and reconstruct totalTokens from input + output + cached components so Responses-API streams report consistent usage when providers under-report inputtokens relative to cachedtokens.",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Plugins: reject malformed package.json openclaw.extensions metadata during install, discovery, and post-update payload smoke instead of silently dropping invalid entries.",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Media/files: sniff inputfile bytes before trusting declared MIME headers, rejecting spoofed image or zip payloads before they become agent-visible text.",
+          "score": 6,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "media/pdf"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Config persistence: ignore malformed array/scalar auth profile, cron job state, and session store entries instead of hydrating them into numeric profile ids, crashed cron rows, or invalid session records.",
+          "score": 10,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "sessions",
+              "config/update"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Providers: reject malformed successful Runway, BytePlus, and Ollama embedding responses with provider-owned errors instead of raw parser/type failures, silent bad vectors, or long bogus polling.",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Trajectory export: skip and report malformed session/runtime JSONL rows in manifest.json instead of letting wrong-shaped session rows crash support bundle export.",
+          "score": 21,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol",
+              "plugin registry"
+            ],
+            "relevant": [
+              "sessions"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Config/doctor: copy fallback-enabled channel allowFrom entries into explicit groupAllowFrom allowlists during openclaw doctor --fix, preserving current group access without adding runtime fallback-transition flags.",
+          "score": 24,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol",
+              "channel/platform"
+            ],
+            "relevant": [
+              "config/update"
+            ],
+            "quality": [
+              "fix",
+              "diagnostics",
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Hooks: raise bounded gateway lifecycle hook wait budgets to 5 seconds for shutdown and 10 seconds for pre-restart, giving short restart notification handlers time to finish before shutdown continues. (82273) Thanks @bryanbaer.",
+          "score": 15,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [
+              "gateway"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Plugin releases: require external package compatibility metadata in the npm plugin publish plan, matching the ClawHub package contract before packages ship.",
+          "score": 6,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix",
+              "compatibility"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Agents/OpenAI-compatible: honor per-model maxcompletiontokens/maxtokens params in embedded OpenAI-completions runs so high-token Kimi-style routes keep their configured completion cap. Fixes 82230. Thanks @albert-zen.",
+          "score": 6,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix",
+              "compatibility"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Agents/local: install a local gateway request scope around trusted openclaw agent --local runs, so subagent completion announces can use in-process gateway dispatch without crashing. Fixes 82140. Thanks @Kushmaro.",
+          "score": 19,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [
+              "gateway",
+              "sessions"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Cron: keep failed isolated-agent runs from marking successful result delivery when only the failure notification was delivered. Fixes 72985. Thanks @Allenbluff.",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Discord: validate message-read results before normalizing channel history and report unexpected payloads with a Discord boundary error instead of map is not a function. Fixes 82252. Thanks @jessewunderlich.",
+          "score": 8,
+          "labels": [
+            "platform",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "channel/platform"
+            ],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Agents/runtime: apply agents.defaults.models[\"provider/\"].agentRuntime as provider-wide model runtime policy while preserving exact model runtime precedence. Fixes 82243. Thanks @rendrag-git.",
+          "score": 10,
+          "labels": [
+            "platform",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Agents/auto-reply: restrict NOREPLY prompt guidance to automatic group/channel replies, remove legacy silent-reply rewrites, and suppress accidental direct-chat silent tokens instead of delivering fallback text. Fixes 82254. Thanks @absol89.",
+          "score": 21,
+          "labels": [
+            "platform",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "deprecation",
+              "channel/platform"
+            ],
+            "relevant": [],
+            "quality": [
+              "fix",
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Telegram: retain a longer partial-stream preview when a final callback only carries an ellipsis-truncated snapshot, preventing the visible answer and transcript mirror from being replaced by the short preview. Fixes 82239.",
+          "score": 8,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "telegram"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Telegram/active-memory: run blocking memory recall through the Telegram provider for direct-message turns even when the hook context carries the raw chat id, preventing embedded recall from launching against an invalid numeric channel. Fixes 82177. Thanks @cslash-zz.",
+          "score": 18,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "channel/platform"
+            ],
+            "relevant": [
+              "telegram",
+              "memory"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Control UI/WebChat: keep optimistic image messages from embedding large inline data: previews and preserve image-only user turns in chat history, avoiding browser stack overflows when sending image attachments. Fixes 82182. Thanks @ExploreSheep.",
+          "score": 10,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "browser"
+            ],
+            "quality": [
+              "fix",
+              "ux/ui"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Agents/media: preserve message-tool-only delivery for generated music and video completion handoffs, so group/channel completions do not finish without posting the generated attachment.",
+          "score": 11,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "channel/platform"
+            ],
+            "relevant": [
+              "media/pdf"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Telegram: drain queued outbound deliveries after polling reconnect confirms fresh getUpdates activity, so stale-socket and network recovery do not leave failed replies stranded. Fixes 50040. Refs 82175. Thanks @dmitriiforpost-commits and @shellyrocklobster.",
+          "score": 8,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "telegram"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Telegram: mark isolated polling ingress unhealthy when a spooled inbound backlog stalls while Bot API polling still succeeds, so gateway/channel health no longer stays green after Telegram DM processing wedges. Fixes 82175. Thanks @shellyrocklobster.",
+          "score": 25,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service",
+              "channel/platform"
+            ],
+            "relevant": [
+              "telegram",
+              "gateway"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Agents: strip Gemini/Gemma <final tags with attributes or self-closing syntax from delivered replies, including strict final-tag streaming enforcement. Fixes 65867.",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "macOS/update: disarm legacy ai.openclaw.update. LaunchAgents when openclaw update starts from one, preventing KeepAlive relaunch loops that repeatedly restart the Gateway and replay update continuations. Fixes 82167.",
+          "score": 18,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [
+              "gateway",
+              "config/update"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Agents/replay: strip internal runtime-context metadata and NOREPLY sentinels from provider replay and pending final-delivery recovery so restart and heartbeat resumes do not feed control text back to the model. Fixes 76629. Thanks @fuyizheng3120, @bryan-chx, and @cael-dandelion-cult.",
+          "score": 15,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [
+              "heartbeat"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "LINE: acknowledge signed webhook events before agent processing so slow model replies do not cause LINE requesttimeout delivery failures. Fixes 65375. Thanks @myericho.",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "LINE: stop cron recovery from inferring lowercased LINE recipients from canonical session keys, so long-running task replies do not silently retry undeliverable push targets. Fixes 81628. (81704) Thanks @edenfunf.",
+          "score": 10,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "sessions"
+            ],
+            "quality": [
+              "fix",
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "TTS: preserve channel-derived voice-note delivery for /tts audio replies even when the provider output is not natively voice-compatible. (82174) Thanks @xuruiray.",
+          "score": 14,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "channel/platform"
+            ],
+            "relevant": [
+              "media/pdf"
+            ],
+            "quality": [
+              "fix",
+              "compatibility"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Codex app-server: preserve inbound sender metadata and source-channel provenance on mirrored user prompts, including failure snapshots, so channel history keeps the original sender identity. (82184) Thanks @zknicker.",
+          "score": 13,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "channel/platform"
+            ],
+            "relevant": [
+              "codex/acp"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Codex account/status: treat metadata-only rate-limit buckets as returned but empty so /codex status and /codex account report none returned instead of counting phantom limits.",
+          "score": 14,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "codex/acp",
+              "config/update"
+            ],
+            "quality": [
+              "fix",
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Codex/Lossless: keep Codex explicit compaction on native app-server threads while allowing Lossless through the context-engine slot; openclaw doctor --fix now migrates legacy compaction.provider: \"lossless-claw\" config to plugins.slots.contextEngine.",
+          "score": 26,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "migration"
+            ],
+            "relevant": [
+              "codex/acp",
+              "config/update"
+            ],
+            "quality": [
+              "fix",
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Cron/doctor: report scheduled jobs with explicit payload.model overrides, including provider namespace counts and default-model mismatches, so stale cron model pins are visible during auth or billing investigations. Fixes 82151. Thanks @mgonto.",
+          "score": 9,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "config/update"
+            ],
+            "quality": [
+              "fix",
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Codex app-server: keep the short turn-completion idle watchdog armed after the last non-assistant current-turn item completes, so a quiet Codex app-server releases the OpenClaw session lane before the outer attempt timeout. Fixes 82171. (82172) Thanks @funmerlin.",
+          "score": 15,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "sessions",
+              "codex/acp"
+            ],
+            "quality": [
+              "fix",
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Providers/OpenRouter: stop adding empty DeepSeek V4 reasoningcontent placeholders to assistant tool-call replay messages and strip empty replay artifacts before follow-up Chat Completions requests, so openrouter/deepseek/deepseek-v4-pro no longer fails after tool use. Fixes 82150. (82158) Thanks @luyao618 and @Suquir0.",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "OpenAI-compatible providers: honor streaming-usage compatibility metadata when deciding whether to send streamoptions.includeusage, while keeping bundled Volcengine routes opted in to Ark streaming usage. Refs 44845. (82181) Thanks @xuruiray.",
+          "score": 6,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix",
+              "compatibility"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Gateway/approvals: treat turnSourceTo as optional in canBridgeNoDeviceChatApprovalFromBackend, matching the existing optional handling of turnSourceAccountId and turnSourceThreadId. Channels without a recipient concept (webchat, control-ui) leave turnSourceTo null on both the approval snapshot and the replay params, so the prior required-string check rejected every backend replay with APPROVALCLIENTMISMATCH. Cross-channel replay is still gated by the required turnSourceChannel and sessionKey checks. Fixes 82132. (82136) Thanks @ottodeng.",
+          "score": 27,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service",
+              "channel/platform"
+            ],
+            "relevant": [
+              "gateway",
+              "tools/exec"
+            ],
+            "quality": [
+              "fix",
+              "ux/ui"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Cron: load runtime plugins before isolated cron model and delivery resolution so external channels can be selected for scheduled runs. (82111) Thanks @medns.",
+          "score": 10,
+          "labels": [
+            "platform",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Cron: mirror successful direct scheduled deliveries into the resolved destination session transcript while preserving isolated-delivery awareness policy. (80786) Thanks @cavit99.",
+          "score": 7,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "sessions"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Cron: preserve rotated transcript identity after session-bound scheduled runs compact, so sessionTarget: \"current\" keeps the next user message on the same conversation. Fixes 82164. Thanks @weissfl.",
+          "score": 7,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "sessions"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Twitch: keep gateway accounts running until shutdown instead of treating successful monitor startup as a clean channel exit, preventing immediate auto-restart loops. Fixes 60071. (81853) Thanks @edenfunf.",
+          "score": 20,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service",
+              "channel/platform"
+            ],
+            "relevant": [
+              "gateway"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Agents/auto-reply: honor agents.defaults.silentReply and per-surface group silent-reply policy when generic agent-run failure fallbacks decide whether to send visible fallback text. Fixes 82060. (82086) Thanks @taozengabc.",
+          "score": 6,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix",
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Discord: render channel topic context as structured untrusted metadata in reply prompts and stop duplicating inbound message bodies or exposing raw EXTERNALUNTRUSTEDCONTENT envelopes. Fixes 82168. Thanks @ronan-dandelion-cult.",
+          "score": 8,
+          "labels": [
+            "platform",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "channel/platform"
+            ],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Codex app-server: arm the short idle watchdog as soon as Codex accepts a turn, so accepted turns with no current-turn progress release the OpenClaw session lane before the outer model timeout. Fixes 82129. Thanks @Francois3d.",
+          "score": 15,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "sessions",
+              "codex/acp"
+            ],
+            "quality": [
+              "fix",
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Agents/replies: also strip <functionresponse workflow output when it becomes visible after an adjacent stripped tool-call XML block, closing the remaining sanitizer leak from 47444.",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Control UI/WebChat: focus the composer when users click the visible input chrome and restore larger, labeled desktop composer controls while preserving compact mobile taps. Fixes 45656. Thanks @BunsDev.",
+          "score": 15,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "channel/platform"
+            ],
+            "relevant": [
+              "browser"
+            ],
+            "quality": [
+              "fix",
+              "ux/ui"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Discord: suppress generated link embeds on outbound messages by default so agent-sent URLs stay as plain links unless channels.discord.suppressEmbeds is disabled.",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "System events: keep owner downgrades in structured metadata while rendering queued prompt text as plain System: lines, preserving least-privilege wakeups without prompt-visible trust labels. (82067)",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Slack: default outbound bot link unfurls off so agent-sent URLs no longer expand into inline previews unless channels.slack.unfurlLinks is enabled. (82123) Thanks @kibi-bsp.",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Slack: keep finalized draft-preview replies visible when a later same-turn tool warning is delivered normally instead of clearing the edited answer. Fixes 81903. (81979) Thanks @neeravmakwana.",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Providers/Xiaomi: preserve MiMo reasoningcontent on multi-turn tool-call replay, including custom Xiaomi-compatible proxy routes, so follow-up turns no longer fail with 400 Param Incorrect. Fixes 81419. (81589) Thanks @lovelefeng-glitch and @jimdawdy-hub.",
+          "score": 6,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix",
+              "compatibility"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Slack/plugins: route plugin-owned modal viewsubmission and viewclosed events through Slack interactive handlers before compacting the agent-visible system event, so plugins can persist full submitted form state while the transcript stays compact. Fixes 82102. Thanks @shannon0430.",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Providers/Xiaomi: promote legacy MiMo V2 reasoning-only final answers to visible text, including Xiaomi-compatible proxy routes, so mimo-v2-pro and mimo-v2-omni replies no longer appear blank when the answer arrives in reasoningcontent. Fixes 60261. (60304) Thanks @HiddenPuppy.",
+          "score": 6,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix",
+              "compatibility"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Providers: preserve required reasoningcontent replay for Kimi K2.6/K2 thinking and MiMo V2.6 OpenAI-compatible tool-call follow-up turns while keeping the stock OpenAI/Qwen strip path intact. Fixes 82139. Thanks @yimao.",
+          "score": 6,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix",
+              "compatibility"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Memory search: stop using chokidar write-stability polling for memory and QMD watchers so large Markdown extraPath trees no longer build up regular file descriptors; changed files now settle through the existing debounced sync queue. Fixes 77327 and 78224. (81802) Thanks @frankekn, @loyur, and @JanPlessow.",
+          "score": 12,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "memory"
+            ],
+            "quality": [
+              "fix",
+              "reliability"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Message tool: rename the Discord channel-create schema field exposed to models from type to channelType, avoiding NVIDIA NIM JSON Schema parser failures while still accepting legacy type tool calls. (78920) Thanks @YashSaliya.",
+          "score": 21,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "config/schema",
+              "channel/platform"
+            ],
+            "relevant": [
+              "tools/exec"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        }
+      ]
+    },
     {
       "tag": "v2026.5.14-beta.2",
       "version": "2026.5.14-beta.2",
