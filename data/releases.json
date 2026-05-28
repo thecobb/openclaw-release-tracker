@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-27T12:32:33.692Z",
+  "generatedAt": "2026-05-28T12:45:57.408Z",
   "source": {
     "owner": "openclaw",
     "repo": "openclaw",
@@ -9,15 +9,15 @@
   },
   "defaults": {
     "months": 3,
-    "since": "2026-02-27T11:27:24.000Z"
+    "since": "2026-02-28T11:41:42.000Z"
   },
-  "releaseCount": 180,
-  "stableCount": 96,
+  "releaseCount": 182,
+  "stableCount": 97,
   "latest": {
-    "tag": "v2026.5.26",
-    "version": "2026.5.26",
-    "publishedAt": "2026-05-27T11:27:24Z",
-    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.26"
+    "tag": "v2026.5.27",
+    "version": "2026.5.27",
+    "publishedAt": "2026-05-28T11:41:42Z",
+    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.27"
   },
   "keywords": {
     "jacobKeywords": [
@@ -83,6 +83,1898 @@
   },
   "releases": [
     {
+      "tag": "v2026.5.27",
+      "version": "2026.5.27",
+      "versionParts": {
+        "year": 2026,
+        "month": 5,
+        "patch": 27,
+        "suffix": ""
+      },
+      "name": "openclaw 2026.5.27",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.27",
+      "apiUrl": "https://api.github.com/repos/openclaw/openclaw/releases/330806884",
+      "publishedAt": "2026-05-28T11:41:42Z",
+      "createdAt": "2026-05-28T11:16:30Z",
+      "prerelease": false,
+      "draft": false,
+      "bodyExcerpt": "Highlights - Stronger security and content boundaries: group prompt text is kept out of the system prompt, repeated-dot hostnames are normalized, side-effecting command wrappers and unsafe Node runtime env overrides are blocked, no-auth Tailscale exposure is rejected, and node/device-role approvals now require admin authority. (87144, 87305, 87292, 87308, 87146) Thanks @eleqtrizit and @pgondhi987. - More reliable Codex app-server runs: Codex runtime models resolve first, workspace memory is rout",
+      "summary": {
+        "title": "openclaw 2026.5.27",
+        "headline": "Stronger security and content boundaries: group prompt text is kept out of the system prompt, repeated-dot hostnames are normalized, side-effecting command wrappers and unsafe Node runtime env overrides are blocked, no-auth Tailscale exposure is rejected, and node/device-role approvals now require admin authority. (87144, 87305, 87292, 87308, 87146) Thanks @eleqtrizit and @pgondhi987.",
+        "importance": "medium",
+        "score": 549,
+        "topItems": [
+          {
+            "section": "Highlights",
+            "text": "Stronger security and content boundaries: group prompt text is kept out of the system prompt, repeated-dot hostnames are normalized, side-effecting command wrappers and unsafe Node runtime env overrides are blocked, no-auth Tailscale exposure is rejected, and node/device-role approvals now require admin authority. (87144, 87305, 87292, 87308, 87146) Thanks @eleqtrizit and @pgondhi987.",
+            "score": 29,
+            "labels": [
+              "security",
+              "platform",
+              "relevant"
+            ],
+            "hits": {
+              "security": [
+                "security",
+                "approval",
+                "auth"
+              ],
+              "platform": [
+                "runtime/protocol"
+              ],
+              "relevant": [
+                "tools/exec"
+              ],
+              "quality": []
+            }
+          },
+          {
+            "section": "Highlights",
+            "text": "More reliable Codex app-server runs: Codex runtime models resolve first, workspace memory is routed through tools, shared app-server clients survive startup and spawned-helper failures, native hook relay generations survive restarts and rotate on fresh fallbacks, and false runtime live switches are avoided. (87383, 87403, 87375, 72574, 87428) Thanks @yetval.",
+            "score": 26,
+            "labels": [
+              "platform",
+              "relevant",
+              "quality"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [
+                "runtime/protocol"
+              ],
+              "relevant": [
+                "memory",
+                "codex/acp"
+              ],
+              "quality": [
+                "reliability"
+              ]
+            }
+          },
+          {
+            "section": "Highlights",
+            "text": "Faster Gateway and reply paths: session reads, plugin metadata fingerprints, auth env snapshots, auto-enabled plugin config, tool-search catalogs, and stable metadata caches do less hot-path rediscovery while visible replies no longer inherit hidden cleanup timeouts. (86439, 87044) Thanks @keshavbotagent.",
+            "score": 28,
+            "labels": [
+              "platform",
+              "relevant",
+              "quality"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [
+                "gateway/service"
+              ],
+              "relevant": [
+                "gateway",
+                "sessions",
+                "config/update"
+              ],
+              "quality": [
+                "performance"
+              ]
+            }
+          },
+          {
+            "section": "Highlights",
+            "text": "Better provider and model coverage: OpenAI-compatible embedding providers are core, DeepInfra catalog browsing loads the full credential-aware model set, Pixverse adds video generation and API region selection, VLLM thinking params are wired, Claude CLI OAuth overlays load for PI auth profiles, and bare direct Anthropic model ids work. (85269, 84549, 87167) Thanks @dutifulbob, @ats3v, and @joshavant.",
+            "score": 15,
+            "labels": [
+              "platform",
+              "quality"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [
+                "plugin registry"
+              ],
+              "relevant": [],
+              "quality": [
+                "compatibility"
+              ]
+            }
+          }
+        ],
+        "reasons": [
+          "security-sensitive wording",
+          "matches your setup: tools/exec, memory, codex/acp, gateway, sessions, config/update, telegram, media/pdf",
+          "platform change signals: runtime/protocol, gateway/service, plugin registry, channel/platform, deprecation, config/schema",
+          "quality/reliability: reliability, performance, compatibility, fallback/retry, diagnostics, fix"
+        ],
+        "filterLabels": [],
+        "labelItemCounts": {
+          "security": 4,
+          "platform": 21,
+          "relevant": 21,
+          "quality": 22
+        },
+        "hitCounts": {
+          "security": 5,
+          "platform": 6,
+          "relevant": 10,
+          "quality": 6
+        }
+      },
+      "items": [
+        {
+          "section": "Highlights",
+          "text": "Stronger security and content boundaries: group prompt text is kept out of the system prompt, repeated-dot hostnames are normalized, side-effecting command wrappers and unsafe Node runtime env overrides are blocked, no-auth Tailscale exposure is rejected, and node/device-role approvals now require admin authority. (87144, 87305, 87292, 87308, 87146) Thanks @eleqtrizit and @pgondhi987.",
+          "score": 29,
+          "labels": [
+            "security",
+            "platform",
+            "relevant"
+          ],
+          "hits": {
+            "security": [
+              "security",
+              "approval",
+              "auth"
+            ],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [
+              "tools/exec"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "More reliable Codex app-server runs: Codex runtime models resolve first, workspace memory is routed through tools, shared app-server clients survive startup and spawned-helper failures, native hook relay generations survive restarts and rotate on fresh fallbacks, and false runtime live switches are avoided. (87383, 87403, 87375, 72574, 87428) Thanks @yetval.",
+          "score": 26,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [
+              "memory",
+              "codex/acp"
+            ],
+            "quality": [
+              "reliability"
+            ]
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Faster Gateway and reply paths: session reads, plugin metadata fingerprints, auth env snapshots, auto-enabled plugin config, tool-search catalogs, and stable metadata caches do less hot-path rediscovery while visible replies no longer inherit hidden cleanup timeouts. (86439, 87044) Thanks @keshavbotagent.",
+          "score": 28,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [
+              "gateway",
+              "sessions",
+              "config/update"
+            ],
+            "quality": [
+              "performance"
+            ]
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Better provider and model coverage: OpenAI-compatible embedding providers are core, DeepInfra catalog browsing loads the full credential-aware model set, Pixverse adds video generation and API region selection, VLLM thinking params are wired, Claude CLI OAuth overlays load for PI auth profiles, and bare direct Anthropic model ids work. (85269, 84549, 87167) Thanks @dutifulbob, @ats3v, and @joshavant.",
+          "score": 15,
+          "labels": [
+            "platform",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "plugin registry"
+            ],
+            "relevant": [],
+            "quality": [
+              "compatibility"
+            ]
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Channel delivery is steadier: Telegram sendMessage actions use durable outbound delivery, iMessage suppresses duplicate native exec approval prompts and sends, Slack keeps delivered final replies during late cleanup, Matrix mention previews/finals are stricter, QQBot fallback approval buttons honor slash-command auth, Discord guild requester checks are tighter, recovered Discord tool-warning artifacts stay out of successful replies, and Google Chat stops thread sends in DMs. (87261, 87154) Thanks @mbelinky and @eleqtrizit.",
+          "score": 23,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "channel/platform"
+            ],
+            "relevant": [
+              "telegram",
+              "tools/exec"
+            ],
+            "quality": [
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Release, package, and CI proof paths are harder to wedge: npm/package inventory honors dist exclusions, shrinkwrap override pins merge correctly, Docker runtime workspace templates are packaged and smoked, release postpublish checks are stricter, beta smoke rejects empty runs, and E2E log/probe waits are bounded.",
+          "score": 15,
+          "labels": [
+            "platform",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [],
+            "quality": [
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Memory: add a core OpenAI-compatible embedding provider for local and hosted OpenAI-style endpoints, with config, doctor, and docs support. (85269) Thanks @dutifulbob.",
+          "score": 14,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "memory",
+              "config/update"
+            ],
+            "quality": [
+              "diagnostics",
+              "compatibility"
+            ]
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Plugin SDK: mark memory-specific embedding provider registration as deprecated compatibility and surface non-bundled usage in plugin compatibility diagnostics. (85072) Thanks @mbelinky.",
+          "score": 21,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "deprecation"
+            ],
+            "relevant": [
+              "memory"
+            ],
+            "quality": [
+              "diagnostics",
+              "compatibility"
+            ]
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Providers: add the Pixverse video generation provider, API region selection, docs, and external plugin packaging support.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "DeepInfra: load the full model catalog when users browse models during onboarding, preserve configured API-key catalogs, refresh media/video defaults, and keep pricing/default model metadata aligned. (84549) Thanks @ats3v.",
+          "score": 10,
+          "labels": [
+            "platform",
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "plugin registry"
+            ],
+            "relevant": [
+              "media/pdf"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Plugin SDK: expose plugin approval action metadata and stop exporting Vitest test helpers from the public SDK surface. (87120) Thanks @RomneyDa.",
+          "score": 5,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "tools/exec"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Channel SDK: move channel message compatibility into core, remove old channel turn runtime aliases, and preserve runtime catalog markdown metadata for plugins.",
+          "score": 32,
+          "labels": [
+            "platform",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "deprecation",
+              "runtime/protocol",
+              "plugin registry",
+              "channel/platform"
+            ],
+            "relevant": [],
+            "quality": [
+              "compatibility"
+            ]
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "ClawHub: add plugin display metadata so catalog/package listings use cleaner names. (87354) Thanks @thewilloftheshadow.",
+          "score": 7,
+          "labels": [
+            "platform"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "plugin registry"
+            ],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Agents: split the heartbeat runtime template out of docs assets and add compatibility repair for legacy heartbeat template content. (85416) Thanks @hxy91819.",
+          "score": 18,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [
+              "heartbeat"
+            ],
+            "quality": [
+              "diagnostics",
+              "compatibility"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Security/content boundaries: route untrusted group prompt metadata outside system prompts, normalize repeated trailing hostname dots, block side-effecting command wrappers, reject unsafe Node runtime env overrides, reject no-auth Tailscale exposure, block untrusted Microsoft Teams service URLs, enforce /allowlist configWrites origin policy, gate QQBot fallback approval buttons, and require admin for node/device-role approvals. (87144, 87305, 87292, 87308, 87146, 87154, 87334) Thanks @eleqtrizit and @pgondhi987.",
+          "score": 37,
+          "labels": [
+            "security",
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [
+              "security",
+              "approval",
+              "auth",
+              "allowlist"
+            ],
+            "platform": [
+              "gateway/service",
+              "runtime/protocol"
+            ],
+            "relevant": [
+              "tools/exec"
+            ],
+            "quality": [
+              "fix",
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Codex: resolve Codex runtime models before generic routing, route workspace memory through tools, preserve shared app-server clients after startup and spawned-helper failures, preserve native hook relay generations across restarts and fresh fallbacks, keep raw reasoning/source-reply guards intact, report quarantined dynamic tools, keep the attempt watchdog armed for queued terminal turns, and route Codex OAuth compaction through OpenAI-Codex. (87383, 87403, 87375, 72574, 87428) Thanks @yetval.",
+          "score": 20,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [
+              "memory",
+              "codex/acp"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Agents/runtime: avoid session event queue self-waits, bound compaction wake and steering retries, preserve grace for pending error diagnostics, avoid false Codex runtime live switches, avoid stale restart continuation reuse, preserve session fallback errors, suppress duplicate Claude CLI skill prompts, keep runtime context before active user turns, strip stale Anthropic thinking, quarantine unsupported tool schemas, recover completed write timeouts safely, release retained session write locks on timeout abort, and validate forced plugin harness support before pinning. (86123, 55424, 86855, 74341, 87278) Thanks @luoyanglang, @cathrynlavery, and @openperf.",
+          "score": 25,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [
+              "sessions",
+              "codex/acp"
+            ],
+            "quality": [
+              "fix",
+              "diagnostics",
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Reply/session delivery: keep visible turn admission unbounded, keep visible fallback delivery on latest targets, preserve bridge hook context, classify direct fallback targets by channel grammar, report approval resolutions in bridge mode, and avoid stale source-reply artifacts. (87044) Thanks @keshavbotagent.",
+          "score": 27,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol",
+              "channel/platform"
+            ],
+            "relevant": [
+              "sessions",
+              "tools/exec"
+            ],
+            "quality": [
+              "fix",
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Channels: make Telegram sendMessage action replies durable and preserve SecretRef prompt config, suppress duplicate iMessage native exec approval prompts and sends, keep iMessage approval polling alive after denied reactions, keep Slack delivered final replies during late cleanup, keep Matrix mention previews/finals mention-inert and normally delivered, ignore filename-embedded Matrix IDs, suppress recovered Discord tool-warning artifacts from successful replies, suppress Google Chat thread sends in DMs, and harden Discord guild requester checks. (87261, 87452) Thanks @mbelinky.",
+          "score": 16,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "telegram",
+              "tools/exec",
+              "config/update"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Memory: salvage QMD search JSON after nonzero exits and keep workspace memory routing through the Codex tool path where possible. (87225, 87383, 87403) Thanks @osolmaz.",
+          "score": 13,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "memory",
+              "codex/acp"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Providers/models: forward cached token usage in OpenAI-compatible chat completions, load Claude CLI OAuth overlays for PI auth profiles, send bare direct Anthropic model ids, wire configured VLLM thinking params, honor OpenAI-compatible cache retention, normalize OpenAI Responses replay tool ids, resolve OpenAI gpt-5.5 without a cached catalog, preserve retry-after fallback handling, bound GitHub Copilot auth requests, and load DeepInfra custom/live catalogs consistently. (82062, 87167, 84549) Thanks @caz0075, @joshavant, and @ats3v.",
+          "score": 23,
+          "labels": [
+            "security",
+            "platform",
+            "quality"
+          ],
+          "hits": {
+            "security": [
+              "auth",
+              "token"
+            ],
+            "platform": [
+              "plugin registry"
+            ],
+            "relevant": [],
+            "quality": [
+              "fix",
+              "fallback/retry",
+              "compatibility"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Gateway/performance: borrow read-only session metadata and active session working stores, cache current/stable plugin metadata fingerprints, cache auto-enabled plugin config, slim metadata identity caches, trust current metadata lifecycle caches, stabilize isolated cron prompt-cache affinity, persist model auth profile suffixes, drain probe client closes, expire browser tokens after auth rotation, and keep default status fast paths bounded. Thanks @ferminquant.",
+          "score": 45,
+          "labels": [
+            "security",
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [
+              "auth",
+              "token"
+            ],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [
+              "gateway",
+              "browser",
+              "sessions",
+              "config/update"
+            ],
+            "quality": [
+              "fix",
+              "reliability",
+              "performance",
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "CLI/help/config: reject loose or malformed numeric options for gateway timeouts, model limits, directory limits, message options, webhooks, and partial values; respect subcommand version options; route generated/root/plugin help targets correctly; keep skills JSON output flushing naturally; and keep plugin descriptor loading quiet in root help. (87398) Thanks @Patrick-Erichsen.",
+          "score": 18,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [
+              "gateway",
+              "config/update"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Plugin state/tool search: evict the current namespace when plugin rows hit caps, reuse unchanged tool-search catalogs, align the release catalog reuse wrapper, and keep fallback tool warnings mention-inert.",
+          "score": 13,
+          "labels": [
+            "platform",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "plugin registry"
+            ],
+            "relevant": [],
+            "quality": [
+              "fix",
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Install/package/release: match npm globstar exclusions, honor dist package exclusions in inventory, omit unpacked test helpers, skip Homebrew until macOS packages need it, package Docker runtime workspace templates, smoke Docker runtime templates during full validation, merge nested shrinkwrap override pins, preserve forked shrinkwrap pins, pin aged lru-cache, harden postpublish verification, accept main full-validation proof, and reject empty beta smoke runs.",
+          "score": 10,
+          "labels": [
+            "platform",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "E2E/QA/Crabbox: bound Telegram, Open WebUI, ClawHub, Matrix, Tool Search, MCP, gateway network, bundled runtime, kitchen-sink, codex media, config reload, and agent-turn assertion waits; prefer Azure for Windows targets; reinitialize invalid changed-gate git dirs; full-sync sparse container runs; and fail empty explicit test requests. (87186)",
+          "score": 46,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "config/schema",
+              "gateway/service",
+              "runtime/protocol"
+            ],
+            "relevant": [
+              "telegram",
+              "gateway",
+              "codex/acp",
+              "media/pdf",
+              "config/update"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "npm package: https://www.npmjs.com/package/openclaw/v/2026.5.27",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "registry tarball: https://registry.npmjs.org/openclaw/-/openclaw-2026.5.27.tgz",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "integrity: sha512-2N93zhdAo88KAbHt6T7KvYXf4s7XIkYXBgv1npYpn7e1Y9FvrtgtpsA38my9rtFW+70uXEojRPX5/OqnuDqJPw==",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "full release CI report: https://github.com/openclaw/releases-private/blob/main/evidence/2026.5.27/release-evidence.md",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "release publish: https://github.com/openclaw/openclaw/actions/runs/26571393853",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "npm preflight: https://github.com/openclaw/openclaw/actions/runs/26569630056",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "full release validation: https://github.com/openclaw/openclaw/actions/runs/26569544553",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "release checks: https://github.com/openclaw/openclaw/actions/runs/26569853272",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "product performance: https://github.com/openclaw/openclaw/actions/runs/26569541556",
+          "score": 4,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "performance"
+            ]
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "plugin npm publish: https://github.com/openclaw/openclaw/actions/runs/26571646739",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "plugin ClawHub publish: https://github.com/openclaw/openclaw/actions/runs/26571650967",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "OpenClaw npm publish: https://github.com/openclaw/openclaw/actions/runs/26572175549",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "macOS preflight/sign/notarize: https://github.com/openclaw/releases-private/actions/runs/26572630696",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "macOS validation: https://github.com/openclaw/releases-private/actions/runs/26573954998",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "macOS publish/appcast: https://github.com/openclaw/releases-private/actions/runs/26574441406",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "appcast: https://raw.githubusercontent.com/openclaw/openclaw/main/appcast.xml",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "macOS zip: https://github.com/openclaw/openclaw/releases/download/v2026.5.27/OpenClaw-2026.5.27.zip",
+          "score": 3,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "media/pdf"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "macOS dmg: https://github.com/openclaw/openclaw/releases/download/v2026.5.27/OpenClaw-2026.5.27.dmg",
+          "score": 3,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "media/pdf"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "macOS dSYM: https://github.com/openclaw/openclaw/releases/download/v2026.5.27/OpenClaw-2026.5.27.dSYM.zip",
+          "score": 3,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "media/pdf"
+            ],
+            "quality": []
+          }
+        }
+      ]
+    },
+    {
+      "tag": "v2026.5.27-beta.1",
+      "version": "2026.5.27-beta.1",
+      "versionParts": {
+        "year": 2026,
+        "month": 5,
+        "patch": 27,
+        "suffix": "beta.1"
+      },
+      "name": "openclaw 2026.5.27-beta.1",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.27-beta.1",
+      "apiUrl": "https://api.github.com/repos/openclaw/openclaw/releases/330672815",
+      "publishedAt": "2026-05-28T05:54:37Z",
+      "createdAt": "2026-05-28T04:54:48Z",
+      "prerelease": true,
+      "draft": false,
+      "bodyExcerpt": "Highlights - Stronger security and content boundaries: group prompt text is kept out of the system prompt, repeated-dot hostnames are normalized, side-effecting command wrappers and unsafe Node runtime env overrides are blocked, no-auth Tailscale exposure is rejected, and node/device-role approvals now require admin authority. (87144, 87305, 87292, 87308, 87146) Thanks @eleqtrizit and @pgondhi987. - More reliable Codex app-server runs: Codex runtime models resolve first, workspace memory is rout",
+      "summary": {
+        "title": "openclaw 2026.5.27-beta.1",
+        "headline": "Stronger security and content boundaries: group prompt text is kept out of the system prompt, repeated-dot hostnames are normalized, side-effecting command wrappers and unsafe Node runtime env overrides are blocked, no-auth Tailscale exposure is rejected, and node/device-role approvals now require admin authority. (87144, 87305, 87292, 87308, 87146) Thanks @eleqtrizit and @pgondhi987.",
+        "importance": "medium",
+        "score": 546,
+        "topItems": [
+          {
+            "section": "Highlights",
+            "text": "Stronger security and content boundaries: group prompt text is kept out of the system prompt, repeated-dot hostnames are normalized, side-effecting command wrappers and unsafe Node runtime env overrides are blocked, no-auth Tailscale exposure is rejected, and node/device-role approvals now require admin authority. (87144, 87305, 87292, 87308, 87146) Thanks @eleqtrizit and @pgondhi987.",
+            "score": 29,
+            "labels": [
+              "security",
+              "platform",
+              "relevant"
+            ],
+            "hits": {
+              "security": [
+                "security",
+                "approval",
+                "auth"
+              ],
+              "platform": [
+                "runtime/protocol"
+              ],
+              "relevant": [
+                "tools/exec"
+              ],
+              "quality": []
+            }
+          },
+          {
+            "section": "Highlights",
+            "text": "More reliable Codex app-server runs: Codex runtime models resolve first, workspace memory is routed through tools, shared app-server clients survive startup and spawned-helper failures, native hook relay generations survive restarts and rotate on fresh fallbacks, and false runtime live switches are avoided. (87383, 87403, 87375, 72574, 87428) Thanks @yetval.",
+            "score": 26,
+            "labels": [
+              "platform",
+              "relevant",
+              "quality"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [
+                "runtime/protocol"
+              ],
+              "relevant": [
+                "memory",
+                "codex/acp"
+              ],
+              "quality": [
+                "reliability"
+              ]
+            }
+          },
+          {
+            "section": "Highlights",
+            "text": "Faster Gateway and reply paths: session reads, plugin metadata fingerprints, auth env snapshots, auto-enabled plugin config, tool-search catalogs, and stable metadata caches do less hot-path rediscovery while visible replies no longer inherit hidden cleanup timeouts. (86439, 87044) Thanks @keshavbotagent.",
+            "score": 28,
+            "labels": [
+              "platform",
+              "relevant",
+              "quality"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [
+                "gateway/service"
+              ],
+              "relevant": [
+                "gateway",
+                "sessions",
+                "config/update"
+              ],
+              "quality": [
+                "performance"
+              ]
+            }
+          },
+          {
+            "section": "Highlights",
+            "text": "Better provider and model coverage: OpenAI-compatible embedding providers are core, DeepInfra catalog browsing loads the full credential-aware model set, Pixverse adds video generation and API region selection, VLLM thinking params are wired, Claude CLI OAuth overlays load for PI auth profiles, and bare direct Anthropic model ids work. (85269, 84549, 87167) Thanks @dutifulbob, @ats3v, and @joshavant.",
+            "score": 15,
+            "labels": [
+              "platform",
+              "quality"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [
+                "plugin registry"
+              ],
+              "relevant": [],
+              "quality": [
+                "compatibility"
+              ]
+            }
+          }
+        ],
+        "reasons": [
+          "security-sensitive wording",
+          "matches your setup: tools/exec, memory, codex/acp, gateway, sessions, config/update, telegram, media/pdf",
+          "platform change signals: runtime/protocol, gateway/service, plugin registry, channel/platform, deprecation, config/schema",
+          "quality/reliability: reliability, performance, compatibility, fallback/retry, diagnostics, fix"
+        ],
+        "filterLabels": [],
+        "labelItemCounts": {
+          "security": 4,
+          "platform": 21,
+          "relevant": 20,
+          "quality": 21
+        },
+        "hitCounts": {
+          "security": 5,
+          "platform": 6,
+          "relevant": 10,
+          "quality": 6
+        }
+      },
+      "items": [
+        {
+          "section": "Highlights",
+          "text": "Stronger security and content boundaries: group prompt text is kept out of the system prompt, repeated-dot hostnames are normalized, side-effecting command wrappers and unsafe Node runtime env overrides are blocked, no-auth Tailscale exposure is rejected, and node/device-role approvals now require admin authority. (87144, 87305, 87292, 87308, 87146) Thanks @eleqtrizit and @pgondhi987.",
+          "score": 29,
+          "labels": [
+            "security",
+            "platform",
+            "relevant"
+          ],
+          "hits": {
+            "security": [
+              "security",
+              "approval",
+              "auth"
+            ],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [
+              "tools/exec"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "More reliable Codex app-server runs: Codex runtime models resolve first, workspace memory is routed through tools, shared app-server clients survive startup and spawned-helper failures, native hook relay generations survive restarts and rotate on fresh fallbacks, and false runtime live switches are avoided. (87383, 87403, 87375, 72574, 87428) Thanks @yetval.",
+          "score": 26,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [
+              "memory",
+              "codex/acp"
+            ],
+            "quality": [
+              "reliability"
+            ]
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Faster Gateway and reply paths: session reads, plugin metadata fingerprints, auth env snapshots, auto-enabled plugin config, tool-search catalogs, and stable metadata caches do less hot-path rediscovery while visible replies no longer inherit hidden cleanup timeouts. (86439, 87044) Thanks @keshavbotagent.",
+          "score": 28,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [
+              "gateway",
+              "sessions",
+              "config/update"
+            ],
+            "quality": [
+              "performance"
+            ]
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Better provider and model coverage: OpenAI-compatible embedding providers are core, DeepInfra catalog browsing loads the full credential-aware model set, Pixverse adds video generation and API region selection, VLLM thinking params are wired, Claude CLI OAuth overlays load for PI auth profiles, and bare direct Anthropic model ids work. (85269, 84549, 87167) Thanks @dutifulbob, @ats3v, and @joshavant.",
+          "score": 15,
+          "labels": [
+            "platform",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "plugin registry"
+            ],
+            "relevant": [],
+            "quality": [
+              "compatibility"
+            ]
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Channel delivery is steadier: Telegram sendMessage actions use durable outbound delivery, iMessage suppresses duplicate native exec approval prompts and sends, Slack keeps delivered final replies during late cleanup, Matrix mention previews/finals are stricter, QQBot fallback approval buttons honor slash-command auth, Discord guild requester checks are tighter, recovered Discord tool-warning artifacts stay out of successful replies, and Google Chat stops thread sends in DMs. (87261, 87154) Thanks @mbelinky and @eleqtrizit.",
+          "score": 23,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "channel/platform"
+            ],
+            "relevant": [
+              "telegram",
+              "tools/exec"
+            ],
+            "quality": [
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Release, package, and CI proof paths are harder to wedge: npm/package inventory honors dist exclusions, shrinkwrap override pins merge correctly, Docker runtime workspace templates are packaged and smoked, release postpublish checks are stricter, beta smoke rejects empty runs, and E2E log/probe waits are bounded.",
+          "score": 15,
+          "labels": [
+            "platform",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [],
+            "quality": [
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Memory: add a core OpenAI-compatible embedding provider for local and hosted OpenAI-style endpoints, with config, doctor, and docs support. (85269) Thanks @dutifulbob.",
+          "score": 14,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "memory",
+              "config/update"
+            ],
+            "quality": [
+              "diagnostics",
+              "compatibility"
+            ]
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Plugin SDK: mark memory-specific embedding provider registration as deprecated compatibility and surface non-bundled usage in plugin compatibility diagnostics. (85072) Thanks @mbelinky.",
+          "score": 21,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "deprecation"
+            ],
+            "relevant": [
+              "memory"
+            ],
+            "quality": [
+              "diagnostics",
+              "compatibility"
+            ]
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Providers: add the Pixverse video generation provider, API region selection, docs, and external plugin packaging support.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "DeepInfra: load the full model catalog when users browse models during onboarding, preserve configured API-key catalogs, refresh media/video defaults, and keep pricing/default model metadata aligned. (84549) Thanks @ats3v.",
+          "score": 10,
+          "labels": [
+            "platform",
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "plugin registry"
+            ],
+            "relevant": [
+              "media/pdf"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Plugin SDK: expose plugin approval action metadata and stop exporting Vitest test helpers from the public SDK surface. (87120) Thanks @RomneyDa.",
+          "score": 5,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "tools/exec"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Channel SDK: move channel message compatibility into core, remove old channel turn runtime aliases, and preserve runtime catalog markdown metadata for plugins.",
+          "score": 32,
+          "labels": [
+            "platform",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "deprecation",
+              "runtime/protocol",
+              "plugin registry",
+              "channel/platform"
+            ],
+            "relevant": [],
+            "quality": [
+              "compatibility"
+            ]
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "ClawHub: add plugin display metadata so catalog/package listings use cleaner names. (87354) Thanks @thewilloftheshadow.",
+          "score": 7,
+          "labels": [
+            "platform"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "plugin registry"
+            ],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Agents: split the heartbeat runtime template out of docs assets and add compatibility repair for legacy heartbeat template content. (85416) Thanks @hxy91819.",
+          "score": 18,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [
+              "heartbeat"
+            ],
+            "quality": [
+              "diagnostics",
+              "compatibility"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Security/content boundaries: route untrusted group prompt metadata outside system prompts, normalize repeated trailing hostname dots, block side-effecting command wrappers, reject unsafe Node runtime env overrides, reject no-auth Tailscale exposure, block untrusted Microsoft Teams service URLs, enforce /allowlist configWrites origin policy, gate QQBot fallback approval buttons, and require admin for node/device-role approvals. (87144, 87305, 87292, 87308, 87146, 87154, 87334) Thanks @eleqtrizit and @pgondhi987.",
+          "score": 37,
+          "labels": [
+            "security",
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [
+              "security",
+              "approval",
+              "auth",
+              "allowlist"
+            ],
+            "platform": [
+              "gateway/service",
+              "runtime/protocol"
+            ],
+            "relevant": [
+              "tools/exec"
+            ],
+            "quality": [
+              "fix",
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Codex: resolve Codex runtime models before generic routing, route workspace memory through tools, preserve shared app-server clients after startup and spawned-helper failures, preserve native hook relay generations across restarts and fresh fallbacks, keep raw reasoning/source-reply guards intact, report quarantined dynamic tools, keep the attempt watchdog armed for queued terminal turns, and route Codex OAuth compaction through OpenAI-Codex. (87383, 87403, 87375, 72574, 87428) Thanks @yetval.",
+          "score": 20,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [
+              "memory",
+              "codex/acp"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Agents/runtime: avoid session event queue self-waits, bound compaction wake and steering retries, preserve grace for pending error diagnostics, avoid false Codex runtime live switches, avoid stale restart continuation reuse, preserve session fallback errors, suppress duplicate Claude CLI skill prompts, keep runtime context before active user turns, strip stale Anthropic thinking, quarantine unsupported tool schemas, recover completed write timeouts safely, release retained session write locks on timeout abort, and validate forced plugin harness support before pinning. (86123, 55424, 86855, 74341, 87278) Thanks @luoyanglang, @cathrynlavery, and @openperf.",
+          "score": 25,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [
+              "sessions",
+              "codex/acp"
+            ],
+            "quality": [
+              "fix",
+              "diagnostics",
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Reply/session delivery: keep visible turn admission unbounded, keep visible fallback delivery on latest targets, preserve bridge hook context, classify direct fallback targets by channel grammar, report approval resolutions in bridge mode, and avoid stale source-reply artifacts. (87044) Thanks @keshavbotagent.",
+          "score": 27,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol",
+              "channel/platform"
+            ],
+            "relevant": [
+              "sessions",
+              "tools/exec"
+            ],
+            "quality": [
+              "fix",
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Channels: make Telegram sendMessage action replies durable and preserve SecretRef prompt config, suppress duplicate iMessage native exec approval prompts and sends, keep iMessage approval polling alive after denied reactions, keep Slack delivered final replies during late cleanup, keep Matrix mention previews/finals mention-inert and normally delivered, ignore filename-embedded Matrix IDs, suppress recovered Discord tool-warning artifacts from successful replies, suppress Google Chat thread sends in DMs, and harden Discord guild requester checks. (87261, 87452) Thanks @mbelinky.",
+          "score": 16,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "telegram",
+              "tools/exec",
+              "config/update"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Memory: salvage QMD search JSON after nonzero exits and keep workspace memory routing through the Codex tool path where possible. (87225, 87383, 87403) Thanks @osolmaz.",
+          "score": 13,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "memory",
+              "codex/acp"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Providers/models: forward cached token usage in OpenAI-compatible chat completions, load Claude CLI OAuth overlays for PI auth profiles, send bare direct Anthropic model ids, wire configured VLLM thinking params, honor OpenAI-compatible cache retention, normalize OpenAI Responses replay tool ids, resolve OpenAI gpt-5.5 without a cached catalog, preserve retry-after fallback handling, bound GitHub Copilot auth requests, and load DeepInfra custom/live catalogs consistently. (82062, 87167, 84549) Thanks @caz0075, @joshavant, and @ats3v.",
+          "score": 23,
+          "labels": [
+            "security",
+            "platform",
+            "quality"
+          ],
+          "hits": {
+            "security": [
+              "auth",
+              "token"
+            ],
+            "platform": [
+              "plugin registry"
+            ],
+            "relevant": [],
+            "quality": [
+              "fix",
+              "fallback/retry",
+              "compatibility"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Gateway/performance: borrow read-only session metadata and active session working stores, cache current/stable plugin metadata fingerprints, cache auto-enabled plugin config, slim metadata identity caches, trust current metadata lifecycle caches, stabilize isolated cron prompt-cache affinity, persist model auth profile suffixes, drain probe client closes, expire browser tokens after auth rotation, and keep default status fast paths bounded. Thanks @ferminquant.",
+          "score": 45,
+          "labels": [
+            "security",
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [
+              "auth",
+              "token"
+            ],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [
+              "gateway",
+              "browser",
+              "sessions",
+              "config/update"
+            ],
+            "quality": [
+              "fix",
+              "reliability",
+              "performance",
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "CLI/help/config: reject loose or malformed numeric options for gateway timeouts, model limits, directory limits, message options, webhooks, and partial values; respect subcommand version options; route generated/root/plugin help targets correctly; keep skills JSON output flushing naturally; and keep plugin descriptor loading quiet in root help. (87398) Thanks @Patrick-Erichsen.",
+          "score": 18,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [
+              "gateway",
+              "config/update"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Plugin state/tool search: evict the current namespace when plugin rows hit caps, reuse unchanged tool-search catalogs, align the release catalog reuse wrapper, and keep fallback tool warnings mention-inert.",
+          "score": 13,
+          "labels": [
+            "platform",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "plugin registry"
+            ],
+            "relevant": [],
+            "quality": [
+              "fix",
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Install/package/release: match npm globstar exclusions, honor dist package exclusions in inventory, omit unpacked test helpers, skip Homebrew until macOS packages need it, package Docker runtime workspace templates, smoke Docker runtime templates during full validation, merge nested shrinkwrap override pins, preserve forked shrinkwrap pins, pin aged lru-cache, harden postpublish verification, accept main full-validation proof, and reject empty beta smoke runs.",
+          "score": 10,
+          "labels": [
+            "platform",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "E2E/QA/Crabbox: bound Telegram, Open WebUI, ClawHub, Matrix, Tool Search, MCP, gateway network, bundled runtime, kitchen-sink, codex media, config reload, and agent-turn assertion waits; prefer Azure for Windows targets; reinitialize invalid changed-gate git dirs; full-sync sparse container runs; and fail empty explicit test requests. (87186)",
+          "score": 46,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "config/schema",
+              "gateway/service",
+              "runtime/protocol"
+            ],
+            "relevant": [
+              "telegram",
+              "gateway",
+              "codex/acp",
+              "media/pdf",
+              "config/update"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "npm package: https://www.npmjs.com/package/openclaw/v/2026.5.27-beta.1",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "registry tarball: https://registry.npmjs.org/openclaw/-/openclaw-2026.5.27-beta.1.tgz",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "integrity: sha512-Bwc1x2bsmmjgc/zfKrZZTUCVKSwc29WJ96RxKb6xvR/3/ISvBjmMGa1goJuJi2Po+oqrD3IJ8zdbxcGSY7Woww==",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "full release validation: https://github.com/openclaw/openclaw/actions/runs/26555534701",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "npm preflight: https://github.com/openclaw/openclaw/actions/runs/26555537448",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "release publish parent: https://github.com/openclaw/openclaw/actions/runs/26556941655",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "OpenClaw npm publish: https://github.com/openclaw/openclaw/actions/runs/26557350528",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "plugin npm publish: https://github.com/openclaw/openclaw/actions/runs/26557065983 published all plugins except @openclaw/pixverse-provider in Actions; @openclaw/pixverse-provider was recovered manually via npm maintainer auth.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "plugin ClawHub publish: https://github.com/openclaw/openclaw/actions/runs/26557068673 published all workflow candidates except @openclaw/pixverse-provider in Actions; @openclaw/pixverse-provider was recovered manually on ClawHub after package-row bootstrap.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "postpublish verifier: fnm exec --using 24.15.0 -- node --import tsx scripts/openclaw-npm-postpublish-verify.ts 2026.5.27-beta.1 passed.",
+          "score": 5,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "tools/exec"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "beta release verifier: fnm exec --using 24.15.0 -- pnpm release:verify-beta -- 2026.5.27-beta.1 ... --skip-clawhub --plugins <all publishable except @openclaw/pixverse-provider passed for core npm, GitHub release, 30 plugin npm packages, full validation, and OpenClaw npm publish.",
+          "score": 5,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "tools/exec"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "@openclaw/pixverse-provider recovery verifier: node --import tsx scripts/release-verify-beta.ts 2026.5.27-beta.1 --plugins @openclaw/pixverse-provider --skip-postpublish passed for GitHub release, core npm, plugin npm, and ClawHub.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "beta smoke: blocked locally because Parallels VM Ubuntu 26.04 is missing on this host.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "@openclaw/pixverse-provider: https://www.npmjs.com/package/@openclaw/pixverse-provider/v/2026.5.27-beta.1",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "@openclaw/pixverse-provider tarball: https://registry.npmjs.org/@openclaw/pixverse-provider/-/pixverse-provider-2026.5.27-beta.1.tgz",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "@openclaw/pixverse-provider integrity: sha512-9rfWZ4GcKSd9sFrdfI9jncRKWvdtGLjNVWZdbJ+6ztd3WRyxSJTFfj/i9Py8Qj0gr3mDCiQqQXceFA0l7DW2Rg==",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "@openclaw/pixverse-provider ClawHub: https://clawhub.ai/plugins/%40openclaw%2Fpixverse-provider",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "@openclaw/pixverse-provider ClawHub API: https://clawhub.ai/api/v1/packages/%40openclaw%2Fpixverse-provider/versions/2026.5.27-beta.1",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        }
+      ]
+    },
+    {
       "tag": "v2026.5.26",
       "version": "2026.5.26",
       "versionParts": {
@@ -91,19 +1983,19 @@
         "patch": 26,
         "suffix": ""
       },
-      "name": "OpenClaw 2026.5.26",
+      "name": "openclaw 2026.5.26",
       "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.26",
       "apiUrl": "https://api.github.com/repos/openclaw/openclaw/releases/330131636",
       "publishedAt": "2026-05-27T11:27:24Z",
       "createdAt": "2026-05-27T11:27:12Z",
       "prerelease": false,
       "draft": false,
-      "bodyExcerpt": "2026.5.26 Highlights - Faster Gateway and replies: startup avoids repeated plugin, channel, session, usage-cost, warning, scheduled-service, and filesystem scans; visible replies separate user-facing sends from slower follow-up work; Gateway runtime/session caches churn less under load. - Transcripts are core: transcript-backed meeting summaries, source-provider chunks, cleaned user turns, media provenance, Codex mirrors, WebChat replies, and CLI/TUI replay now use one more reliable transcript p",
+      "bodyExcerpt": "Highlights - Faster Gateway and replies: startup avoids repeated plugin, channel, session, usage-cost, warning, scheduled-service, and filesystem scans; visible replies separate user-facing sends from slower follow-up work; Gateway runtime/session caches churn less under load. - Transcripts are core: transcript-backed meeting summaries, source-provider chunks, cleaned user turns, media provenance, Codex mirrors, WebChat replies, and CLI/TUI replay now use one more reliable transcript path. - Mor",
       "summary": {
-        "title": "OpenClaw 2026.5.26",
+        "title": "openclaw 2026.5.26",
         "headline": "Faster Gateway and replies: startup avoids repeated plugin, channel, session, usage-cost, warning, scheduled-service, and filesystem scans; visible replies separate user-facing sends from slower follow-up work; Gateway runtime/session caches churn less under load.",
         "importance": "high",
-        "score": 2295,
+        "score": 2304,
         "topItems": [
           {
             "section": "Highlights",
@@ -203,7 +2095,7 @@
         "labelItemCounts": {
           "security": 11,
           "platform": 78,
-          "relevant": 131,
+          "relevant": 134,
           "quality": 170
         },
         "hitCounts": {
@@ -699,7 +2591,7 @@
         },
         {
           "section": "Changes",
-          "text": "Discord/model picker: surface an alpha-bucket select (e.g. A–G (12) · H–N (18) · O–Z (5)) when the provider list or a provider's model list exceeds 25 items, so configs with provider/ wildcards stay one click from the right page instead of paginating through prev/next; falls back to numeric chunks when every item shares the same first letter.",
+          "text": "Discord/model picker: surface an alpha-bucket select (e.g. A–G (12) · H–N (18) · O–Z (5)) when the provider list or a provider's model list exceeds 25 items, so configs with provider/ wildcards stay one click from the right page instead of paginating through prev/next; falls back to numeric chunks when every item shares the same first letter. (86181) Thanks @rendrag-git.",
           "score": 0,
           "labels": [],
           "hits": {
@@ -3945,6 +5837,318 @@
               "fix",
               "diagnostics"
             ]
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "npm package: https://www.npmjs.com/package/openclaw/v/2026.5.26",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "registry tarball: https://registry.npmjs.org/openclaw/-/openclaw-2026.5.26.tgz",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "integrity: sha512-ne6ESyXmspmWO7JlSAWFp1ACmk/um2bnEGnEkiHd4BK62XRUt82DBCCpBGcLsMKA+zNG9G938dA+zCNJCKvUFA==",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "full release validation: https://github.com/openclaw/openclaw/actions/runs/26508372964",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "release checks and package acceptance: https://github.com/openclaw/openclaw/actions/runs/26508649633",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "plugin npm publish: https://github.com/openclaw/openclaw/actions/runs/26510827501",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "plugin ClawHub publish: https://github.com/openclaw/openclaw/actions/runs/26510832030",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "OpenClaw npm publish: https://github.com/openclaw/openclaw/actions/runs/26511283421",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "published-package smoke: OpenClaw 2026.5.26 (10ad3aa) and plugins list --json returned 46 bundled plugins from a clean temp HOME.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "npm package: https://www.npmjs.com/package/openclaw/v/2026.5.26",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "registry tarball: https://registry.npmjs.org/openclaw/-/openclaw-2026.5.26.tgz",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "integrity: sha512-ne6ESyXmspmWO7JlSAWFp1ACmk/um2bnEGnEkiHd4BK62XRUt82DBCCpBGcLsMKA+zNG9G938dA+zCNJCKvUFA==",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "full release CI report: https://github.com/openclaw/releases-private/blob/main/evidence/2026.5.26/release-evidence.md",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "npm preflight: https://github.com/openclaw/openclaw/actions/runs/26508373036",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "full release validation: https://github.com/openclaw/openclaw/actions/runs/26508372964",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "plugin npm publish: https://github.com/openclaw/openclaw/actions/runs/26510827501",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "plugin ClawHub publish: https://github.com/openclaw/openclaw/actions/runs/26510832030",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "OpenClaw npm publish: https://github.com/openclaw/openclaw/actions/runs/26511283421",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "macOS preflight/sign/notarize: https://github.com/openclaw/releases-private/actions/runs/26508373159",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "macOS validation: https://github.com/openclaw/releases-private/actions/runs/26512430969",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "macOS publish/appcast: https://github.com/openclaw/releases-private/actions/runs/26512779540",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "appcast: https://github.com/openclaw/openclaw/blob/main/appcast.xml",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "macOS zip: https://github.com/openclaw/openclaw/releases/download/v2026.5.26/OpenClaw-2026.5.26.zip",
+          "score": 3,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "media/pdf"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "macOS dmg: https://github.com/openclaw/openclaw/releases/download/v2026.5.26/OpenClaw-2026.5.26.dmg",
+          "score": 3,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "media/pdf"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "macOS dSYM: https://github.com/openclaw/openclaw/releases/download/v2026.5.26/OpenClaw-2026.5.26.dSYM.zip",
+          "score": 3,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "media/pdf"
+            ],
+            "quality": []
           }
         }
       ]
