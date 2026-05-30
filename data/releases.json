@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-29T12:28:28.050Z",
+  "generatedAt": "2026-05-30T10:54:19.200Z",
   "source": {
     "owner": "openclaw",
     "repo": "openclaw",
@@ -9,15 +9,15 @@
   },
   "defaults": {
     "months": 3,
-    "since": "2026-03-01T12:19:13.000Z"
+    "since": "2026-03-01T22:48:42.000Z"
   },
-  "releaseCount": 184,
+  "releaseCount": 186,
   "stableCount": 97,
   "latest": {
-    "tag": "v2026.5.28-beta.2",
-    "version": "2026.5.28-beta.2",
-    "publishedAt": "2026-05-29T12:19:13Z",
-    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.28-beta.2"
+    "tag": "v2026.5.28-beta.4",
+    "version": "2026.5.28-beta.4",
+    "publishedAt": "2026-05-29T22:48:42Z",
+    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.28-beta.4"
   },
   "keywords": {
     "jacobKeywords": [
@@ -82,6 +82,2244 @@
     ]
   },
   "releases": [
+    {
+      "tag": "v2026.5.28-beta.4",
+      "version": "2026.5.28-beta.4",
+      "versionParts": {
+        "year": 2026,
+        "month": 5,
+        "patch": 28,
+        "suffix": "beta.4"
+      },
+      "name": "openclaw 2026.5.28-beta.4",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.28-beta.4",
+      "apiUrl": "https://api.github.com/repos/openclaw/openclaw/releases/331817686",
+      "publishedAt": "2026-05-29T22:48:42Z",
+      "createdAt": "2026-05-29T21:52:28Z",
+      "prerelease": true,
+      "draft": false,
+      "bodyExcerpt": "Highlights - Agent and Codex runtime recovery is steadier: subagents keep cwd/workspace separation, hook context stays prompt-local, session locks release on timeout abort, stale restart continuations are avoided, and Codex app-server/helper failures no longer tear down shared runtime state. (87218, 86875, 87409, 87399, 87375) - Channel delivery and session identity got safer across outbound plugin hooks, Matrix room ids, iMessage reactions/approvals, Slack final replies, Discord recovered tool ",
+      "summary": {
+        "title": "openclaw 2026.5.28-beta.4",
+        "headline": "Agent and Codex runtime recovery is steadier: subagents keep cwd/workspace separation, hook context stays prompt-local, session locks release on timeout abort, stale restart continuations are avoided, and Codex app-server/helper failures no longer tear down shared runtime state. (87218, 86875, 87409, 87399, 87375)",
+        "importance": "medium",
+        "score": 760,
+        "topItems": [
+          {
+            "section": "Highlights",
+            "text": "Agent and Codex runtime recovery is steadier: subagents keep cwd/workspace separation, hook context stays prompt-local, session locks release on timeout abort, stale restart continuations are avoided, and Codex app-server/helper failures no longer tear down shared runtime state. (87218, 86875, 87409, 87399, 87375)",
+            "score": 24,
+            "labels": [
+              "platform",
+              "relevant",
+              "quality"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [
+                "runtime/protocol"
+              ],
+              "relevant": [
+                "sessions",
+                "codex/acp"
+              ],
+              "quality": [
+                "fallback/retry"
+              ]
+            }
+          },
+          {
+            "section": "Highlights",
+            "text": "Channel delivery and session identity got safer across outbound plugin hooks, Matrix room ids, iMessage reactions/approvals, Slack final replies, Discord recovered tool warnings, WhatsApp profile auth roots, Telegram polling, and Microsoft Teams service URL trust checks. (73706, 75670, 87366, 87451, 87334, 82492, 83304, 87160)",
+            "score": 31,
+            "labels": [
+              "platform",
+              "relevant"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [
+                "gateway/service",
+                "channel/platform"
+              ],
+              "relevant": [
+                "telegram",
+                "sessions",
+                "tools/exec"
+              ],
+              "quality": []
+            }
+          },
+          {
+            "section": "Highlights",
+            "text": "Mobile and chat surfaces got a broader refresh: the iOS Pro UI, hosted push relay default, realtime Talk tab playback, Gateway chat transport, onboarding, Talk permissions, WebChat reconnect delivery, and session picker behavior now preserve more state across reconnects and empty searches. (87367, 87531, 87682, 88096, 88105) Thanks @ngutman.",
+            "score": 35,
+            "labels": [
+              "platform",
+              "relevant",
+              "quality"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [
+                "gateway/service",
+                "runtime/protocol",
+                "channel/platform"
+              ],
+              "relevant": [
+                "gateway",
+                "sessions"
+              ],
+              "quality": [
+                "ux/ui"
+              ]
+            }
+          },
+          {
+            "section": "Highlights",
+            "text": "Browser, channel, and automation inputs are stricter: Browser tool timeouts, viewport/tab indices, Gateway ports, cron retry handling, Discord component ids, schema array refs, Telegram callback pages, and channel progress callbacks now reject malformed values earlier and preserve the intended delivery context. (82887)",
+            "score": 43,
+            "labels": [
+              "platform",
+              "relevant",
+              "quality"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [
+                "config/schema",
+                "gateway/service",
+                "channel/platform"
+              ],
+              "relevant": [
+                "telegram",
+                "gateway",
+                "browser"
+              ],
+              "quality": [
+                "fallback/retry"
+              ]
+            }
+          }
+        ],
+        "reasons": [
+          "security-sensitive wording",
+          "matches your setup: sessions, codex/acp, telegram, tools/exec, gateway, browser, media/pdf, config/update",
+          "platform change signals: runtime/protocol, gateway/service, channel/platform, config/schema, migration, plugin registry",
+          "quality/reliability: fallback/retry, ux/ui, performance, diagnostics, compatibility, fix"
+        ],
+        "filterLabels": [],
+        "labelItemCounts": {
+          "security": 6,
+          "platform": 25,
+          "relevant": 30,
+          "quality": 30
+        },
+        "hitCounts": {
+          "security": 8,
+          "platform": 6,
+          "relevant": 9,
+          "quality": 6
+        }
+      },
+      "items": [
+        {
+          "section": "Highlights",
+          "text": "Agent and Codex runtime recovery is steadier: subagents keep cwd/workspace separation, hook context stays prompt-local, session locks release on timeout abort, stale restart continuations are avoided, and Codex app-server/helper failures no longer tear down shared runtime state. (87218, 86875, 87409, 87399, 87375)",
+          "score": 24,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [
+              "sessions",
+              "codex/acp"
+            ],
+            "quality": [
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Channel delivery and session identity got safer across outbound plugin hooks, Matrix room ids, iMessage reactions/approvals, Slack final replies, Discord recovered tool warnings, WhatsApp profile auth roots, Telegram polling, and Microsoft Teams service URL trust checks. (73706, 75670, 87366, 87451, 87334, 82492, 83304, 87160)",
+          "score": 31,
+          "labels": [
+            "platform",
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service",
+              "channel/platform"
+            ],
+            "relevant": [
+              "telegram",
+              "sessions",
+              "tools/exec"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Mobile and chat surfaces got a broader refresh: the iOS Pro UI, hosted push relay default, realtime Talk tab playback, Gateway chat transport, onboarding, Talk permissions, WebChat reconnect delivery, and session picker behavior now preserve more state across reconnects and empty searches. (87367, 87531, 87682, 88096, 88105) Thanks @ngutman.",
+          "score": 35,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service",
+              "runtime/protocol",
+              "channel/platform"
+            ],
+            "relevant": [
+              "gateway",
+              "sessions"
+            ],
+            "quality": [
+              "ux/ui"
+            ]
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Browser, channel, and automation inputs are stricter: Browser tool timeouts, viewport/tab indices, Gateway ports, cron retry handling, Discord component ids, schema array refs, Telegram callback pages, and channel progress callbacks now reject malformed values earlier and preserve the intended delivery context. (82887)",
+          "score": 43,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "config/schema",
+              "gateway/service",
+              "channel/platform"
+            ],
+            "relevant": [
+              "telegram",
+              "gateway",
+              "browser"
+            ],
+            "quality": [
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Provider, media, and document coverage expands with Claude Opus 4.8, Fal Krea image schemas, NVIDIA featured models, MiniMax streaming music responses, encrypted PDF extraction, voice model catalogs, GitHub Copilot agent runtime support, and a Codex Supervisor plugin path for delegated Codex workflows. (87845, 87890, 80775, 84764, 87751, 87794)",
+          "score": 20,
+          "labels": [
+            "platform",
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [
+              "codex/acp",
+              "media/pdf"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "CLI, auth, doctor, and provider paths fail faster and recover more clearly: malformed numeric/version options are rejected, workspace dotenv provider credentials are ignored, OAuth/token lifetimes and local service startup requests are bounded, agent auth health labels are clearer, legacy apikey auth profiles migrate to canonical form, and restart guidance is actionable. (87398, 86281, 87361, 83655, 87559, 88088, 85924) Thanks @vincentkoc and @giodl73-repo.",
+          "score": 34,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "migration",
+              "gateway/service"
+            ],
+            "relevant": [
+              "config/update"
+            ],
+            "quality": [
+              "performance",
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Plugin and Gateway hot paths do less repeated work while preserving cache correctness for install records, config JSON parsing, tool search catalogs, session stores, manifest model rows, auto-enabled plugin config, browser tokens, viewer assets, and release-split external plugin packages. (86699)",
+          "score": 36,
+          "labels": [
+            "platform",
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service",
+              "plugin registry"
+            ],
+            "relevant": [
+              "gateway",
+              "browser",
+              "sessions",
+              "config/update"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Release, QA, and E2E validation now bound more log, artifact, harness, and cross-OS waits so failing lanes produce proof instead of hanging or false-greening.",
+          "score": 8,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Status: show active subagent details in status output.",
+          "score": 10,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "sessions",
+              "config/update"
+            ],
+            "quality": [
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Diffs: split the default language pack and expand default Diffs language coverage while keeping the host floor aligned. (87370, 87372) Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "ClawHub: add plugin display names plus skill verification and trust surfaces. (87354, 86699) Thanks @thewilloftheshadow and @Patrick-Erichsen.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "iOS: refresh the dev app with Pro Command, Chat, Agents, Settings, hosted push relay defaults, and realtime Talk playback wired to gateway sessions, diagnostics, chat, and realtime Talk. (87367, 88096, 88105) Thanks @Solvely-Colin and @ngutman.",
+          "score": 19,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [
+              "gateway",
+              "sessions"
+            ],
+            "quality": [
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Docs: clarify Codex computer-use setup, paste-token stdin auth setup, macOS gateway sleep troubleshooting, native Codex hook relay recovery, container model auth, install deployment cards, device-token admin gating, CLI setup flow compatibility, Notte cloud browser CDP setup, and backport targets. (87313, 63050, 87685) Thanks @bdjben, @liaoandi, and @thewilloftheshadow.",
+          "score": 25,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [
+              "gateway",
+              "browser",
+              "codex/acp"
+            ],
+            "quality": [
+              "compatibility"
+            ]
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "PDF/tools: use ClawPDF for PDF extraction, support encrypted PDF extraction, and surface MCP structured content in agent tool results. (87670, 87751)",
+          "score": 10,
+          "labels": [
+            "platform",
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [
+              "media/pdf"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Providers: add Claude Opus 4.8 support, Fal Krea image model schemas, NVIDIA featured model catalogs, MiniMax streaming music responses, and provider-backed voice model catalogs. (87845, 87890, 80775, 84764, 87794) Thanks @eleqtrizit and @vincentkoc.",
+          "score": 3,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "media/pdf"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Codex/GitHub: add the GitHub Copilot agent runtime and the Codex Supervisor plugin package.",
+          "score": 12,
+          "labels": [
+            "platform",
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [
+              "codex/acp"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Plugins: externalize GitHub Copilot and Tokenjuice as official install-on-demand plugins with npm and ClawHub publish metadata.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Workboard: add agent coordination tools for tracking and handing off active agent work.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Discord: show commentary in progress drafts so live Discord runs expose useful in-progress context. (85200)",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Plugin SDK: add a reply payload sending hook for plugins that need to deliver channel-owned replies and flatten package types for SDK declarations. (82823, 87165) Thanks @RomneyDa.",
+          "score": 5,
+          "labels": [
+            "platform"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "channel/platform"
+            ],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Policy: add policy comparison, ingress-channel conformance, and sandbox-posture conformance checks. (85572, 85744, 86768)",
+          "score": 5,
+          "labels": [
+            "platform"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "channel/platform"
+            ],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Agents: fall back to local config pruning when the optional agents delete Gateway probe cannot authenticate, so offline installs can still delete agents without removing shared workspaces.",
+          "score": 18,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [
+              "gateway",
+              "config/update"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Tighten phone-control mutation authorization [AI]. (87150) Thanks @pgondhi987.",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Clarify directive persistence authorization policy [AI]. (86369) Thanks @pgondhi987.",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Agents/Codex: keep spawned agent cwd/workspace state separated, forward ACP spawn attachments, keep hook context prompt-local, release session locks on timeout abort and runtime teardown, avoid session event queue self-wait, clean up exec abort listeners, stream assistant deltas incrementally, recover raw missing-thread compaction failures, preserve rotated compaction session identity, keep compaction-timeout snapshots continuable, preserve shared app-server state across startup or helper failures, keep native hook relay alive across restarts and prune stale bridge files, close native hook relay replacement races, keep Claude live tool progress visible for watchdog recovery, suppress abandoned requester completion handoff, route workspace memory through tools, resolve Codex runtime models first, report quarantined dynamic tools, format skills command output, bind node auto-review to prepared plans, retry Claude CLI transcript probes, and bound compaction/steering retries. (87218, 86875, 86123, 87399, 87375, 72574, 87383, 87400, 83022, 87671, 87738, 87747, 87706, 87546, 87541, 81048) Thanks @mbelinky, @Alix-007, @luoyanglang, @yetval, @sjf, @joshavant, and @benjamin1492.",
+          "score": 32,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [
+              "memory",
+              "sessions",
+              "tools/exec",
+              "codex/acp"
+            ],
+            "quality": [
+              "fix",
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Codex Supervisor: keep real-home app-server MCP session listing on the loaded state path, bound stored history scans, and close WebSocket probes cleanly.",
+          "score": 19,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [
+              "sessions",
+              "codex/acp"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Channels: thread canonical session keys into outbound hooks, preserve Matrix room-id case, keep fallback tool warnings mention-inert, retain delivered Slack final replies during late cleanup, continue iMessage polling after denied reactions, suppress duplicate native exec approvals, preserve Telegram SecretRef prompt config and polling keepalives, preserve WhatsApp profile auth roots, QR display, document filenames, and plugin hook config, suppress Discord recovered tool warnings, preserve the Discord voice outbound helper, cap Discord/Signal/Zalo channel request and container timeouts, and block untrusted Teams service URLs while keeping TeamsSDK patterns aligned. (73706, 75670, 87366, 87451, 87465, 87334, 76262, 83304, 82492, 87581, 77114, 86426, 85529, 87160) Thanks @zeroaltitude, @lukeboyett, @xiaotian, @eleqtrizit, @heyitsaamir, @amittell, @liorb-mountapps, @masatohoshino, @bladin, and @giodl73-repo.",
+          "score": 46,
+          "labels": [
+            "security",
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [
+              "approval",
+              "auth"
+            ],
+            "platform": [
+              "gateway/service",
+              "channel/platform"
+            ],
+            "relevant": [
+              "telegram",
+              "sessions",
+              "tools/exec",
+              "media/pdf",
+              "config/update"
+            ],
+            "quality": [
+              "fix",
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "CLI/auth/doctor/providers: reject malformed numeric/timeout/subcommand-version inputs, ignore workspace dotenv provider credentials, wait for respawn child shutdown, bound Codex, GitHub Copilot, OpenAI, Anthropic, Google, Feishu, LM Studio, MiniMax, Xiaomi TTS, and local-provider OAuth/token/model requests, harden Codex auth probes, label auth health by agent, preserve explicit agentRuntime pins during Codex model migration, warm provider auth off the main thread, honor Codex response timeouts, stop migrating current Claude Haiku 4.5 profiles to Sonnet, bound local service startup, resolve GPT-5.5 without cached catalog, migrate legacy memory auto-provider config, rewrite non-canonical apikey auth profiles, and make doctor restart follow-ups actionable. (87398, 86281, 87361, 83655, 87559, 87719, 88088, 85924, 84362) Thanks @Patrick-Erichsen, @samzong, @giodl73-repo, @alkor2000, @mmaps, @nxmxbbd, and @vincentkoc.",
+          "score": 62,
+          "labels": [
+            "security",
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [
+              "auth",
+              "token",
+              "secret"
+            ],
+            "platform": [
+              "migration",
+              "gateway/service",
+              "plugin registry"
+            ],
+            "relevant": [
+              "memory",
+              "codex/acp",
+              "media/pdf",
+              "config/update"
+            ],
+            "quality": [
+              "fix",
+              "diagnostics",
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Gateway/security/session state: expire browser tokens after auth rotation, scope assistant idempotency dedupe, drain probe client closes, avoid stale restart continuation reuse, preserve retry-after fallbacks and stale rate-limit cooldown probes, bound webchat image and artifact transcript scans, include seconds in inbound metadata timestamps, clear completed session active runs, clear stale chat stream buffers, and evict current plugin-state namespaces at row caps. (87810, 87833, 75089) Thanks @joshavant and @litang9.",
+          "score": 39,
+          "labels": [
+            "security",
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [
+              "security",
+              "auth",
+              "token"
+            ],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [
+              "gateway",
+              "browser",
+              "sessions"
+            ],
+            "quality": [
+              "fix",
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Config/parsing/network: reject partial numeric parsing, parse provider/Discord retry headers and dates strictly, honor IPv6 and bare IPv6 noproxy entries, preserve empty plugin allowlists, canonicalize secret target array indexes, and reject malformed media content lengths, inspected TCP ports, marketplace content lengths, cron epochs, sandbox stat fields, unsafe duration values, empty config path segments, noncanonical schema array refs, unsafe Telegram callback pages, and invalid Teams attachment-fetch DNS targets. (87883) Thanks @zhangguiping-xydt.",
+          "score": 40,
+          "labels": [
+            "security",
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [
+              "sandbox",
+              "secret"
+            ],
+            "platform": [
+              "config/schema",
+              "plugin registry"
+            ],
+            "relevant": [
+              "telegram",
+              "media/pdf",
+              "config/update"
+            ],
+            "quality": [
+              "fix",
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Browser/input hardening: reject invalid tab indexes, excessive viewport resizes, explicit zero CDP ports, malformed geolocation options, unsafe screenshot or permission-grant timeouts, loose response-body limits, invalid cookie expiries, and non-finite Browser tool delays/timeouts.",
+          "score": 15,
+          "labels": [
+            "security",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [
+              "permission",
+              "cookie"
+            ],
+            "platform": [],
+            "relevant": [
+              "browser"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Cron/automation: retry recurring jobs after transient model rate limits before waiting for the next scheduled slot, and preflight model fallbacks before skipping scheduled work. (82887)",
+          "score": 6,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix",
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Auto-reply/directives: respect provider and relayed channel metadata during directive persistence so channel-originated decisions keep their intended context. (87683)",
+          "score": 8,
+          "labels": [
+            "platform",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "channel/platform"
+            ],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "WhatsApp: resolve the auth directory from the active profile so profile-scoped WhatsApp installs do not drift to the wrong credential root. (82492)",
+          "score": 11,
+          "labels": [
+            "security",
+            "quality"
+          ],
+          "hits": {
+            "security": [
+              "auth",
+              "secret"
+            ],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Gateway/session state: clear completed session active runs, avoid cold-loading providers for MCP inventory, cache single-session child indexes, cap handshake timers, and bound preauth, auth-guard, media, transcript, readiness, and port options.",
+          "score": 29,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service",
+              "runtime/protocol"
+            ],
+            "relevant": [
+              "gateway",
+              "sessions",
+              "media/pdf"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Channels/replies: preserve channel-owned progress callbacks when verbose output is off, keep group-room progress suppression intact, prefer external session delivery context, escape Discord component id delimiters, force final TUI chat repaints, show Slack reasoning previews, and normalize Discord/Matrix/Mattermost channel numeric options. (87476, 87423)",
+          "score": 12,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "channel/platform"
+            ],
+            "relevant": [
+              "sessions"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Agents/tool args: harden smart-quoted argument repair for edit arrays and exact escaped arguments so model-produced tool calls recover without corrupting valid input. (86611)",
+          "score": 11,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "tools/exec"
+            ],
+            "quality": [
+              "fix",
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Providers/agents: preserve seeded Anthropic signatures, preserve signed thinking payloads, concatenate signature-delta chunks, preserve DeepSeek reasoningcontent replay across tier suffixes, apply OpenRouter strict9 ids to Mistral routes, promote Ollama plain-text tool calls, load NVIDIA featured model catalogs, stream MiniMax music generation responses, and recover empty preflight compaction. (87593, 87493, 80775, 84764) Thanks @eleqtrizit.",
+          "score": 8,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "tools/exec"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Media/images: skip CLI image cache refs when resolving generated images, allow trusted generated HTML attachments, and bound generated video downloads so stale refs and slow providers fail cleanly. (87523, 87982)",
+          "score": 6,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "media/pdf"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "File transfer: handle late tar stdin pipe errors after archive validation or unpacking has already settled.",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Performance: trust install-record caches between reloads, prefer native JSON parsing, reuse unchanged tool-search catalogs, reuse gateway session and plugin metadata paths, skip unchanged store serialization, patch single-entry session writes, add precomputed session patch writers, reduce store clone allocations, cache manifest model catalog rows and auto-enabled plugin config, avoid full session snapshots for entry reads, defer configured Slack full startup, prefer bundled plugin dist entries, and slim current metadata identity caches. (87760)",
+          "score": 33,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service",
+              "plugin registry"
+            ],
+            "relevant": [
+              "gateway",
+              "sessions",
+              "config/update"
+            ],
+            "quality": [
+              "fix",
+              "performance"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Docker/release/QA: package runtime workspace templates, stream cross-OS served artifacts, preserve sparse Crabbox run artifacts, isolate npm plugin installs per package, reject incompatible package plugin API installs, bound OpenClaw instance logs, plugin gauntlet relay logs, MCP channel buffers, kitchen-sink scans, agent-turn assertions, QA-Lab credential broker calls, QA Matrix substrate requests, and release scenario logs, and keep release/google live guards current. (87647, 87477) Thanks @rohitjavvadi.",
+          "score": 18,
+          "labels": [
+            "platform",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol",
+              "channel/platform"
+            ],
+            "relevant": [],
+            "quality": [
+              "fix",
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Release/CI: bound manual git fetches, ClawHub verifier responses, ClawHub owner metadata, dependency-guard error bodies, Parallels limits, startup/test/memory budget parsing, and diffs viewer build warnings so release lanes fail with useful proof instead of hanging. (87839)",
+          "score": 8,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "memory"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "npm package: https://www.npmjs.com/package/openclaw/v/2026.5.28-beta.4",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "registry tarball: https://registry.npmjs.org/openclaw/-/openclaw-2026.5.28-beta.4.tgz",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "integrity: sha512-V6lJIyLks2mkey95ay/1jxB8auBEz3mKq/+y11iirfOdkI89YXBjsXYLW9+X3EI56RsIUFXpCSJqgyzVQXhYxQ==",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "full release validation: https://github.com/openclaw/openclaw/actions/runs/26664140015",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "npm preflight: https://github.com/openclaw/openclaw/actions/runs/26664142736",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "OpenClaw npm publish: https://github.com/openclaw/openclaw/actions/runs/26666012438",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "npm Telegram package E2E: https://github.com/openclaw/openclaw/actions/runs/26666192921",
+          "score": 5,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "telegram"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "Parallels fresh/update/fresh-target smoke: macOS, Windows, and Linux passed",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "npm Telegram beta E2E: https://github.com/openclaw/openclaw/actions/runs/26666958739",
+          "score": 5,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "telegram"
+            ],
+            "quality": []
+          }
+        }
+      ]
+    },
+    {
+      "tag": "v2026.5.28-beta.3",
+      "version": "2026.5.28-beta.3",
+      "versionParts": {
+        "year": 2026,
+        "month": 5,
+        "patch": 28,
+        "suffix": "beta.3"
+      },
+      "name": "openclaw 2026.5.28-beta.3",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.28-beta.3",
+      "apiUrl": "https://api.github.com/repos/openclaw/openclaw/releases/331666168",
+      "publishedAt": "2026-05-29T17:19:33Z",
+      "createdAt": "2026-05-29T16:13:51Z",
+      "prerelease": true,
+      "draft": false,
+      "bodyExcerpt": "Highlights - Agent and Codex runtime recovery is steadier: subagents keep cwd/workspace separation, hook context stays prompt-local, session locks release on timeout abort, stale restart continuations are avoided, and Codex app-server/helper failures no longer tear down shared runtime state. (87218, 86875, 87409, 87399, 87375) - Channel delivery and session identity got safer across outbound plugin hooks, Matrix room ids, iMessage reactions/approvals, Slack final replies, Discord recovered tool ",
+      "summary": {
+        "title": "openclaw 2026.5.28-beta.3",
+        "headline": "Agent and Codex runtime recovery is steadier: subagents keep cwd/workspace separation, hook context stays prompt-local, session locks release on timeout abort, stale restart continuations are avoided, and Codex app-server/helper failures no longer tear down shared runtime state. (87218, 86875, 87409, 87399, 87375)",
+        "importance": "medium",
+        "score": 710,
+        "topItems": [
+          {
+            "section": "Highlights",
+            "text": "Agent and Codex runtime recovery is steadier: subagents keep cwd/workspace separation, hook context stays prompt-local, session locks release on timeout abort, stale restart continuations are avoided, and Codex app-server/helper failures no longer tear down shared runtime state. (87218, 86875, 87409, 87399, 87375)",
+            "score": 24,
+            "labels": [
+              "platform",
+              "relevant",
+              "quality"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [
+                "runtime/protocol"
+              ],
+              "relevant": [
+                "sessions",
+                "codex/acp"
+              ],
+              "quality": [
+                "fallback/retry"
+              ]
+            }
+          },
+          {
+            "section": "Highlights",
+            "text": "Channel delivery and session identity got safer across outbound plugin hooks, Matrix room ids, iMessage reactions/approvals, Slack final replies, Discord recovered tool warnings, WhatsApp profile auth roots, Telegram polling, and Microsoft Teams service URL trust checks. (73706, 75670, 87366, 87451, 87334, 82492, 83304, 87160)",
+            "score": 31,
+            "labels": [
+              "platform",
+              "relevant"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [
+                "gateway/service",
+                "channel/platform"
+              ],
+              "relevant": [
+                "telegram",
+                "sessions",
+                "tools/exec"
+              ],
+              "quality": []
+            }
+          },
+          {
+            "section": "Highlights",
+            "text": "Mobile and chat surfaces got a broader refresh: the iOS Pro UI, Gateway chat transport, onboarding, Talk permissions, WebChat reconnect delivery, and session picker behavior now preserve more state across reconnects and empty searches. (87367, 87531, 87682)",
+            "score": 35,
+            "labels": [
+              "platform",
+              "relevant",
+              "quality"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [
+                "gateway/service",
+                "runtime/protocol",
+                "channel/platform"
+              ],
+              "relevant": [
+                "gateway",
+                "sessions"
+              ],
+              "quality": [
+                "ux/ui"
+              ]
+            }
+          },
+          {
+            "section": "Highlights",
+            "text": "Browser, channel, and automation inputs are stricter: Browser tool timeouts, viewport/tab indices, Gateway ports, cron retry handling, Discord component ids, schema array refs, Telegram callback pages, and channel progress callbacks now reject malformed values earlier and preserve the intended delivery context. (82887)",
+            "score": 43,
+            "labels": [
+              "platform",
+              "relevant",
+              "quality"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [
+                "config/schema",
+                "gateway/service",
+                "channel/platform"
+              ],
+              "relevant": [
+                "telegram",
+                "gateway",
+                "browser"
+              ],
+              "quality": [
+                "fallback/retry"
+              ]
+            }
+          }
+        ],
+        "reasons": [
+          "security-sensitive wording",
+          "matches your setup: sessions, codex/acp, telegram, tools/exec, gateway, browser, media/pdf, config/update",
+          "platform change signals: runtime/protocol, gateway/service, channel/platform, config/schema, migration, plugin registry",
+          "quality/reliability: fallback/retry, ux/ui, performance, diagnostics, compatibility, fix"
+        ],
+        "filterLabels": [],
+        "labelItemCounts": {
+          "security": 6,
+          "platform": 24,
+          "relevant": 27,
+          "quality": 30
+        },
+        "hitCounts": {
+          "security": 8,
+          "platform": 6,
+          "relevant": 9,
+          "quality": 6
+        }
+      },
+      "items": [
+        {
+          "section": "Highlights",
+          "text": "Agent and Codex runtime recovery is steadier: subagents keep cwd/workspace separation, hook context stays prompt-local, session locks release on timeout abort, stale restart continuations are avoided, and Codex app-server/helper failures no longer tear down shared runtime state. (87218, 86875, 87409, 87399, 87375)",
+          "score": 24,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [
+              "sessions",
+              "codex/acp"
+            ],
+            "quality": [
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Channel delivery and session identity got safer across outbound plugin hooks, Matrix room ids, iMessage reactions/approvals, Slack final replies, Discord recovered tool warnings, WhatsApp profile auth roots, Telegram polling, and Microsoft Teams service URL trust checks. (73706, 75670, 87366, 87451, 87334, 82492, 83304, 87160)",
+          "score": 31,
+          "labels": [
+            "platform",
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service",
+              "channel/platform"
+            ],
+            "relevant": [
+              "telegram",
+              "sessions",
+              "tools/exec"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Mobile and chat surfaces got a broader refresh: the iOS Pro UI, Gateway chat transport, onboarding, Talk permissions, WebChat reconnect delivery, and session picker behavior now preserve more state across reconnects and empty searches. (87367, 87531, 87682)",
+          "score": 35,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service",
+              "runtime/protocol",
+              "channel/platform"
+            ],
+            "relevant": [
+              "gateway",
+              "sessions"
+            ],
+            "quality": [
+              "ux/ui"
+            ]
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Browser, channel, and automation inputs are stricter: Browser tool timeouts, viewport/tab indices, Gateway ports, cron retry handling, Discord component ids, schema array refs, Telegram callback pages, and channel progress callbacks now reject malformed values earlier and preserve the intended delivery context. (82887)",
+          "score": 43,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "config/schema",
+              "gateway/service",
+              "channel/platform"
+            ],
+            "relevant": [
+              "telegram",
+              "gateway",
+              "browser"
+            ],
+            "quality": [
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Provider, media, and document coverage expands with Claude Opus 4.8, Fal Krea image schemas, NVIDIA featured models, MiniMax streaming music responses, encrypted PDF extraction, voice model catalogs, GitHub Copilot agent runtime support, and a Codex Supervisor plugin path for delegated Codex workflows. (87845, 87890, 80775, 84764, 87751, 87794)",
+          "score": 20,
+          "labels": [
+            "platform",
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [
+              "codex/acp",
+              "media/pdf"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "CLI, auth, doctor, and provider paths fail faster and recover more clearly: malformed numeric/version options are rejected, workspace dotenv provider credentials are ignored, OAuth and local service startup requests are bounded, legacy apikey auth profiles migrate to canonical form, and restart guidance is actionable. (87398, 86281, 87361, 83655, 87559)",
+          "score": 34,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "migration",
+              "gateway/service"
+            ],
+            "relevant": [
+              "config/update"
+            ],
+            "quality": [
+              "performance",
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Plugin and Gateway hot paths do less repeated work while preserving cache correctness for install records, config JSON parsing, tool search catalogs, session stores, manifest model rows, auto-enabled plugin config, browser tokens, and viewer assets. (86699)",
+          "score": 36,
+          "labels": [
+            "platform",
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service",
+              "plugin registry"
+            ],
+            "relevant": [
+              "gateway",
+              "browser",
+              "sessions",
+              "config/update"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Release, QA, and E2E validation now bound more log, artifact, harness, and cross-OS waits so failing lanes produce proof instead of hanging or false-greening.",
+          "score": 8,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Status: show active subagent details in status output.",
+          "score": 10,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "sessions",
+              "config/update"
+            ],
+            "quality": [
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Diffs: split the default language pack and expand default Diffs language coverage while keeping the host floor aligned. (87370, 87372) Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "ClawHub: add plugin display names plus skill verification and trust surfaces. (87354, 86699) Thanks @thewilloftheshadow and @Patrick-Erichsen.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "iOS: refresh the dev app with Pro Command, Chat, Agents, and Settings tabs wired to gateway sessions, diagnostics, chat, and realtime Talk. (87367) Thanks @Solvely-Colin.",
+          "score": 19,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [
+              "gateway",
+              "sessions"
+            ],
+            "quality": [
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Docs: clarify Codex computer-use setup, paste-token stdin auth setup, macOS gateway sleep troubleshooting, native Codex hook relay recovery, container model auth, install deployment cards, device-token admin gating, CLI setup flow compatibility, and backport targets. (87313, 63050, 87685) Thanks @bdjben, @liaoandi, and @thewilloftheshadow.",
+          "score": 20,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [
+              "gateway",
+              "codex/acp"
+            ],
+            "quality": [
+              "compatibility"
+            ]
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "PDF/tools: use ClawPDF for PDF extraction, support encrypted PDF extraction, and surface MCP structured content in agent tool results. (87670, 87751)",
+          "score": 10,
+          "labels": [
+            "platform",
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [
+              "media/pdf"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Providers: add Claude Opus 4.8 support, Fal Krea image model schemas, NVIDIA featured model catalogs, MiniMax streaming music responses, and provider-backed voice model catalogs. (87845, 87890, 80775, 84764, 87794) Thanks @eleqtrizit and @vincentkoc.",
+          "score": 3,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "media/pdf"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Codex/GitHub: add the GitHub Copilot agent runtime and the Codex Supervisor plugin package.",
+          "score": 12,
+          "labels": [
+            "platform",
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [
+              "codex/acp"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Discord: show commentary in progress drafts so live Discord runs expose useful in-progress context. (85200)",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Plugin SDK: add a reply payload sending hook for plugins that need to deliver channel-owned replies and flatten package types for SDK declarations. (82823, 87165) Thanks @RomneyDa.",
+          "score": 5,
+          "labels": [
+            "platform"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "channel/platform"
+            ],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Policy: add policy comparison, ingress-channel conformance, and sandbox-posture conformance checks. (85572, 85744, 86768)",
+          "score": 5,
+          "labels": [
+            "platform"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "channel/platform"
+            ],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Agents: fall back to local config pruning when the optional agents delete Gateway probe cannot authenticate, so offline installs can still delete agents without removing shared workspaces.",
+          "score": 18,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [
+              "gateway",
+              "config/update"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Tighten phone-control mutation authorization [AI]. (87150) Thanks @pgondhi987.",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Clarify directive persistence authorization policy [AI]. (86369) Thanks @pgondhi987.",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Agents/Codex: keep spawned agent cwd/workspace state separated, keep hook context prompt-local, release session locks on timeout abort and runtime teardown, avoid session event queue self-wait, clean up exec abort listeners, stream assistant deltas incrementally, recover raw missing-thread compaction failures, preserve shared app-server state across startup or helper failures, keep native hook relay alive across restarts and prune stale bridge files, keep Claude live tool progress visible for watchdog recovery, suppress abandoned requester completion handoff, route workspace memory through tools, resolve Codex runtime models first, report quarantined dynamic tools, format skills command output, and bound compaction/steering retries. (87218, 86875, 86123, 87399, 87375, 72574, 87383, 87400, 83022, 87671, 87738, 87747, 87706, 87546, 87541) Thanks @mbelinky, @Alix-007, @luoyanglang, @yetval, @sjf, and @joshavant.",
+          "score": 32,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [
+              "memory",
+              "sessions",
+              "tools/exec",
+              "codex/acp"
+            ],
+            "quality": [
+              "fix",
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Channels: thread canonical session keys into outbound hooks, preserve Matrix room-id case, keep fallback tool warnings mention-inert, retain delivered Slack final replies during late cleanup, continue iMessage polling after denied reactions, suppress duplicate native exec approvals, preserve Telegram SecretRef prompt config and polling keepalives, preserve WhatsApp profile auth roots, QR display, document filenames, and plugin hook config, suppress Discord recovered tool warnings, preserve the Discord voice outbound helper, and block untrusted Teams service URLs while keeping TeamsSDK patterns aligned. (73706, 75670, 87366, 87451, 87465, 87334, 76262, 83304, 82492, 87581, 77114, 86426, 85529, 87160) Thanks @zeroaltitude, @lukeboyett, @xiaotian, @eleqtrizit, @heyitsaamir, @amittell, @liorb-mountapps, @masatohoshino, @bladin, and @giodl73-repo.",
+          "score": 41,
+          "labels": [
+            "security",
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [
+              "approval",
+              "auth"
+            ],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [
+              "telegram",
+              "sessions",
+              "tools/exec",
+              "media/pdf",
+              "config/update"
+            ],
+            "quality": [
+              "fix",
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "CLI/auth/doctor/providers: reject malformed numeric/timeout/subcommand-version inputs, ignore workspace dotenv provider credentials, wait for respawn child shutdown, bound Codex and GitHub Copilot OAuth/token requests, harden Codex auth probes, warm provider auth off the main thread, honor Codex response timeouts, stop migrating current Claude Haiku 4.5 profiles to Sonnet, bound local service startup, resolve GPT-5.5 without cached catalog, migrate legacy memory auto-provider config, rewrite non-canonical apikey auth profiles, and make doctor restart follow-ups actionable. (87398, 86281, 87361, 83655, 87559, 87719) Thanks @Patrick-Erichsen, @samzong, @giodl73-repo, @alkor2000, @mmaps, and @nxmxbbd.",
+          "score": 59,
+          "labels": [
+            "security",
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [
+              "auth",
+              "token",
+              "secret"
+            ],
+            "platform": [
+              "migration",
+              "gateway/service",
+              "plugin registry"
+            ],
+            "relevant": [
+              "memory",
+              "codex/acp",
+              "config/update"
+            ],
+            "quality": [
+              "fix",
+              "diagnostics",
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Gateway/security/session state: expire browser tokens after auth rotation, scope assistant idempotency dedupe, drain probe client closes, avoid stale restart continuation reuse, preserve retry-after fallbacks and stale rate-limit cooldown probes, bound webchat image and artifact transcript scans, include seconds in inbound metadata timestamps, clear completed session active runs, and evict current plugin-state namespaces at row caps. (87810, 87833) Thanks @joshavant.",
+          "score": 39,
+          "labels": [
+            "security",
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [
+              "security",
+              "auth",
+              "token"
+            ],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [
+              "gateway",
+              "browser",
+              "sessions"
+            ],
+            "quality": [
+              "fix",
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Config/parsing/network: reject partial numeric parsing, parse provider/Discord retry headers and dates strictly, honor IPv6 and bare IPv6 noproxy entries, canonicalize secret target array indexes, and reject malformed media content lengths, inspected TCP ports, marketplace content lengths, cron epochs, sandbox stat fields, unsafe duration values, empty config path segments, noncanonical schema array refs, unsafe Telegram callback pages, and invalid Teams attachment-fetch DNS targets.",
+          "score": 40,
+          "labels": [
+            "security",
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [
+              "sandbox",
+              "secret"
+            ],
+            "platform": [
+              "config/schema",
+              "plugin registry"
+            ],
+            "relevant": [
+              "telegram",
+              "media/pdf",
+              "config/update"
+            ],
+            "quality": [
+              "fix",
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Browser/input hardening: reject invalid tab indexes, excessive viewport resizes, explicit zero CDP ports, malformed geolocation options, unsafe screenshot or permission-grant timeouts, loose response-body limits, invalid cookie expiries, and non-finite Browser tool delays/timeouts.",
+          "score": 15,
+          "labels": [
+            "security",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [
+              "permission",
+              "cookie"
+            ],
+            "platform": [],
+            "relevant": [
+              "browser"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Cron/automation: retry recurring jobs after transient model rate limits before waiting for the next scheduled slot, and preflight model fallbacks before skipping scheduled work. (82887)",
+          "score": 6,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix",
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Auto-reply/directives: respect provider and relayed channel metadata during directive persistence so channel-originated decisions keep their intended context. (87683)",
+          "score": 8,
+          "labels": [
+            "platform",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "channel/platform"
+            ],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "WhatsApp: resolve the auth directory from the active profile so profile-scoped WhatsApp installs do not drift to the wrong credential root. (82492)",
+          "score": 11,
+          "labels": [
+            "security",
+            "quality"
+          ],
+          "hits": {
+            "security": [
+              "auth",
+              "secret"
+            ],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Gateway/session state: clear completed session active runs, avoid cold-loading providers for MCP inventory, cache single-session child indexes, cap handshake timers, and bound preauth, auth-guard, media, transcript, readiness, and port options.",
+          "score": 29,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service",
+              "runtime/protocol"
+            ],
+            "relevant": [
+              "gateway",
+              "sessions",
+              "media/pdf"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Channels/replies: preserve channel-owned progress callbacks when verbose output is off, keep group-room progress suppression intact, prefer external session delivery context, escape Discord component id delimiters, force final TUI chat repaints, show Slack reasoning previews, and normalize Discord/Matrix/Mattermost channel numeric options. (87476, 87423)",
+          "score": 12,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "channel/platform"
+            ],
+            "relevant": [
+              "sessions"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Agents/tool args: harden smart-quoted argument repair for edit arrays and exact escaped arguments so model-produced tool calls recover without corrupting valid input. (86611)",
+          "score": 11,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "tools/exec"
+            ],
+            "quality": [
+              "fix",
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Providers/agents: preserve seeded Anthropic signatures, preserve signed thinking payloads, concatenate signature-delta chunks, preserve DeepSeek reasoningcontent replay across tier suffixes, apply OpenRouter strict9 ids to Mistral routes, promote Ollama plain-text tool calls, load NVIDIA featured model catalogs, stream MiniMax music generation responses, and recover empty preflight compaction. (87593, 87493, 80775, 84764) Thanks @eleqtrizit.",
+          "score": 8,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "tools/exec"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Media/images: skip CLI image cache refs when resolving generated images and bound generated video downloads so stale refs and slow providers fail cleanly. (87523)",
+          "score": 6,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "media/pdf"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "File transfer: handle late tar stdin pipe errors after archive validation or unpacking has already settled.",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Performance: trust install-record caches between reloads, prefer native JSON parsing, reuse unchanged tool-search catalogs, skip unchanged store serialization, add precomputed session patch writers, reduce store clone allocations, cache manifest model catalog rows and auto-enabled plugin config, avoid full session snapshots for entry reads, defer configured Slack full startup, prefer bundled plugin dist entries, and slim current metadata identity caches. (87760)",
+          "score": 21,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "plugin registry"
+            ],
+            "relevant": [
+              "sessions",
+              "config/update"
+            ],
+            "quality": [
+              "fix",
+              "performance"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Docker/release/QA: package runtime workspace templates, stream cross-OS served artifacts, preserve sparse Crabbox run artifacts, isolate npm plugin installs per package, reject incompatible package plugin API installs, bound OpenClaw instance logs, plugin gauntlet relay logs, MCP channel buffers, kitchen-sink scans, agent-turn assertions, and release scenario logs, and keep release/google live guards current. (87647, 87477) Thanks @rohitjavvadi.",
+          "score": 18,
+          "labels": [
+            "platform",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol",
+              "channel/platform"
+            ],
+            "relevant": [],
+            "quality": [
+              "fix",
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Release/CI: bound manual git fetches, ClawHub verifier responses, ClawHub owner metadata, Parallels limits, startup/test/memory budget parsing, and diffs viewer build warnings so release lanes fail with useful proof instead of hanging. (87839)",
+          "score": 8,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "memory"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "npm package: https://www.npmjs.com/package/openclaw/v/2026.5.28-beta.3",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "registry tarball: https://registry.npmjs.org/openclaw/-/openclaw-2026.5.28-beta.3.tgz",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "integrity: sha512-S495OQbu67tIExI1cn+rs8wfNI7SY1ksePrt7xnQUGHCWpubvGpqoWKCF/Jf5k/5yfjz3JC+qVD7823IKc42TQ==",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "release publish attempt: https://github.com/openclaw/openclaw/actions/runs/26650757547",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "npm preflight: https://github.com/openclaw/openclaw/actions/runs/26648478809",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "full release validation: https://github.com/openclaw/openclaw/actions/runs/26648480369",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "performance evidence: https://github.com/openclaw/openclaw/actions/runs/26648477398",
+          "score": 4,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "performance"
+            ]
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "plugin npm publish: https://github.com/openclaw/openclaw/actions/runs/26650915625",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "OpenClaw npm publish: https://github.com/openclaw/openclaw/actions/runs/26651492551",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        }
+      ]
+    },
     {
       "tag": "v2026.5.28-beta.2",
       "version": "2026.5.28-beta.2",
