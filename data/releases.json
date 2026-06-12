@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-11T12:55:09.242Z",
+  "generatedAt": "2026-06-12T12:33:34.399Z",
   "source": {
     "owner": "openclaw",
     "repo": "openclaw",
@@ -9,15 +9,15 @@
   },
   "defaults": {
     "months": 3,
-    "since": "2026-03-10T19:33:39.000Z"
+    "since": "2026-03-12T11:04:42.000Z"
   },
-  "releaseCount": 204,
-  "stableCount": 100,
+  "releaseCount": 206,
+  "stableCount": 101,
   "latest": {
-    "tag": "v2026.6.6-beta.1",
-    "version": "2026.6.6-beta.1",
-    "publishedAt": "2026-06-10T19:33:39Z",
-    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.6-beta.1"
+    "tag": "v2026.6.6",
+    "version": "2026.6.6",
+    "publishedAt": "2026-06-12T11:04:42Z",
+    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.6"
   },
   "keywords": {
     "jacobKeywords": [
@@ -82,6 +82,1490 @@
     ]
   },
   "releases": [
+    {
+      "tag": "v2026.6.6",
+      "version": "2026.6.6",
+      "versionParts": {
+        "year": 2026,
+        "month": 6,
+        "patch": 6,
+        "suffix": ""
+      },
+      "name": "openclaw 2026.6.6",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.6",
+      "apiUrl": "https://api.github.com/repos/openclaw/openclaw/releases/338523978",
+      "publishedAt": "2026-06-12T11:04:42Z",
+      "createdAt": "2026-06-12T05:26:40Z",
+      "prerelease": false,
+      "draft": false,
+      "bodyExcerpt": "Highlights - Security boundaries are substantially tighter across transcripts, sandbox binds, host environment inheritance, MCP stdio, Codex HTTP access, native search policy, elevated sender checks, deleted-agent ACP bypasses, loopback tools, Discord moderation, and Teams group actions; exec approvals now fail closed on timeout. (91529, 91618, 91615, 91619, 91741, 91745, 91746, 91748, 91749, 91750, 91751, 91752, 91763, 89938) Thanks @joshavant, @pgondhi987, @mmaps, @eleqtrizit, @shakkernerd, an",
+      "summary": {
+        "title": "openclaw 2026.6.6",
+        "headline": "Security boundaries are substantially tighter across transcripts, sandbox binds, host environment inheritance, MCP stdio, Codex HTTP access, native search policy, elevated sender checks, deleted-agent ACP bypasses, loopback tools, Discord moderation, and Teams group actions; exec approvals now fail closed on timeout. (91529, 91618, 91615, 91619, 91741, 91745, 91746, 91748, 91749, 91750, 91751, 91752, 91763, 89938) Thanks @joshavant, @pgondhi987, @mmaps, @eleqtrizit, @shakkernerd, and @drobison00.",
+        "importance": "medium",
+        "score": 416,
+        "topItems": [
+          {
+            "section": "Highlights",
+            "text": "Security boundaries are substantially tighter across transcripts, sandbox binds, host environment inheritance, MCP stdio, Codex HTTP access, native search policy, elevated sender checks, deleted-agent ACP bypasses, loopback tools, Discord moderation, and Teams group actions; exec approvals now fail closed on timeout. (91529, 91618, 91615, 91619, 91741, 91745, 91746, 91748, 91749, 91750, 91751, 91752, 91763, 89938) Thanks @joshavant, @pgondhi987, @mmaps, @eleqtrizit, @shakkernerd, and @drobison00.",
+            "score": 25,
+            "labels": [
+              "platform",
+              "relevant",
+              "quality"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [
+                "runtime/protocol"
+              ],
+              "relevant": [
+                "tools/exec",
+                "codex/acp"
+              ],
+              "quality": [
+                "fallback/retry"
+              ]
+            }
+          },
+          {
+            "section": "Highlights",
+            "text": "Telegram delivery is safer and more coherent: account-scoped topics route to the right agent, streamed text survives tool calls, /compact works on generic ingress, callback handling uses concrete APIs, draft chunking is shared, durable dispatch dedupe moved into the SDK, and unauthorized DM text stays out of cache and prompt context. (91189, 88682, 89588, 90212, 91876, 91874, 91904, 91478, 91915) Thanks @codysai001, @alexzhu0, @joelnishanth, @snowzlm, @obviyus, and @sallyom.",
+            "score": 15,
+            "labels": [
+              "relevant"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [],
+              "relevant": [
+                "telegram",
+                "tools/exec"
+              ],
+              "quality": []
+            }
+          },
+          {
+            "section": "Highlights",
+            "text": "iMessage recovery and delivery now cover always-on inbound restart, durable echo markers, block streaming, idle approval discovery, hardened outbound transport, and actionable inbound startup diagnostics. (91335, 91449, 88969, 88530, 91783, 91785) Thanks @omarshahine, @jmissig, and @colmbrogan.",
+            "score": 20,
+            "labels": [
+              "platform",
+              "relevant",
+              "quality"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [
+                "runtime/protocol"
+              ],
+              "relevant": [
+                "tools/exec"
+              ],
+              "quality": [
+                "diagnostics"
+              ]
+            }
+          },
+          {
+            "section": "Highlights",
+            "text": "Browser and MCP connectivity gained existing-session CDP support, discovered WebSocket validation, default-profile cdpUrl handling, safer browser-output boundaries, Streamable HTTP loopback transport, corrected OAuth/SSE authorization handling, and broader schema compatibility. (91422, 89851, 91736, 91747, 91451, 80143) Thanks @pgondhi987, @anagnorisis2peripeteia, @lifuyue, @eleqtrizit, @LiuwqGit, and @HemantSudarshan.",
+            "score": 32,
+            "labels": [
+              "platform",
+              "relevant",
+              "quality"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [
+                "config/schema",
+                "runtime/protocol"
+              ],
+              "relevant": [
+                "browser",
+                "sessions"
+              ],
+              "quality": [
+                "compatibility"
+              ]
+            }
+          }
+        ],
+        "reasons": [
+          "security-sensitive wording",
+          "matches your setup: tools/exec, codex/acp, telegram, browser, sessions, memory, media/pdf, gateway",
+          "platform change signals: runtime/protocol, config/schema, deprecation, plugin registry, channel/platform, migration, gateway/service",
+          "quality/reliability: fallback/retry, diagnostics, compatibility, performance, ux/ui, fix"
+        ],
+        "filterLabels": [],
+        "labelItemCounts": {
+          "security": 1,
+          "platform": 15,
+          "relevant": 14,
+          "quality": 16
+        },
+        "hitCounts": {
+          "security": 3,
+          "platform": 7,
+          "relevant": 9,
+          "quality": 6
+        }
+      },
+      "items": [
+        {
+          "section": "Highlights",
+          "text": "Security boundaries are substantially tighter across transcripts, sandbox binds, host environment inheritance, MCP stdio, Codex HTTP access, native search policy, elevated sender checks, deleted-agent ACP bypasses, loopback tools, Discord moderation, and Teams group actions; exec approvals now fail closed on timeout. (91529, 91618, 91615, 91619, 91741, 91745, 91746, 91748, 91749, 91750, 91751, 91752, 91763, 89938) Thanks @joshavant, @pgondhi987, @mmaps, @eleqtrizit, @shakkernerd, and @drobison00.",
+          "score": 25,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [
+              "tools/exec",
+              "codex/acp"
+            ],
+            "quality": [
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Telegram delivery is safer and more coherent: account-scoped topics route to the right agent, streamed text survives tool calls, /compact works on generic ingress, callback handling uses concrete APIs, draft chunking is shared, durable dispatch dedupe moved into the SDK, and unauthorized DM text stays out of cache and prompt context. (91189, 88682, 89588, 90212, 91876, 91874, 91904, 91478, 91915) Thanks @codysai001, @alexzhu0, @joelnishanth, @snowzlm, @obviyus, and @sallyom.",
+          "score": 15,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "telegram",
+              "tools/exec"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "iMessage recovery and delivery now cover always-on inbound restart, durable echo markers, block streaming, idle approval discovery, hardened outbound transport, and actionable inbound startup diagnostics. (91335, 91449, 88969, 88530, 91783, 91785) Thanks @omarshahine, @jmissig, and @colmbrogan.",
+          "score": 20,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [
+              "tools/exec"
+            ],
+            "quality": [
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Browser and MCP connectivity gained existing-session CDP support, discovered WebSocket validation, default-profile cdpUrl handling, safer browser-output boundaries, Streamable HTTP loopback transport, corrected OAuth/SSE authorization handling, and broader schema compatibility. (91422, 89851, 91736, 91747, 91451, 80143) Thanks @pgondhi987, @anagnorisis2peripeteia, @lifuyue, @eleqtrizit, @LiuwqGit, and @HemantSudarshan.",
+          "score": 32,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "config/schema",
+              "runtime/protocol"
+            ],
+            "relevant": [
+              "browser",
+              "sessions"
+            ],
+            "quality": [
+              "compatibility"
+            ]
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Control UI startup and first-reply latency are lower through cached model metadata, removal of the startup catalog wait, lazy slash-command loading, and first-event tracing with slow-reply diagnostics. (91531, 91538, 91568, 91583, 91598)",
+          "score": 31,
+          "labels": [
+            "platform",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "deprecation",
+              "plugin registry"
+            ],
+            "relevant": [],
+            "quality": [
+              "performance",
+              "diagnostics",
+              "ux/ui"
+            ]
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Provider support expands with OpenRouter OAuth onboarding and Claude Fable 5 adaptive thinking, while Codex sessions keep correct compaction ownership, local models skip guardian review, dynamic tool progress normalizes cleanly, and Gemma 4 reasoning replay is preserved. (91830, 91882, 91590, 88630, 88768, 91696) Thanks @Patrick-Erichsen, @joshavant, @bdjben, and @Coder-Wangyankun.",
+          "score": 14,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "sessions",
+              "codex/acp"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "CLI progress: emit Claude CLI commentary progress events and bridge inter-tool commentary into channel progress without exposing internal protocol scaffolding. (89834, 90883) Thanks @anagnorisis2peripeteia.",
+          "score": 12,
+          "labels": [
+            "platform"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol",
+              "channel/platform"
+            ],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Observability: allow trusted diagnostics channels to capture tool input/output content, add first-assistant-event traces, and warn on slow initial replies. (91256, 91568, 91583) Thanks @amknight.",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Plugins/ClawHub: dogfood reusable package publishing, let dry runs skip publish approval, allow declared installed trusted hooks, report managed plugin version drift, and warn instead of failing on retired Skill Workshop configuration. (91574, 91591, 90004, 90927, 90838) Thanks @Patrick-Erichsen, @brokemac79, and @lonexreb.",
+          "score": 5,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "tools/exec"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Memory/providers: move the local llama.cpp runtime into its provider plugin, batch embeddings across files, persist the agent model catalog cache, and keep QMD JSON search one-shot while filtering stale REM recall previews. (91324, 89138, 90457, 91837, 91851) Thanks @osolmaz, @mushuiyu886, @ai-hpc, and @TurboTheTurtle.",
+          "score": 19,
+          "labels": [
+            "platform",
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol",
+              "plugin registry"
+            ],
+            "relevant": [
+              "memory"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Channels/mobile: add the QQBot group mention toggle, improve iPad and iPhone control surfaces, and expose the active connection host in the TUI footer. (91423, 91557, 89909) Thanks @cxyhhhhh, @Solvely-Colin, and @baskduf.",
+          "score": 5,
+          "labels": [
+            "platform"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "channel/platform"
+            ],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Performance: prewarm TUI runtime plugins, deduplicate plugin auto-enable fanout, stop /models derived-registry rescan storms, trim dense text-delta snapshots, and reuse prepared startup model metadata. (90782, 89978, 92127, 91580, 91531) Thanks @RomneyDa, @obuchowski, and @ai-hpc.",
+          "score": 11,
+          "labels": [
+            "platform",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [],
+            "quality": [
+              "performance"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Agent/session recovery: drop stale approval follow-ups after session rebind, remove drained reply-queue items by identity, recover stale main and visible replies, preserve Codex context-engine compaction ownership, project thinking catalog compatibility through SDK sessions, retry same-model assistant calls across short rate-limit windows, lower the default compaction timeout to 180 seconds while respecting explicit configuration, and keep provider-failure terminal lifecycle state correct. (85679, 91450, 91566, 91840, 91590, 91911, 91361, 91895) Thanks @openperf, @yetval, @joshavant, @lanzhi-lee, @wangmiao0668000666, and @TurboTheTurtle.",
+          "score": 40,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "deprecation",
+              "plugin registry"
+            ],
+            "relevant": [
+              "sessions",
+              "tools/exec",
+              "codex/acp"
+            ],
+            "quality": [
+              "fix",
+              "fallback/retry",
+              "compatibility"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "User-visible content boundaries: suppress Codex/Harmony protocol artifacts, neutralize browser and LanceDB memory media directives, redact transcript images, and preserve native /compact replies through source suppression. (89151, 91422, 91425, 91529, 90212) Thanks @joelnishanth, @pgondhi987, @joshavant, and @snowzlm.",
+          "score": 28,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [
+              "browser",
+              "memory",
+              "codex/acp",
+              "media/pdf"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Channel delivery: keep WhatsApp captured replies attached to the successor controller after restart, retry Feishu rate limits, preserve Mattermost thread replies, canonicalize LINE webhook paths, restore Discord reply hydration and runtime timeout exports, and show OpenAI Realtime WebRTC assistant transcripts. (85823, 89659, 91684, 91649, 90263, 91686, 90426) Thanks @itsuzef, @ladygege, @jacobtomlinson, @fuller-stack-dev, and @shushushv.",
+          "score": 18,
+          "labels": [
+            "platform",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol",
+              "channel/platform"
+            ],
+            "relevant": [],
+            "quality": [
+              "fix",
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Cron: cancel active task runs cleanly, preserve terminal timeout/cancel state, and recover no-deliver tool warnings instead of silently losing the outcome. (90666, 90678) Thanks @ai-hpc.",
+          "score": 6,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix",
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Gateway/config/auth: share the approval runtime socket token, replace arrays explicitly in config.patch, keep indexed replacePaths consent from widening to whole arrays, reject malformed Gateway RPC timeout inputs, skip the deleted-agent guard only for valid ACP harness sessions, surface headless LaunchAgent state, verify SQLite auth migration before cleanup, and arm QMD startup maintenance. (87105, 91551, 91966, 54646, 40953, 91219, 91614, 91740, 91978) Thanks @fuller-stack-dev, @yetval, @ruanrrn, @comeran, and @scotthuang.",
+          "score": 65,
+          "labels": [
+            "security",
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [
+              "approval",
+              "auth",
+              "token"
+            ],
+            "platform": [
+              "migration",
+              "gateway/service",
+              "runtime/protocol"
+            ],
+            "relevant": [
+              "gateway",
+              "sessions",
+              "tools/exec",
+              "codex/acp",
+              "config/update"
+            ],
+            "quality": [
+              "fix",
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Providers/Codex: clarify quota errors, restore the Codex synthetic usage line, canonicalize Codex protocol assets, require API-key auth for realtime voice, normalize ACP model refs, preserve Gemma 4 reasoningcontent, honor Ollama's provider-declared thinking default in SDK sessions, and avoid guardian review for local models. (91390, 91709, 91507, 91567, 88630, 91657, 91696) Thanks @hxy91819, @brokemac79, @RomneyDa, @joshavant, @openperf, and @Coder-Wangyankun.",
+          "score": 22,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [
+              "sessions",
+              "codex/acp",
+              "media/pdf"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Updates/builds: recover package Gateway restarts after refresh failure, expose plugin convergence repair, fall back to Corepack in PATH-less pnpm environments, seed the correct Docker store packages, keep ClawHub dry-run and publish paths reusable, and keep beta GitHub release pages draft until OpenClaw npm, dependency evidence, postpublish verification, and required plugin publishes pass. (91581, 91599, 91547, 91591) Thanks @fuller-stack-dev, @sallyom, and @Patrick-Erichsen.",
+          "score": 18,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [
+              "gateway"
+            ],
+            "quality": [
+              "fix",
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "UI: require explicit user intent before opening chat sessions and drain restored chat queues after session switches. (91480) Thanks @TurboTheTurtle.",
+          "score": 9,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "sessions"
+            ],
+            "quality": [
+              "fix",
+              "ux/ui"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Android: avoid the dataSync foreground-service type for persistent nodes. (80082) Thanks @davelutztx.",
+          "score": 10,
+          "labels": [
+            "platform",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Native hooks: bound relay lifetimes so abandoned native hook connections cannot linger indefinitely. (91550) Thanks @joshavant.",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "npm package: https://www.npmjs.com/package/openclaw/v/2026.6.6",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "registry tarball: https://registry.npmjs.org/openclaw/-/openclaw-2026.6.6.tgz",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "integrity: sha512-oMYoQ8a7zummw1tD+AX98yYLzqoq0tQmYWHG65AA0ZivgzmOb2oD0cVdhcWP9IT3opkHdJ5vBdWywUe6xWQXtw==",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "release SHA: 8c802aa683510c7f7503597b54c3021733245e59",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "full release CI report: https://github.com/openclaw/releases/blob/main/evidence/2026.6.6/release-evidence.md",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "release publish: https://github.com/openclaw/openclaw/actions/runs/27411250030",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "npm preflight: https://github.com/openclaw/openclaw/actions/runs/27396521799",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "full release validation: https://github.com/openclaw/openclaw/actions/runs/27396520911",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "plugin npm publish: https://github.com/openclaw/openclaw/actions/runs/27411419408",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "plugin ClawHub publish: dispatched separately, not awaited by this proof: https://github.com/openclaw/openclaw/actions/runs/27411423316",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "OpenClaw npm publish: https://github.com/openclaw/openclaw/actions/runs/27411547994",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "npm Telegram beta E2E: not supplied",
+          "score": 5,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "telegram"
+            ],
+            "quality": []
+          }
+        }
+      ]
+    },
+    {
+      "tag": "v2026.6.6-beta.2",
+      "version": "2026.6.6-beta.2",
+      "versionParts": {
+        "year": 2026,
+        "month": 6,
+        "patch": 6,
+        "suffix": "beta.2"
+      },
+      "name": "openclaw 2026.6.6-beta.2",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.6-beta.2",
+      "apiUrl": "https://api.github.com/repos/openclaw/openclaw/releases/338357959",
+      "publishedAt": "2026-06-12T03:32:42Z",
+      "createdAt": "2026-06-12T02:28:39Z",
+      "prerelease": true,
+      "draft": false,
+      "bodyExcerpt": "Highlights - Security boundaries are substantially tighter across transcripts, sandbox binds, host environment inheritance, MCP stdio, Codex HTTP access, native search policy, elevated sender checks, deleted-agent ACP bypasses, loopback tools, Discord moderation, and Teams group actions; exec approvals now fail closed on timeout. (91529, 91618, 91615, 91619, 91741, 91745, 91746, 91748, 91749, 91750, 91751, 91752, 91763, 89938) Thanks @joshavant, @pgondhi987, @mmaps, @eleqtrizit, @shakkernerd, an",
+      "summary": {
+        "title": "openclaw 2026.6.6-beta.2",
+        "headline": "Security boundaries are substantially tighter across transcripts, sandbox binds, host environment inheritance, MCP stdio, Codex HTTP access, native search policy, elevated sender checks, deleted-agent ACP bypasses, loopback tools, Discord moderation, and Teams group actions; exec approvals now fail closed on timeout. (91529, 91618, 91615, 91619, 91741, 91745, 91746, 91748, 91749, 91750, 91751, 91752, 91763, 89938) Thanks @joshavant, @pgondhi987, @mmaps, @eleqtrizit, @shakkernerd, and @drobison00.",
+        "importance": "medium",
+        "score": 416,
+        "topItems": [
+          {
+            "section": "Highlights",
+            "text": "Security boundaries are substantially tighter across transcripts, sandbox binds, host environment inheritance, MCP stdio, Codex HTTP access, native search policy, elevated sender checks, deleted-agent ACP bypasses, loopback tools, Discord moderation, and Teams group actions; exec approvals now fail closed on timeout. (91529, 91618, 91615, 91619, 91741, 91745, 91746, 91748, 91749, 91750, 91751, 91752, 91763, 89938) Thanks @joshavant, @pgondhi987, @mmaps, @eleqtrizit, @shakkernerd, and @drobison00.",
+            "score": 25,
+            "labels": [
+              "platform",
+              "relevant",
+              "quality"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [
+                "runtime/protocol"
+              ],
+              "relevant": [
+                "tools/exec",
+                "codex/acp"
+              ],
+              "quality": [
+                "fallback/retry"
+              ]
+            }
+          },
+          {
+            "section": "Highlights",
+            "text": "Telegram delivery is safer and more coherent: account-scoped topics route to the right agent, streamed text survives tool calls, /compact works on generic ingress, callback handling uses concrete APIs, draft chunking is shared, durable dispatch dedupe moved into the SDK, and unauthorized DM text stays out of cache and prompt context. (91189, 88682, 89588, 90212, 91876, 91874, 91904, 91478, 91915) Thanks @codysai001, @alexzhu0, @joelnishanth, @snowzlm, @obviyus, and @sallyom.",
+            "score": 15,
+            "labels": [
+              "relevant"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [],
+              "relevant": [
+                "telegram",
+                "tools/exec"
+              ],
+              "quality": []
+            }
+          },
+          {
+            "section": "Highlights",
+            "text": "iMessage recovery and delivery now cover always-on inbound restart, durable echo markers, block streaming, idle approval discovery, hardened outbound transport, and actionable inbound startup diagnostics. (91335, 91449, 88969, 88530, 91783, 91785) Thanks @omarshahine, @jmissig, and @colmbrogan.",
+            "score": 20,
+            "labels": [
+              "platform",
+              "relevant",
+              "quality"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [
+                "runtime/protocol"
+              ],
+              "relevant": [
+                "tools/exec"
+              ],
+              "quality": [
+                "diagnostics"
+              ]
+            }
+          },
+          {
+            "section": "Highlights",
+            "text": "Browser and MCP connectivity gained existing-session CDP support, discovered WebSocket validation, default-profile cdpUrl handling, safer browser-output boundaries, Streamable HTTP loopback transport, corrected OAuth/SSE authorization handling, and broader schema compatibility. (91422, 89851, 91736, 91747, 91451, 80143) Thanks @pgondhi987, @anagnorisis2peripeteia, @lifuyue, @eleqtrizit, @LiuwqGit, and @HemantSudarshan.",
+            "score": 32,
+            "labels": [
+              "platform",
+              "relevant",
+              "quality"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [
+                "config/schema",
+                "runtime/protocol"
+              ],
+              "relevant": [
+                "browser",
+                "sessions"
+              ],
+              "quality": [
+                "compatibility"
+              ]
+            }
+          }
+        ],
+        "reasons": [
+          "security-sensitive wording",
+          "matches your setup: tools/exec, codex/acp, telegram, browser, sessions, memory, media/pdf, gateway",
+          "platform change signals: runtime/protocol, config/schema, deprecation, plugin registry, channel/platform, migration, gateway/service",
+          "quality/reliability: fallback/retry, diagnostics, compatibility, performance, ux/ui, fix"
+        ],
+        "filterLabels": [],
+        "labelItemCounts": {
+          "security": 1,
+          "platform": 15,
+          "relevant": 14,
+          "quality": 16
+        },
+        "hitCounts": {
+          "security": 3,
+          "platform": 7,
+          "relevant": 9,
+          "quality": 6
+        }
+      },
+      "items": [
+        {
+          "section": "Highlights",
+          "text": "Security boundaries are substantially tighter across transcripts, sandbox binds, host environment inheritance, MCP stdio, Codex HTTP access, native search policy, elevated sender checks, deleted-agent ACP bypasses, loopback tools, Discord moderation, and Teams group actions; exec approvals now fail closed on timeout. (91529, 91618, 91615, 91619, 91741, 91745, 91746, 91748, 91749, 91750, 91751, 91752, 91763, 89938) Thanks @joshavant, @pgondhi987, @mmaps, @eleqtrizit, @shakkernerd, and @drobison00.",
+          "score": 25,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [
+              "tools/exec",
+              "codex/acp"
+            ],
+            "quality": [
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Telegram delivery is safer and more coherent: account-scoped topics route to the right agent, streamed text survives tool calls, /compact works on generic ingress, callback handling uses concrete APIs, draft chunking is shared, durable dispatch dedupe moved into the SDK, and unauthorized DM text stays out of cache and prompt context. (91189, 88682, 89588, 90212, 91876, 91874, 91904, 91478, 91915) Thanks @codysai001, @alexzhu0, @joelnishanth, @snowzlm, @obviyus, and @sallyom.",
+          "score": 15,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "telegram",
+              "tools/exec"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "iMessage recovery and delivery now cover always-on inbound restart, durable echo markers, block streaming, idle approval discovery, hardened outbound transport, and actionable inbound startup diagnostics. (91335, 91449, 88969, 88530, 91783, 91785) Thanks @omarshahine, @jmissig, and @colmbrogan.",
+          "score": 20,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [
+              "tools/exec"
+            ],
+            "quality": [
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Browser and MCP connectivity gained existing-session CDP support, discovered WebSocket validation, default-profile cdpUrl handling, safer browser-output boundaries, Streamable HTTP loopback transport, corrected OAuth/SSE authorization handling, and broader schema compatibility. (91422, 89851, 91736, 91747, 91451, 80143) Thanks @pgondhi987, @anagnorisis2peripeteia, @lifuyue, @eleqtrizit, @LiuwqGit, and @HemantSudarshan.",
+          "score": 32,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "config/schema",
+              "runtime/protocol"
+            ],
+            "relevant": [
+              "browser",
+              "sessions"
+            ],
+            "quality": [
+              "compatibility"
+            ]
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Control UI startup and first-reply latency are lower through cached model metadata, removal of the startup catalog wait, lazy slash-command loading, and first-event tracing with slow-reply diagnostics. (91531, 91538, 91568, 91583, 91598)",
+          "score": 31,
+          "labels": [
+            "platform",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "deprecation",
+              "plugin registry"
+            ],
+            "relevant": [],
+            "quality": [
+              "performance",
+              "diagnostics",
+              "ux/ui"
+            ]
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Provider support expands with OpenRouter OAuth onboarding and Claude Fable 5 adaptive thinking, while Codex sessions keep correct compaction ownership, local models skip guardian review, dynamic tool progress normalizes cleanly, and Gemma 4 reasoning replay is preserved. (91830, 91882, 91590, 88630, 88768, 91696) Thanks @Patrick-Erichsen, @joshavant, @bdjben, and @Coder-Wangyankun.",
+          "score": 14,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "sessions",
+              "codex/acp"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "CLI progress: emit Claude CLI commentary progress events and bridge inter-tool commentary into channel progress without exposing internal protocol scaffolding. (89834, 90883) Thanks @anagnorisis2peripeteia.",
+          "score": 12,
+          "labels": [
+            "platform"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol",
+              "channel/platform"
+            ],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Observability: allow trusted diagnostics channels to capture tool input/output content, add first-assistant-event traces, and warn on slow initial replies. (91256, 91568, 91583) Thanks @amknight.",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Plugins/ClawHub: dogfood reusable package publishing, let dry runs skip publish approval, allow declared installed trusted hooks, report managed plugin version drift, and warn instead of failing on retired Skill Workshop configuration. (91574, 91591, 90004, 90927, 90838) Thanks @Patrick-Erichsen, @brokemac79, and @lonexreb.",
+          "score": 5,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "tools/exec"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Memory/providers: move the local llama.cpp runtime into its provider plugin, batch embeddings across files, persist the agent model catalog cache, and keep QMD JSON search one-shot while filtering stale REM recall previews. (91324, 89138, 90457, 91837, 91851) Thanks @osolmaz, @mushuiyu886, @ai-hpc, and @TurboTheTurtle.",
+          "score": 19,
+          "labels": [
+            "platform",
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol",
+              "plugin registry"
+            ],
+            "relevant": [
+              "memory"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Channels/mobile: add the QQBot group mention toggle, improve iPad and iPhone control surfaces, and expose the active connection host in the TUI footer. (91423, 91557, 89909) Thanks @cxyhhhhh, @Solvely-Colin, and @baskduf.",
+          "score": 5,
+          "labels": [
+            "platform"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "channel/platform"
+            ],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Performance: prewarm TUI runtime plugins, deduplicate plugin auto-enable fanout, stop /models derived-registry rescan storms, trim dense text-delta snapshots, and reuse prepared startup model metadata. (90782, 89978, 92127, 91580, 91531) Thanks @RomneyDa, @obuchowski, and @ai-hpc.",
+          "score": 11,
+          "labels": [
+            "platform",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [],
+            "quality": [
+              "performance"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Agent/session recovery: drop stale approval follow-ups after session rebind, remove drained reply-queue items by identity, recover stale main and visible replies, preserve Codex context-engine compaction ownership, project thinking catalog compatibility through SDK sessions, retry same-model assistant calls across short rate-limit windows, lower the default compaction timeout to 180 seconds while respecting explicit configuration, and keep provider-failure terminal lifecycle state correct. (85679, 91450, 91566, 91840, 91590, 91911, 91361, 91895) Thanks @openperf, @yetval, @joshavant, @lanzhi-lee, @wangmiao0668000666, and @TurboTheTurtle.",
+          "score": 40,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "deprecation",
+              "plugin registry"
+            ],
+            "relevant": [
+              "sessions",
+              "tools/exec",
+              "codex/acp"
+            ],
+            "quality": [
+              "fix",
+              "fallback/retry",
+              "compatibility"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "User-visible content boundaries: suppress Codex/Harmony protocol artifacts, neutralize browser and LanceDB memory media directives, redact transcript images, and preserve native /compact replies through source suppression. (89151, 91422, 91425, 91529, 90212) Thanks @joelnishanth, @pgondhi987, @joshavant, and @snowzlm.",
+          "score": 28,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [
+              "browser",
+              "memory",
+              "codex/acp",
+              "media/pdf"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Channel delivery: keep WhatsApp captured replies attached to the successor controller after restart, retry Feishu rate limits, preserve Mattermost thread replies, canonicalize LINE webhook paths, restore Discord reply hydration and runtime timeout exports, and show OpenAI Realtime WebRTC assistant transcripts. (85823, 89659, 91684, 91649, 90263, 91686, 90426) Thanks @itsuzef, @ladygege, @jacobtomlinson, @fuller-stack-dev, and @shushushv.",
+          "score": 18,
+          "labels": [
+            "platform",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol",
+              "channel/platform"
+            ],
+            "relevant": [],
+            "quality": [
+              "fix",
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Cron: cancel active task runs cleanly, preserve terminal timeout/cancel state, and recover no-deliver tool warnings instead of silently losing the outcome. (90666, 90678) Thanks @ai-hpc.",
+          "score": 6,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix",
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Gateway/config/auth: share the approval runtime socket token, replace arrays explicitly in config.patch, keep indexed replacePaths consent from widening to whole arrays, reject malformed Gateway RPC timeout inputs, skip the deleted-agent guard only for valid ACP harness sessions, surface headless LaunchAgent state, verify SQLite auth migration before cleanup, and arm QMD startup maintenance. (87105, 91551, 91966, 54646, 40953, 91219, 91614, 91740, 91978) Thanks @fuller-stack-dev, @yetval, @ruanrrn, @comeran, and @scotthuang.",
+          "score": 65,
+          "labels": [
+            "security",
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [
+              "approval",
+              "auth",
+              "token"
+            ],
+            "platform": [
+              "migration",
+              "gateway/service",
+              "runtime/protocol"
+            ],
+            "relevant": [
+              "gateway",
+              "sessions",
+              "tools/exec",
+              "codex/acp",
+              "config/update"
+            ],
+            "quality": [
+              "fix",
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Providers/Codex: clarify quota errors, restore the Codex synthetic usage line, canonicalize Codex protocol assets, require API-key auth for realtime voice, normalize ACP model refs, preserve Gemma 4 reasoningcontent, honor Ollama's provider-declared thinking default in SDK sessions, and avoid guardian review for local models. (91390, 91709, 91507, 91567, 88630, 91657, 91696) Thanks @hxy91819, @brokemac79, @RomneyDa, @joshavant, @openperf, and @Coder-Wangyankun.",
+          "score": 22,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [
+              "sessions",
+              "codex/acp",
+              "media/pdf"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Updates/builds: recover package Gateway restarts after refresh failure, expose plugin convergence repair, fall back to Corepack in PATH-less pnpm environments, seed the correct Docker store packages, keep ClawHub dry-run and publish paths reusable, and keep beta GitHub release pages draft until OpenClaw npm, dependency evidence, postpublish verification, and required plugin publishes pass. (91581, 91599, 91547, 91591) Thanks @fuller-stack-dev, @sallyom, and @Patrick-Erichsen.",
+          "score": 18,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [
+              "gateway"
+            ],
+            "quality": [
+              "fix",
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "UI: require explicit user intent before opening chat sessions and drain restored chat queues after session switches. (91480) Thanks @TurboTheTurtle.",
+          "score": 9,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "sessions"
+            ],
+            "quality": [
+              "fix",
+              "ux/ui"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Android: avoid the dataSync foreground-service type for persistent nodes. (80082) Thanks @davelutztx.",
+          "score": 10,
+          "labels": [
+            "platform",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Native hooks: bound relay lifetimes so abandoned native hook connections cannot linger indefinitely. (91550) Thanks @joshavant.",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "npm package: https://www.npmjs.com/package/openclaw/v/2026.6.6-beta.2",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "registry tarball: https://registry.npmjs.org/openclaw/-/openclaw-2026.6.6-beta.2.tgz",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "integrity: sha512-617ITjTL0UxtQK4qGOc248nQBJjExX43/RR7CBr+0rEpqnA88i/VWABfTPrUnNT25181uZkOyzgguZjMW0u4Ug==",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "release SHA: 3129eed4de92d0ddc0209fbf195c790c3d73ab03",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "full release CI report: https://github.com/openclaw/releases/blob/main/evidence/2026.6.6-beta.2/release-evidence.md",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "release publish: https://github.com/openclaw/openclaw/actions/runs/27392222148",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "npm preflight: https://github.com/openclaw/openclaw/actions/runs/27390602410",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "full release validation: https://github.com/openclaw/openclaw/actions/runs/27390601362",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "plugin npm publish: https://github.com/openclaw/openclaw/actions/runs/27392305214",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "plugin ClawHub publish: dispatched separately, not awaited by this proof: https://github.com/openclaw/openclaw/actions/runs/27392308021",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "OpenClaw npm publish: https://github.com/openclaw/openclaw/actions/runs/27392531757",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "npm Telegram beta E2E: https://github.com/openclaw/openclaw/actions/runs/27392727108",
+          "score": 5,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "telegram"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "postpublish package acceptance: https://github.com/openclaw/openclaw/actions/runs/27392843057",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        }
+      ]
+    },
     {
       "tag": "v2026.6.6-beta.1",
       "version": "2026.6.6-beta.1",
