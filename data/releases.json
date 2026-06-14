@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-13T11:25:02.787Z",
+  "generatedAt": "2026-06-14T11:37:26.352Z",
   "source": {
     "owner": "openclaw",
     "repo": "openclaw",
@@ -9,15 +9,15 @@
   },
   "defaults": {
     "months": 3,
-    "since": "2026-03-13T09:42:35.000Z"
+    "since": "2026-03-13T21:49:06.000Z"
   },
-  "releaseCount": 207,
+  "releaseCount": 208,
   "stableCount": 101,
   "latest": {
-    "tag": "v2026.6.7-beta.1",
-    "version": "2026.6.7-beta.1",
-    "publishedAt": "2026-06-13T09:42:35Z",
-    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.7-beta.1"
+    "tag": "v2026.6.8-beta.1",
+    "version": "2026.6.8-beta.1",
+    "publishedAt": "2026-06-13T21:49:06Z",
+    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.8-beta.1"
   },
   "keywords": {
     "jacobKeywords": [
@@ -82,6 +82,517 @@
     ]
   },
   "releases": [
+    {
+      "tag": "v2026.6.8-beta.1",
+      "version": "2026.6.8-beta.1",
+      "versionParts": {
+        "year": 2026,
+        "month": 6,
+        "patch": 8,
+        "suffix": "beta.1"
+      },
+      "name": "openclaw 2026.6.8-beta.1",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.8-beta.1",
+      "apiUrl": "https://api.github.com/repos/openclaw/openclaw/releases/339054463",
+      "publishedAt": "2026-06-13T21:49:06Z",
+      "createdAt": "2026-06-14T11:26:07Z",
+      "prerelease": true,
+      "draft": false,
+      "bodyExcerpt": "2026.6.8 Highlights - Telegram and WhatsApp channel delivery are richer and less brittle: Telegram can send structured rich text with tables, lists, expandable blockquotes, prompt-preserving CLI backend delivery, retired native draft migration, and safer rich-media boundaries, while WhatsApp now honors configured ACP bindings. (92679, 84082, 89421, 92513) Thanks @obviyus, @jzakirov, @spacegeologist, and @TurboTheTurtle. - Agent and Gateway recovery is sharper across account-scoped DM sends, gene",
+      "summary": {
+        "title": "openclaw 2026.6.8-beta.1",
+        "headline": "Telegram and WhatsApp channel delivery are richer and less brittle: Telegram can send structured rich text with tables, lists, expandable blockquotes, prompt-preserving CLI backend delivery, retired native draft migration, and safer rich-media boundaries, while WhatsApp now honors configured ACP bindings. (92679, 84082, 89421, 92513) Thanks @obviyus, @jzakirov, @spacegeologist, and @TurboTheTurtle.",
+        "importance": "medium",
+        "score": 354,
+        "topItems": [
+          {
+            "section": "Highlights",
+            "text": "Telegram and WhatsApp channel delivery are richer and less brittle: Telegram can send structured rich text with tables, lists, expandable blockquotes, prompt-preserving CLI backend delivery, retired native draft migration, and safer rich-media boundaries, while WhatsApp now honors configured ACP bindings. (92679, 84082, 89421, 92513) Thanks @obviyus, @jzakirov, @spacegeologist, and @TurboTheTurtle.",
+            "score": 35,
+            "labels": [
+              "platform",
+              "relevant"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [
+                "migration",
+                "channel/platform"
+              ],
+              "relevant": [
+                "telegram",
+                "codex/acp",
+                "media/pdf"
+              ],
+              "quality": []
+            }
+          },
+          {
+            "section": "Highlights",
+            "text": "Agent and Gateway recovery is sharper across account-scoped DM sends, generated media completions, reset archive fallback reads, restart shutdown aborts, yielded subagent pauses, trusted subagent thinking override fallback, yielded cron media, heartbeat dedupe, session identity prompts, and unknown OpenAI agent selector rejection. (92788, 91246, 92879, 91357, 92631, 92412, 92146, 91287, 92468, 92510) Thanks @yetval, @TurboTheTurtle, @masatohoshino, @CadanHu, @ooiuuii, @openperf, @IWhatsskill, @ZengWen-DT, and @zhangguiping-xydt.",
+            "score": 32,
+            "labels": [
+              "platform",
+              "relevant",
+              "quality"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [
+                "gateway/service"
+              ],
+              "relevant": [
+                "gateway",
+                "sessions",
+                "heartbeat",
+                "media/pdf"
+              ],
+              "quality": [
+                "fallback/retry"
+              ]
+            }
+          },
+          {
+            "section": "Highlights",
+            "text": "Provider/model handling expands and tightens with GLM-5.2, Claude Haiku 4.5 catalog rows, OpenRouter and Google Vertex provider-prefix normalization, managed SecretRef auth, OAuth image-default routing through Codex, bounded model browse discovery, storeless OpenAI Responses replay gating, invalid OpenAI reasoning-signature recovery, Claude 4.5 Copilot tool-streaming safety, and OpenAI/Anthropic-family payload quarantine for unreadable or post-hook tool schemas. (92796, 90116, 92627, 91218, 90686, 92824, 92247, 90706, 92941, 75393, 92908, 92921, 92928) Thanks @arkyu2077, @liuhao1024, @bymle, @rohitjavvadi, @bek91, @samson910022, @snowzlm, @Kailigithub, and @vincentkoc.",
+            "score": 17,
+            "labels": [
+              "platform",
+              "relevant"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [
+                "plugin registry"
+              ],
+              "relevant": [
+                "codex/acp"
+              ],
+              "quality": []
+            }
+          },
+          {
+            "section": "Highlights",
+            "text": "/usage and reply payload hooks now have a native full footer renderer, default template, fixed-decimal formatting, credential-aware limits, better partial-count handling, and warnings for broken templates instead of silent bad output. (92657, 89835, 89629) Thanks @Marvinthebored.",
+            "score": 8,
+            "labels": [
+              "quality"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [],
+              "relevant": [],
+              "quality": [
+                "fix"
+              ]
+            }
+          }
+        ],
+        "reasons": [
+          "security-sensitive wording",
+          "matches your setup: telegram, codex/acp, media/pdf, gateway, sessions, heartbeat, memory, config/update",
+          "platform change signals: migration, channel/platform, gateway/service, plugin registry, runtime/protocol, config/schema",
+          "quality/reliability: fallback/retry, fix, ux/ui, diagnostics, compatibility, reliability"
+        ],
+        "filterLabels": [],
+        "labelItemCounts": {
+          "security": 1,
+          "platform": 11,
+          "relevant": 14,
+          "quality": 12
+        },
+        "hitCounts": {
+          "security": 2,
+          "platform": 6,
+          "relevant": 9,
+          "quality": 6
+        }
+      },
+      "items": [
+        {
+          "section": "Highlights",
+          "text": "Telegram and WhatsApp channel delivery are richer and less brittle: Telegram can send structured rich text with tables, lists, expandable blockquotes, prompt-preserving CLI backend delivery, retired native draft migration, and safer rich-media boundaries, while WhatsApp now honors configured ACP bindings. (92679, 84082, 89421, 92513) Thanks @obviyus, @jzakirov, @spacegeologist, and @TurboTheTurtle.",
+          "score": 35,
+          "labels": [
+            "platform",
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "migration",
+              "channel/platform"
+            ],
+            "relevant": [
+              "telegram",
+              "codex/acp",
+              "media/pdf"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Agent and Gateway recovery is sharper across account-scoped DM sends, generated media completions, reset archive fallback reads, restart shutdown aborts, yielded subagent pauses, trusted subagent thinking override fallback, yielded cron media, heartbeat dedupe, session identity prompts, and unknown OpenAI agent selector rejection. (92788, 91246, 92879, 91357, 92631, 92412, 92146, 91287, 92468, 92510) Thanks @yetval, @TurboTheTurtle, @masatohoshino, @CadanHu, @ooiuuii, @openperf, @IWhatsskill, @ZengWen-DT, and @zhangguiping-xydt.",
+          "score": 32,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [
+              "gateway",
+              "sessions",
+              "heartbeat",
+              "media/pdf"
+            ],
+            "quality": [
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Provider/model handling expands and tightens with GLM-5.2, Claude Haiku 4.5 catalog rows, OpenRouter and Google Vertex provider-prefix normalization, managed SecretRef auth, OAuth image-default routing through Codex, bounded model browse discovery, storeless OpenAI Responses replay gating, invalid OpenAI reasoning-signature recovery, Claude 4.5 Copilot tool-streaming safety, and OpenAI/Anthropic-family payload quarantine for unreadable or post-hook tool schemas. (92796, 90116, 92627, 91218, 90686, 92824, 92247, 90706, 92941, 75393, 92908, 92921, 92928) Thanks @arkyu2077, @liuhao1024, @bymle, @rohitjavvadi, @bek91, @samson910022, @snowzlm, @Kailigithub, and @vincentkoc.",
+          "score": 17,
+          "labels": [
+            "platform",
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "plugin registry"
+            ],
+            "relevant": [
+              "codex/acp"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "/usage and reply payload hooks now have a native full footer renderer, default template, fixed-decimal formatting, credential-aware limits, better partial-count handling, and warnings for broken templates instead of silent bad output. (92657, 89835, 89629) Thanks @Marvinthebored.",
+          "score": 8,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "UI and mobile flows are steadier: workspace files can collapse and start collapsed, WebChat backscroll survives streaming, the sidebar session picker remains interactive above the desktop workbench, reset soft args survive UI dispatch, stale dashboard session parent lineage is preserved, and iOS reconnects stale foreground gateways. (92779, 92622, 92705, 91353, 90658, 92552) Thanks @shakkernerd, @TurboTheTurtle, @NianJiuZst, @zhouhe-xydt, @luoyanglang, and @Solvely-Colin.",
+          "score": 16,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "channel/platform"
+            ],
+            "relevant": [
+              "sessions"
+            ],
+            "quality": [
+              "ux/ui"
+            ]
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Memory, state, and diagnostics recover cleaner: oversized OpenAI embedding batches split before 431s, QMD memory search stays available in transient mode, SQLite avoids WAL on NFS state volumes, stuck-session recovery scheduling no longer resets warning backoff, full memory reindexes preserve rollback/cache recovery, raw Memory Wiki source pages stop looking malformed, and Infinity chunk limits stay genuinely unbounded. (92650, 92618, 92639, 91247, 92752, 92881, 59137, 92876, 69700, 92735) Thanks @mushuiyu886, @TurboTheTurtle, @849261680, @gnanam1990, @TSHOGX, @arlen8411, and @yhterrance.",
+          "score": 17,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "memory",
+              "sessions"
+            ],
+            "quality": [
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Providers/models: add GLM-5.2 support and Claude Haiku 4.5 catalog entries while keeping provider-qualified model IDs normalized across OpenRouter and Google Vertex paths. (92796, 90116, 92627, 91218) Thanks @arkyu2077, @liuhao1024, and @bymle.",
+          "score": 7,
+          "labels": [
+            "platform"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "plugin registry"
+            ],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Channel plugins: ship Telegram rich-message delivery and WhatsApp ACP binding support, including rich prompt handoff to CLI backends and transport fixtures for richer drafts. (92679, 92513) Thanks @obviyus and @TurboTheTurtle.",
+          "score": 22,
+          "labels": [
+            "platform",
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol",
+              "channel/platform"
+            ],
+            "relevant": [
+              "telegram",
+              "codex/acp"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Agent commands: support /btw in CLI-backed sessions and keep CLI usage-error exits classified as usage failures instead of successful runs. (92669, 92162) Thanks @joshavant and @Pandah97.",
+          "score": 4,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "sessions"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Usage hooks: add built-in full footer rendering, default footer templates, per-turn usage state, credential-aware limits, and fixed-decimal formatting for usage-bar templates. (92657, 89835, 89629) Thanks @Marvinthebored.",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Docs and operator guidance: document node config examples, clarify before-install hook scope, correct agent default concurrency comments, refresh ZAI provider docs, and update channel/group docs for current Telegram and WhatsApp behavior. (92677, 92766, 92695) Thanks @liuhao1024, @sallyom, and @ArielSmoliar.",
+          "score": 13,
+          "labels": [
+            "platform",
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "channel/platform"
+            ],
+            "relevant": [
+              "telegram",
+              "config/update"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Channels and delivery: preserve account-scoped DM channel send policy, rich Telegram final replies, rich Telegram tables and lists, Telegram thread-create CLI remapping, Feishu dynamic-agent routes after persisted binding reuse, Slack outbound messagesent hooks, contributed message-tool schema optionality, same-channel generated media completions, and channel chunking around surrogate pairs and Infinity limits. (92788, 92679, 89421, 89943, 42837, 92814, 91137, 91246, 92735) Thanks @yetval, @obviyus, @spacegeologist, @rishitamrakar, @liuhao1024, @lundog, @TurboTheTurtle, and @yhterrance.",
+          "score": 24,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "config/schema",
+              "channel/platform"
+            ],
+            "relevant": [
+              "telegram",
+              "media/pdf"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Discord: give generated auto-thread titles a 60-second timeout and 4,096-token reasoning-model output budget, clamped to the selected model output cap. (64734) Thanks @hanamizuki.",
+          "score": 6,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix",
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Agent, cron, and Gateway runtime: mark active main sessions before restart shutdown aborts, pause yielded subagent runs whose terminal also signals abort, clamp trusted subagent thinking overrides through provider/model fallback, preserve yielded media completions, restore reset archive fallback reads when active async transcripts are missing, de-duplicate main-session heartbeat events, expose session identity in runtime prompts, reject unknown OpenAI agent selectors, keep generated media completions and slash-command block replies in WebChat, and require admin privileges for HTTP session/model override surfaces. (91357, 92631, 92412, 92146, 92879, 91287, 92468, 92510, 91246, 92651, 92646) Thanks @ooiuuii, @openperf, @IWhatsskill, @masatohoshino, @CadanHu, @ZengWen-DT, @zhangguiping-xydt, and @TurboTheTurtle.",
+          "score": 37,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service",
+              "runtime/protocol"
+            ],
+            "relevant": [
+              "gateway",
+              "sessions",
+              "heartbeat",
+              "media/pdf"
+            ],
+            "quality": [
+              "fix",
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Providers and model replay: preserve storeless OpenAI Responses replay compatibility, recover invalid OpenAI reasoning signatures, route OAuth image defaults through Codex for eligible OpenAI profiles, avoid eager tool streaming for Claude 4.5 in Copilot, quarantine unreadable and post-hook OpenAI/Anthropic-family tool schemas without broadening allowed tool choices, honor profile auth for SecretRef model entries, bound model browsing, strip provider prefixes where runtimes need bare IDs, and surface nested embedding fetch failures. (90706, 92941, 92824, 75393, 92908, 92921, 92928, 90686, 92247, 92627, 91218, 92628) Thanks @snowzlm, @bek91, @Kailigithub, @vincentkoc, @rohitjavvadi, @samson910022, @liuhao1024, @bymle, and @mushuiyu886.",
+          "score": 11,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "codex/acp"
+            ],
+            "quality": [
+              "fix",
+              "compatibility"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Memory, state, diagnostics, and config: split header-too-large embedding batches, keep QMD memory search enabled in transient mode, avoid SQLite WAL on NFS volumes, preserve recovery scheduling outside stuck-session warning backoff, preserve full-reindex rollback/cache recovery, treat raw Memory Wiki source pages as source evidence, and keep shell environment fallbacks contained in config write tests. (92650, 92618, 92639, 91247, 92752, 92881, 59137, 92876, 69700) Thanks @mushuiyu886, @TurboTheTurtle, @849261680, @gnanam1990, @TSHOGX, and @arlen8411.",
+          "score": 18,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "memory",
+              "sessions",
+              "config/update"
+            ],
+            "quality": [
+              "fix",
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "UI/mobile/TUI: preserve dashboard session parent lineage, WebChat backscroll, reset soft command args, sidebar session picker interactivity, collapsed workspace files, resolved /model confirmation refs, and stale foreground iOS Gateway reconnects. (90658, 92622, 91353, 92705, 92779, 92773, 92552) Thanks @luoyanglang, @TurboTheTurtle, @zhouhe-xydt, @NianJiuZst, @shakkernerd, @NarahariRaghava, and @Solvely-Colin.",
+          "score": 26,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service",
+              "channel/platform"
+            ],
+            "relevant": [
+              "gateway",
+              "sessions"
+            ],
+            "quality": [
+              "fix",
+              "ux/ui"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Release and test reliability: extend slow Gateway/full-suite watchdogs, split local full-suite shards when throttled, stabilize plugin auth marker fixtures, avoid brittle provider-ref error text, fold Telegram RTT sampling into live QA evidence, simplify QA scorecard mappings around canonical coverage IDs, keep QA Lab bootstrap selection assertions aligned with flow-only scenarios, skip QA coverage artifact consumers when runtime parity producer status is not green, keep Feishu lifecycle release checks pointed at the active fixture config, isolate trajectory-export live seed turns from Codex-native shell approvals, widen live OpenAI TTS budgets for slower provider responses, and avoid false downgrade prompts for unresolved latest-tag updates. (92652, 92550, 92558, 92911) Thanks @RomneyDa and @Andy312432.",
+          "score": 58,
+          "labels": [
+            "security",
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [
+              "approval",
+              "auth"
+            ],
+            "platform": [
+              "gateway/service",
+              "runtime/protocol"
+            ],
+            "relevant": [
+              "telegram",
+              "gateway",
+              "tools/exec",
+              "codex/acp",
+              "media/pdf",
+              "config/update"
+            ],
+            "quality": [
+              "fix",
+              "reliability",
+              "diagnostics"
+            ]
+          }
+        }
+      ]
+    },
     {
       "tag": "v2026.6.7-beta.1",
       "version": "2026.6.7-beta.1",
