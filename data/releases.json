@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-21T11:57:22.631Z",
+  "generatedAt": "2026-06-22T15:01:42.534Z",
   "source": {
     "owner": "openclaw",
     "repo": "openclaw",
@@ -9,15 +9,15 @@
   },
   "defaults": {
     "months": 3,
-    "since": "2026-03-21T09:12:41.000Z"
+    "since": "2026-03-22T09:36:28.000Z"
   },
-  "releaseCount": 213,
+  "releaseCount": 214,
   "stableCount": 103,
   "latest": {
-    "tag": "v2026.6.10-beta.1",
-    "version": "2026.6.10-beta.1",
-    "publishedAt": "2026-06-21T09:12:41Z",
-    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.10-beta.1"
+    "tag": "v2026.6.10-beta.2",
+    "version": "2026.6.10-beta.2",
+    "publishedAt": "2026-06-22T09:36:28Z",
+    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.10-beta.2"
   },
   "keywords": {
     "jacobKeywords": [
@@ -82,6 +82,617 @@
     ]
   },
   "releases": [
+    {
+      "tag": "v2026.6.10-beta.2",
+      "version": "2026.6.10-beta.2",
+      "versionParts": {
+        "year": 2026,
+        "month": 6,
+        "patch": 10,
+        "suffix": "beta.2"
+      },
+      "name": "openclaw 2026.6.10-beta.2",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.10-beta.2",
+      "apiUrl": "https://api.github.com/repos/openclaw/openclaw/releases/342799104",
+      "publishedAt": "2026-06-22T09:36:28Z",
+      "createdAt": "2026-06-22T08:54:11Z",
+      "prerelease": true,
+      "draft": false,
+      "bodyExcerpt": "2026.6.10 Highlights - Automatic fast mode for talks: OpenClaw can enable fast mode for short conversational turns, then return to normal mode for longer runs with bounded fallback and delivery behavior. (85104) Thanks @alexph-dev and @vincentkoc. - More reliable model routing: Zai model synthesis, GLM overload failover, and native reasoning-level selection now follow the active model catalog more consistently. (94461, 93241, 94067, 94136) Thanks @Pandah97, @chrysb, @0xghost42, @zhengli0922, @op",
+      "summary": {
+        "title": "openclaw 2026.6.10-beta.2",
+        "headline": "Automatic fast mode for talks: OpenClaw can enable fast mode for short conversational turns, then return to normal mode for longer runs with bounded fallback and delivery behavior. (85104) Thanks @alexph-dev and @vincentkoc.",
+        "importance": "routine",
+        "score": 175,
+        "topItems": [
+          {
+            "section": "Highlights",
+            "text": "Automatic fast mode for talks: OpenClaw can enable fast mode for short conversational turns, then return to normal mode for longer runs with bounded fallback and delivery behavior. (85104) Thanks @alexph-dev and @vincentkoc.",
+            "score": 8,
+            "labels": [
+              "quality"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [],
+              "relevant": [],
+              "quality": [
+                "fallback/retry"
+              ]
+            }
+          },
+          {
+            "section": "Highlights",
+            "text": "More reliable model routing: Zai model synthesis, GLM overload failover, and native reasoning-level selection now follow the active model catalog more consistently. (94461, 93241, 94067, 94136) Thanks @Pandah97, @chrysb, @0xghost42, @zhengli0922, @openperf, @civiltox, and @BorClaw.",
+            "score": 16,
+            "labels": [
+              "platform",
+              "quality"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [
+                "plugin registry"
+              ],
+              "relevant": [],
+              "quality": [
+                "reliability"
+              ]
+            }
+          },
+          {
+            "section": "Highlights",
+            "text": "Safer session and channel state: channel switches reset stale origin fields, and cron delivery awareness stays attached to the target session. (95328, 93580) Thanks @ZengWen-DT, @jalehman, @gorkem2020, and @scotthuang.",
+            "score": 14,
+            "labels": [
+              "platform",
+              "relevant"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [
+                "channel/platform"
+              ],
+              "relevant": [
+                "sessions"
+              ],
+              "quality": []
+            }
+          },
+          {
+            "section": "Highlights",
+            "text": "Trusted policies survive hook composition: composed hook registries keep the trusted tool policies required by approval-sensitive flows. (94545) Thanks @jesse-merhi.",
+            "score": 10,
+            "labels": [
+              "relevant"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [],
+              "relevant": [
+                "tools/exec"
+              ],
+              "quality": []
+            }
+          }
+        ],
+        "reasons": [
+          "matches your setup: sessions, tools/exec, codex/acp, config/update, telegram",
+          "platform change signals: plugin registry, channel/platform, runtime/protocol, gateway/service",
+          "quality/reliability: fallback/retry, reliability, fix, diagnostics"
+        ],
+        "filterLabels": [],
+        "labelItemCounts": {
+          "security": 0,
+          "platform": 8,
+          "relevant": 9,
+          "quality": 13
+        },
+        "hitCounts": {
+          "security": 0,
+          "platform": 4,
+          "relevant": 5,
+          "quality": 4
+        }
+      },
+      "items": [
+        {
+          "section": "Highlights",
+          "text": "Automatic fast mode for talks: OpenClaw can enable fast mode for short conversational turns, then return to normal mode for longer runs with bounded fallback and delivery behavior. (85104) Thanks @alexph-dev and @vincentkoc.",
+          "score": 8,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "More reliable model routing: Zai model synthesis, GLM overload failover, and native reasoning-level selection now follow the active model catalog more consistently. (94461, 93241, 94067, 94136) Thanks @Pandah97, @chrysb, @0xghost42, @zhengli0922, @openperf, @civiltox, and @BorClaw.",
+          "score": 16,
+          "labels": [
+            "platform",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "plugin registry"
+            ],
+            "relevant": [],
+            "quality": [
+              "reliability"
+            ]
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Safer session and channel state: channel switches reset stale origin fields, and cron delivery awareness stays attached to the target session. (95328, 93580) Thanks @ZengWen-DT, @jalehman, @gorkem2020, and @scotthuang.",
+          "score": 14,
+          "labels": [
+            "platform",
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "channel/platform"
+            ],
+            "relevant": [
+              "sessions"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Trusted policies survive hook composition: composed hook registries keep the trusted tool policies required by approval-sensitive flows. (94545) Thanks @jesse-merhi.",
+          "score": 10,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "tools/exec"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Agent and channel runtime: fast-mode state now survives retries, fallback transitions, progress events, and embedded/CLI/ACP normalization; session and channel routing retain the current target and delivery context. (85104, 93580, 95328) Thanks @alexph-dev, @vincentkoc, @scotthuang, @ZengWen-DT, @jalehman, and @gorkem2020.",
+          "score": 24,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol",
+              "channel/platform"
+            ],
+            "relevant": [
+              "sessions",
+              "codex/acp"
+            ],
+            "quality": [
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Provider behavior: model catalogs now supply the correct Zai base URL, overload classification, and native reasoning controls for live-discovered models. (94461, 93241, 94067, 94136) Thanks @Pandah97, @chrysb, @0xghost42, @zhengli0922, @openperf, @civiltox, and @BorClaw.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Fast-mode and policy correctness: fallback cutoffs and reset notices are bounded, repeated progress events remain visible, Codex service-tier state is normalized, and trusted policies are not lost when hook registries are composed. (85104, 94545) Thanks @alexph-dev, @vincentkoc, and @jesse-merhi.",
+          "score": 18,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [
+              "codex/acp"
+            ],
+            "quality": [
+              "fix",
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Model and delivery edge cases: Zai and GLM failover paths use the right runtime metadata, while stale channel-origin state no longer leaks across session changes. (94461, 93241, 95328) Thanks @Pandah97, @chrysb, @0xghost42, @zhengli0922, @ZengWen-DT, @jalehman, and @gorkem2020.",
+          "score": 19,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol",
+              "channel/platform"
+            ],
+            "relevant": [
+              "sessions"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 86627 Keep core doctor health in contribution order. Thanks @giodl73-repo.",
+          "score": 6,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "config/update"
+            ],
+            "quality": [
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 93580 fix: preserve cron delivery awareness for target sessions. Thanks @scotthuang and @jalehman.",
+          "score": 7,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "sessions"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 95030 refactor: add SDK transcript identity target API. Thanks @jalehman.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 94838 refactor(copilot): complete harness lifecycle parity. Thanks @vincentkoc.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 95328 fix(sessions): reset stale per-channel origin fields on channel switch. Related 95325. Thanks @ZengWen-DT and @jalehman and @gorkem2020.",
+          "score": 12,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "channel/platform"
+            ],
+            "relevant": [
+              "sessions"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 94461 fix(zai): fall back to manifest baseUrl for synthesized GLM-5 models. Related 94269. Thanks @Pandah97 and @chrysb.",
+          "score": 10,
+          "labels": [
+            "platform",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "plugin registry"
+            ],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 93241 fix(agents): classify Zhipu GLM overload as overloaded for failover. Related 93211. Thanks @0xghost42 and @zhengli0922.",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 94067 fix(channels): resolve native /think menu levels via runtime catalog for live-discovered models. Related 93835. Thanks @openperf and @civiltox.",
+          "score": 17,
+          "labels": [
+            "platform",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol",
+              "plugin registry"
+            ],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 94136 fix(zai): expose GLM-5.2 reasoning levels [AI-assisted]. Thanks @BorClaw.",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 85104 feat: fast talks auto mode. Related 85087. Thanks @alexph-dev.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 94545 fix: keep trusted policies with hook registry. Thanks @jesse-merhi.",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "npm package: https://www.npmjs.com/package/openclaw/v/2026.6.10-beta.2",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "registry tarball: https://registry.npmjs.org/openclaw/-/openclaw-2026.6.10-beta.2.tgz",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "integrity: sha512-fOz52YzVw3MhQjQ5qqfPsfSbaMWOM62DNCxDsO/wZXvgvgrqPdZuNEPQokjFX9J7QXDeidl2uMBCnXRxynMzRg==",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "release SHA: 87b40c7160da1e9d470f86520f64ff1642a55b66",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "full release CI report: https://github.com/openclaw/releases/blob/main/evidence/2026.6.10-beta.2/release-evidence.md",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "release publish: https://github.com/openclaw/openclaw/actions/runs/27942155128",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "npm preflight: https://github.com/openclaw/openclaw/actions/runs/27938779493",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "full release validation: https://github.com/openclaw/openclaw/actions/runs/27938779833",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "plugin npm publish: https://github.com/openclaw/openclaw/actions/runs/27942563340",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "plugin ClawHub publish: https://github.com/openclaw/openclaw/actions/runs/27942565547",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "plugin ClawHub bootstrap: not needed",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "OpenClaw npm publish: https://github.com/openclaw/openclaw/actions/runs/27943117132",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "npm Telegram beta E2E: https://github.com/openclaw/openclaw/actions/runs/27941744910",
+          "score": 5,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "telegram"
+            ],
+            "quality": []
+          }
+        }
+      ]
+    },
     {
       "tag": "v2026.6.10-beta.1",
       "version": "2026.6.10-beta.1",
