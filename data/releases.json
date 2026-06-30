@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-29T13:16:07.218Z",
+  "generatedAt": "2026-06-30T11:54:10.263Z",
   "source": {
     "owner": "openclaw",
     "repo": "openclaw",
@@ -98,7 +98,7 @@
       "createdAt": "2026-06-28T21:31:00Z",
       "prerelease": true,
       "draft": false,
-      "bodyExcerpt": "Highlights - More capable channel control: Slack relay mode, native Mattermost /ocqueue, and per-DM model overrides make channel operations easier to automate and tune. (94707, 95546, 95120) Thanks @sjf-oa, @amknight, @xydigit-zt, @thomaszta, and @gandalf-at-lerian. - Richer operator workflows: openclaw agent --message-file and the RAFT CLI wake bridge add practical file-driven and remote wake-up paths. (93351, 95497) Thanks @ooiuuii and @vincentkoc. - Safer plugin distribution: additional offic",
+      "bodyExcerpt": "2026.6.11 Highlights - More capable channel control: Slack relay mode, native Mattermost /ocqueue, and per-DM model overrides make channel operations easier to automate and tune. (94707, 95546, 95120) Thanks @sjf-oa, @amknight, @xydigit-zt, @thomaszta, and @gandalf-at-lerian. - Richer operator workflows: openclaw agent --message-file and the RAFT CLI wake bridge add practical file-driven and remote wake-up paths. (93351, 95497) Thanks @ooiuuii and @vincentkoc. - Safer plugin distribution: additi",
       "summary": {
         "title": "openclaw 2026.6.11-beta.2",
         "headline": "More capable channel control: Slack relay mode, native Mattermost /ocqueue, and per-DM model overrides make channel operations easier to automate and tune. (94707, 95546, 95120) Thanks @sjf-oa, @amknight, @xydigit-zt, @thomaszta, and @gandalf-at-lerian.",
@@ -5724,6 +5724,30 @@
         },
         {
           "section": "Release verification",
+          "text": "Docker release: https://github.com/openclaw/openclaw/actions/runs/28336644856",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "Docker images: docker.io/openclaw/openclaw:2026.6.11-beta.2 and ghcr.io/openclaw/openclaw:2026.6.11-beta.2",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
           "text": "plugin npm publish: https://github.com/openclaw/openclaw/actions/runs/28338858442",
           "score": 0,
           "labels": [],
@@ -5736,7 +5760,7 @@
         },
         {
           "section": "Release verification",
-          "text": "plugin ClawHub publish: dispatched separately, not awaited by this proof: https://github.com/openclaw/openclaw/actions/runs/28338858960",
+          "text": "plugin ClawHub publish: passed in https://github.com/openclaw/openclaw/actions/runs/28397561273",
           "score": 0,
           "labels": [],
           "hits": {
@@ -5748,7 +5772,7 @@
         },
         {
           "section": "Release verification",
-          "text": "ClawHub caveat: Discord, Slack, Voice Call, and WhatsApp plugin publishes failed in ClawHub run https://github.com/openclaw/openclaw/actions/runs/28338858960; core npm/GitHub release and plugin npm packages are live.",
+          "text": "ClawHub package verification: Discord, Slack, Voice Call, and WhatsApp are live in ClawHub at 2026.6.11-beta.2 with npm-pack artifacts.",
           "score": 3,
           "labels": [
             "relevant"
