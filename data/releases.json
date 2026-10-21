@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-20T14:20:30.217Z",
+  "generatedAt": "2026-10-21T14:30:58.065Z",
   "source": {
     "owner": "openclaw",
     "repo": "openclaw",
@@ -9,15 +9,15 @@
   },
   "defaults": {
     "months": 3,
-    "since": "2026-07-18T21:47:25.000Z"
+    "since": "2026-07-21T07:00:49.000Z"
   },
-  "releaseCount": 267,
+  "releaseCount": 268,
   "stableCount": 132,
   "latest": {
-    "tag": "v2026.10.5",
-    "version": "2026.10.5",
-    "publishedAt": "2026-10-18T21:47:25Z",
-    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.5"
+    "tag": "v2026.10.10-beta.3",
+    "version": "2026.10.10-beta.3",
+    "publishedAt": "2026-10-21T07:00:49Z",
+    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.10-beta.3"
   },
   "keywords": {
     "jacobKeywords": [
@@ -82,6 +82,1197 @@
     ]
   },
   "releases": [
+    {
+      "tag": "v2026.10.10-beta.3",
+      "version": "2026.10.10-beta.3",
+      "versionParts": {
+        "year": 2026,
+        "month": 10,
+        "patch": 10,
+        "suffix": "beta.3"
+      },
+      "name": "openclaw 2026.10.10-beta.3",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.10-beta.3",
+      "apiUrl": "https://api.github.com/repos/openclaw/openclaw/releases/419211360",
+      "publishedAt": "2026-10-21T07:00:49Z",
+      "createdAt": "2026-10-21T04:57:26Z",
+      "prerelease": true,
+      "draft": false,
+      "bodyExcerpt": "2026.10.10-beta.3 Highlights - Windows reliability: restore fresh state initialization and Gateway startup, hide SQLite helper windows during app updates, and make forced Gateway reinstalls tolerate launcher timestamp settling. (176194, 174969, 176174, 176945; related 176111, 174906, 176163, and 176872) Thanks @skyzhao1223, @RomneyDa, @easyteacher, @throwingbones, @tjarrau-dev, and @cnnceart. - Upgrade recovery: converge app-owned plugins to the upgraded core version, restore affected agent stor",
+      "summary": {
+        "title": "openclaw 2026.10.10-beta.3",
+        "headline": "Windows reliability: restore fresh state initialization and Gateway startup, hide SQLite helper windows during app updates, and make forced Gateway reinstalls tolerate launcher timestamp settling. (176194, 174969, 176174, 176945; related 176111, 174906, 176163, and 176872) Thanks @skyzhao1223, @RomneyDa, @easyteacher, @throwingbones, @tjarrau-dev, and @cnnceart.",
+        "importance": "routine",
+        "score": 196,
+        "topItems": [
+          {
+            "section": "Highlights",
+            "text": "Windows reliability: restore fresh state initialization and Gateway startup, hide SQLite helper windows during app updates, and make forced Gateway reinstalls tolerate launcher timestamp settling. (176194, 174969, 176174, 176945; related 176111, 174906, 176163, and 176872) Thanks @skyzhao1223, @RomneyDa, @easyteacher, @throwingbones, @tjarrau-dev, and @cnnceart.",
+            "score": 21,
+            "labels": [
+              "platform",
+              "relevant",
+              "quality"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [
+                "gateway/service"
+              ],
+              "relevant": [
+                "gateway"
+              ],
+              "quality": [
+                "reliability"
+              ]
+            }
+          },
+          {
+            "section": "Highlights",
+            "text": "Upgrade recovery: converge app-owned plugins to the upgraded core version, restore affected agent stores including held system agents after schema-changing updates, and scope migration rollback backups to the versioned tables being changed. (174257, 175007, 176783, 172671; related 174120 and 176669) Thanks @RomneyDa, @kazuyuki-eguchi, and @PennyVibe.",
+            "score": 25,
+            "labels": [
+              "platform"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [
+                "migration",
+                "config/schema"
+              ],
+              "relevant": [],
+              "quality": []
+            }
+          }
+        ],
+        "reasons": [
+          "matches your setup: gateway, sessions, codex/acp, config/update, tools/exec, memory, telegram",
+          "platform change signals: gateway/service, migration, config/schema, plugin registry, channel/platform",
+          "quality/reliability: reliability, fix, diagnostics, fallback/retry, ux/ui"
+        ],
+        "filterLabels": [],
+        "labelItemCounts": {
+          "security": 0,
+          "platform": 5,
+          "relevant": 11,
+          "quality": 15
+        },
+        "hitCounts": {
+          "security": 0,
+          "platform": 5,
+          "relevant": 7,
+          "quality": 5
+        }
+      },
+      "items": [
+        {
+          "section": "Highlights",
+          "text": "Windows reliability: restore fresh state initialization and Gateway startup, hide SQLite helper windows during app updates, and make forced Gateway reinstalls tolerate launcher timestamp settling. (176194, 174969, 176174, 176945; related 176111, 174906, 176163, and 176872) Thanks @skyzhao1223, @RomneyDa, @easyteacher, @throwingbones, @tjarrau-dev, and @cnnceart.",
+          "score": 21,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [
+              "gateway"
+            ],
+            "quality": [
+              "reliability"
+            ]
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Upgrade recovery: converge app-owned plugins to the upgraded core version, restore affected agent stores including held system agents after schema-changing updates, and scope migration rollback backups to the versioned tables being changed. (174257, 175007, 176783, 172671; related 174120 and 176669) Thanks @RomneyDa, @kazuyuki-eguchi, and @PennyVibe.",
+          "score": 25,
+          "labels": [
+            "platform"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "migration",
+              "config/schema"
+            ],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Agent state: concurrent initialization can no longer let two agents claim ownership of the same agent database. (174251)",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Codex and native apps: previews no longer block replies after a context refresh, session replies resume after native child recovery, bound Codex history survives app-server restarts, and native app messages send again after reconnecting. (177716, 177564, 172705, 171528) Thanks @jjjhenriksen and @RomneyDa.",
+          "score": 12,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "sessions",
+              "codex/acp"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Background tasks: completions are no longer dropped when the config changes mid-turn. (169529; related 169054) Thanks @wangmiao0668000666, @RomneyDa, and @Oldrich333.",
+          "score": 6,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "config/update"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Discord: restore native slash commands in channels and threads. Thanks @montrellcruse and @RomneyDa.",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Agents: keep the prompt cache when a rate-limited run retries, and preserve steering messages that arrive without an explicit target. Thanks @montrellcruse, @RomneyDa, and @obviyus.",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Cron/CLI continuity: preserve CLI chat sessions across cron announce wakes instead of resetting their provider session. (176218; related 176208) Thanks @eliavb43 and @RomneyDa.",
+          "score": 7,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "sessions"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "CLI tools: invalidate reused CLI sessions when the available tool catalog changes, restoring tools such as exec after Gateway restarts and preventing stale catalogs from reaching spawned agents. (176577; related 175670) Thanks @RomneyDa, @jackylecalvez2, and @vincentkoc.",
+          "score": 31,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service",
+              "plugin registry"
+            ],
+            "relevant": [
+              "gateway",
+              "sessions",
+              "tools/exec"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "GMI: omit unsupported reasoningeffort values on GPT-5.6 tool turns so the provider no longer rejects them with HTTP 400. (176709) Thanks @RomneyDa.",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Windows updates: recognize Scheduled Task permission denials in every Windows display language, keep Windows plugin dependency links across Doctor phases, and clean up backup scratch directories without EPERM failures. (178624, 178219, 169672, 176836; related 176743) Thanks @RomneyDa, @n572770, @xutongxue233, and @WG-Mojo.",
+          "score": 9,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "config/update"
+            ],
+            "quality": [
+              "fix",
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Update and Doctor: update finalization honors TMPDIR for disposable copies, Doctor suggests a retry instead of a restore after snapshot contention, and repeated Docker container restarts no longer take a full Doctor pre-repair capture each time. (178009, 176779, 173711; related 176750 and 173564) Thanks @RomneyDa, @WG-Mojo, and @8bitsforge.",
+          "score": 12,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "config/update"
+            ],
+            "quality": [
+              "fix",
+              "diagnostics",
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Memory: cold Gateway starts no longer open every memory index (restoring 2026.10.4 startup memory), memory files keep indexing after plugin reloads, and plugin reloads no longer time out during slow dreaming cleanup. (174718, 167756, 169945) Thanks @RomneyDa and @Stronggenetics.",
+          "score": 20,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [
+              "gateway",
+              "memory"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Nodes: synchronous node exec output is no longer repeated as a separate Exec finished wake after the waiting caller already received it. (164511) Thanks @holgergruenhagen and @obviyus.",
+          "score": 8,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "tools/exec"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "macOS: long exec commands through the macOS app node no longer fail after 20 seconds. (172117; related 139706) Thanks @holgergruenhagen, @RomneyDa, @ylcn91, and @Colton-Harris.",
+          "score": 8,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "tools/exec"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Control UI: offer desktop setup instead of Retry when Host Desktop is off, model pickers refresh when the catalog changes mid-read, and locale refresh works again after adding a source-only locale. (177888, 174812, 172689; related 174368) Thanks @etzelm, @RomneyDa, and @hannesrudolph.",
+          "score": 20,
+          "labels": [
+            "platform",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "plugin registry",
+              "channel/platform"
+            ],
+            "relevant": [],
+            "quality": [
+              "fix",
+              "fallback/retry",
+              "ux/ui"
+            ]
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 176194 Related 176111. Thanks @skyzhao1223 and @RomneyDa and @easyteacher.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 174969 Related 174906. Thanks @RomneyDa and @throwingbones.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 174257 Related 174120. Thanks @RomneyDa and @kazuyuki-eguchi.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 176174 Related 176163. Thanks @RomneyDa and @tjarrau-dev.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 175007 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 176783 Related 176669. Thanks @RomneyDa and @PennyVibe.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 176945 Related 176872. Thanks @RomneyDa and @cnnceart.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 176218 Related 176208. Thanks @eliavb43 and @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 176577 Related 175670. Thanks @RomneyDa and @jackylecalvez2.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 176709 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 172671 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 177355 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 177159 Thanks @vincentkoc and @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 177586 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 175872 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 177648 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 177725 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 177752 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 177813 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 177851 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 172117 Related 139706. Thanks @holgergruenhagen and @RomneyDa and @ylcn91 and @Colton-Harris.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 177564 Thanks @jjjhenriksen and @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 177913 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 169945 Thanks @Stronggenetics and @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 169529 Related 169054. Thanks @wangmiao0668000666 and @RomneyDa and @Oldrich333.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 173711 Related 173564. Thanks @RomneyDa and @8bitsforge.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 172661 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 170297 Related 170291. Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 172689 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 172745 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 172668 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 172705 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 173615 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 173656 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 173465 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 173781 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 173813 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 174718 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 167756 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 174812 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 177716 Thanks @jjjhenriksen and @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 177888 Related 174368. Thanks @etzelm and @RomneyDa and @hannesrudolph.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 171528 Thanks @jjjhenriksen and @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 178009 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 176836 Related 176743. Thanks @xutongxue233 and @RomneyDa and @WG-Mojo.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 176779 Related 176750. Thanks @RomneyDa and @WG-Mojo.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 169672 Thanks @n572770 and @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 178219 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 178624 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 174251",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 178231 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 164511 Thanks @holgergruenhagen and @obviyus.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 178862 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "npm package: https://www.npmjs.com/package/openclaw/v/2026.10.10-beta.3",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "registry tarball: https://registry.npmjs.org/openclaw/-/openclaw-2026.10.10-beta.3.tgz",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "integrity: sha512-OGKys4zxLjYeZny0aHZK3k1VBoZC/5MyqT+lCk6Pzw52QxkqtAyKtyu/cu4GfcelbRZHOCo3yJZvaYE7Ua9ISA==",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "release SHA: 15dffe5258a93c3d9c5dfd0a2b2de9989ebe7e14",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "full release CI report: https://github.com/openclaw/releases/blob/main/evidence/2026.10.10-beta.3/release-evidence.md",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "release publish: https://github.com/openclaw/openclaw/actions/runs/39555832807",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "npm preflight: https://github.com/openclaw/openclaw/actions/runs/39529505653",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "full release validation: https://github.com/openclaw/openclaw/actions/runs/39528806396",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "plugin npm publish: https://github.com/openclaw/openclaw/actions/runs/39557095517",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "plugin ClawHub publish: no normal OIDC candidates",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "plugin ClawHub bootstrap: not needed",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "OpenClaw npm publish: https://github.com/openclaw/openclaw/actions/runs/39553212507/attempts/1",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "npm Telegram beta E2E: not supplied",
+          "score": 5,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "telegram"
+            ],
+            "quality": []
+          }
+        }
+      ]
+    },
     {
       "tag": "v2026.10.5",
       "version": "2026.10.5",
