@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-28T16:06:46.800Z",
+  "generatedAt": "2026-10-29T16:12:47.028Z",
   "source": {
     "owner": "openclaw",
     "repo": "openclaw",
@@ -9,15 +9,15 @@
   },
   "defaults": {
     "months": 3,
-    "since": "2026-07-27T05:39:34.000Z"
+    "since": "2026-07-29T15:54:35.000Z"
   },
-  "releaseCount": 274,
-  "stableCount": 137,
+  "releaseCount": 275,
+  "stableCount": 138,
   "latest": {
-    "tag": "v2026.10.10-beta.4",
-    "version": "2026.10.10-beta.4",
-    "publishedAt": "2026-10-27T05:39:34Z",
-    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.10-beta.4"
+    "tag": "v2026.10.9",
+    "version": "2026.10.9",
+    "publishedAt": "2026-10-29T15:54:35Z",
+    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.9"
   },
   "keywords": {
     "jacobKeywords": [
@@ -82,6 +82,1224 @@
     ]
   },
   "releases": [
+    {
+      "tag": "v2026.10.9",
+      "version": "2026.10.9",
+      "versionParts": {
+        "year": 2026,
+        "month": 10,
+        "patch": 9,
+        "suffix": ""
+      },
+      "name": "openclaw 2026.10.9",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.9",
+      "apiUrl": "https://api.github.com/repos/openclaw/openclaw/releases/428030713",
+      "publishedAt": "2026-10-29T15:54:35Z",
+      "createdAt": "2026-10-29T14:12:29Z",
+      "prerelease": false,
+      "draft": false,
+      "bodyExcerpt": "2026.10.9 Highlights - Patch vulnerable runtime dependencies: fast-uri 4.2.3 rejects malformed URI schemes and hosts in MCP schema validation, oversized Zod collections are rejected early in A2UI and the Discord embedded app SDK, IMAP sender parsing uses nodemailer 10.1.4 so spoofed senders cannot pass the sender token gate, and Microsoft Teams uses patched MSAL Node 7.1.1. (187294) Thanks @RomneyDa. - Apply tools.fs.workspaceOnly to Gateway-built tools, so delegate changes still require approva",
+      "summary": {
+        "title": "openclaw 2026.10.9",
+        "headline": "Patch vulnerable runtime dependencies: fast-uri 4.2.3 rejects malformed URI schemes and hosts in MCP schema validation, oversized Zod collections are rejected early in A2UI and the Discord embedded app SDK, IMAP sender parsing uses nodemailer 10.1.4 so spoofed senders cannot pass the sender token gate, and Microsoft Teams uses patched MSAL Node 7.1.1. (187294) Thanks @RomneyDa.",
+        "importance": "medium",
+        "score": 233,
+        "topItems": [
+          {
+            "section": "Highlights",
+            "text": "Patch vulnerable runtime dependencies: fast-uri 4.2.3 rejects malformed URI schemes and hosts in MCP schema validation, oversized Zod collections are rejected early in A2UI and the Discord embedded app SDK, IMAP sender parsing uses nodemailer 10.1.4 so spoofed senders cannot pass the sender token gate, and Microsoft Teams uses patched MSAL Node 7.1.1. (187294) Thanks @RomneyDa.",
+            "score": 38,
+            "labels": [
+              "security",
+              "platform"
+            ],
+            "hits": {
+              "security": [
+                "vulnerability"
+              ],
+              "platform": [
+                "config/schema",
+                "runtime/protocol"
+              ],
+              "relevant": [],
+              "quality": []
+            }
+          },
+          {
+            "section": "Highlights",
+            "text": "Apply tools.fs.workspaceOnly to Gateway-built tools, so delegate changes still require approval and media tools stay inside the workspace. (185094) Thanks @eleqtrizit, @RomneyDa, and @shakkernerd.",
+            "score": 25,
+            "labels": [
+              "platform",
+              "relevant"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [
+                "gateway/service"
+              ],
+              "relevant": [
+                "gateway",
+                "tools/exec",
+                "media/pdf"
+              ],
+              "quality": []
+            }
+          },
+          {
+            "section": "Highlights",
+            "text": "Keep live credentials out of MCP CLI inspection and mask Google OAuth client secrets in logs. (180321, 180308, 183193) Thanks @brandon-julio-t, @wr-web, @LeizhenZhang, and @RomneyDa.",
+            "score": 15,
+            "labels": [
+              "platform",
+              "quality"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [
+                "runtime/protocol"
+              ],
+              "relevant": [],
+              "quality": [
+                "diagnostics"
+              ]
+            }
+          },
+          {
+            "section": "Highlights",
+            "text": "Make failed update rollbacks safe: Git-source rollbacks preserve operator edits instead of resetting the checkout, and npm rollbacks retry transient Windows denials and report the exact move that restores a bootable install instead of stranding the package root. (185201, 184887, 185160, 184889) Thanks @wr-web, @syxscott, @LiuwqGit, @shakkernerd, and @RomneyDa.",
+            "score": 8,
+            "labels": [
+              "quality"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [],
+              "relevant": [],
+              "quality": [
+                "fallback/retry"
+              ]
+            }
+          }
+        ],
+        "reasons": [
+          "security-sensitive wording",
+          "matches your setup: gateway, tools/exec, media/pdf, sessions, codex/acp, telegram",
+          "platform change signals: config/schema, runtime/protocol, gateway/service, migration, channel/platform",
+          "quality/reliability: diagnostics, fallback/retry, fix"
+        ],
+        "filterLabels": [
+          "security"
+        ],
+        "labelItemCounts": {
+          "security": 1,
+          "platform": 9,
+          "relevant": 8,
+          "quality": 14
+        },
+        "hitCounts": {
+          "security": 1,
+          "platform": 5,
+          "relevant": 6,
+          "quality": 3
+        }
+      },
+      "items": [
+        {
+          "section": "Highlights",
+          "text": "Patch vulnerable runtime dependencies: fast-uri 4.2.3 rejects malformed URI schemes and hosts in MCP schema validation, oversized Zod collections are rejected early in A2UI and the Discord embedded app SDK, IMAP sender parsing uses nodemailer 10.1.4 so spoofed senders cannot pass the sender token gate, and Microsoft Teams uses patched MSAL Node 7.1.1. (187294) Thanks @RomneyDa.",
+          "score": 38,
+          "labels": [
+            "security",
+            "platform"
+          ],
+          "hits": {
+            "security": [
+              "vulnerability"
+            ],
+            "platform": [
+              "config/schema",
+              "runtime/protocol"
+            ],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Apply tools.fs.workspaceOnly to Gateway-built tools, so delegate changes still require approval and media tools stay inside the workspace. (185094) Thanks @eleqtrizit, @RomneyDa, and @shakkernerd.",
+          "score": 25,
+          "labels": [
+            "platform",
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [
+              "gateway",
+              "tools/exec",
+              "media/pdf"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Keep live credentials out of MCP CLI inspection and mask Google OAuth client secrets in logs. (180321, 180308, 183193) Thanks @brandon-julio-t, @wr-web, @LeizhenZhang, and @RomneyDa.",
+          "score": 15,
+          "labels": [
+            "platform",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [],
+            "quality": [
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Make failed update rollbacks safe: Git-source rollbacks preserve operator edits instead of resetting the checkout, and npm rollbacks retry transient Windows denials and report the exact move that restores a bootable install instead of stranding the package root. (185201, 184887, 185160, 184889) Thanks @wr-web, @syxscott, @LiuwqGit, @shakkernerd, and @RomneyDa.",
+          "score": 8,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Recover intact agent databases and stale full-text indexes after SQLite tokenizer changes, including update snapshots. (176234, 176220, 176833, 181206) Thanks @ndakota79 and @RomneyDa.",
+          "score": 5,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Repair publication-complete updates after a remount while retaining the original launcher and sealed recovery helper. (186557, 186527) Thanks @ericcaiwx-star, @sennyhoney, and @RomneyDa.",
+          "score": 8,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Migrate large transcript archives without exceeding Node.js string limits. (170853, 170847) Thanks @iamonlv426 and @RomneyDa.",
+          "score": 17,
+          "labels": [
+            "platform"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "migration"
+            ],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Allow agents to recover after a full disk once space becomes available, without requiring a restart. (176902) Thanks @RomneyDa.",
+          "score": 5,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Resolve local media in Codex steering messages from the session's own workspace instead of the agent's default workspace. (181528) Thanks @RomneyDa.",
+          "score": 15,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "sessions",
+              "codex/acp",
+              "media/pdf"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Report uncertain process cleanup from buffered commands, such as local CLI speech providers, instead of presenting it as an ordinary command failure. (184270, 184237) Thanks @shakkernerd and @RomneyDa.",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Keep reapproved node connections alive by publishing the approval with its committed pairing facts before the request resumes. Thanks @RomneyDa.",
+          "score": 13,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "channel/platform"
+            ],
+            "relevant": [
+              "tools/exec"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Recover stopped Gateways when service activation cannot be verified; retain untouched-recovery behavior in Windows triage. (172784, 181577, 181698) Thanks @SMF12138 and @RomneyDa.",
+          "score": 10,
+          "labels": [
+            "platform",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Avoid uninstalling a Gateway service during a passive macOS stop when no service is installed. (181257) Thanks @shakkernerd, @LiuwqGit, @eleqtrizit, @syxscott, and @RomneyDa.",
+          "score": 15,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [
+              "gateway"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Recover CLI Node runtimes when launched from the filesystem root, including launchd jobs. (178112, 177739) Thanks @downingkeys and @RomneyDa.",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Start new ACP sessions in the requested working directory instead of the default workspace. (176852, 123557) Thanks @yinx65588-boop, @crappier, and @RomneyDa.",
+          "score": 12,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "sessions",
+              "codex/acp"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Prevent overlapping model refreshes from failing requests. (179144) Thanks @RomneyDa.",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Honor an explicit SSH port 22 in openclaw gateway probe --ssh instead of the alias's configured port. (171092) Thanks @zhangguiping-xydt, @obviyus, and @RomneyDa.",
+          "score": 15,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [
+              "gateway"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Keep skill metadata such as icons and homepages when an inline YAML metadata value has a trailing comment. (171224) Thanks @zhangguiping-xydt, @Takhoffman, and @RomneyDa.",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Show provider-ignored options in openclaw infer video generate text and JSON output. (171172) Thanks @ly85206559, @obviyus, and @RomneyDa.",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 185538 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 170853 Related 170847. Thanks @iamonlv426 and @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 185201 Related 184887. Thanks @wr-web and @RomneyDa and @syxscott.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 176902 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 176852 Related 123557. Thanks @yinx65588-boop and @RomneyDa and @crappier.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 178112 Related 177739. Thanks @RomneyDa and @downingkeys.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 179144 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 180321 Related 180308. Thanks @brandon-julio-t and @wr-web and @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 183193 Thanks @LeizhenZhang and @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 176833 Related 176220. Thanks @RomneyDa and @ndakota79.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 181698 Related 181577. Thanks @RomneyDa and @SMF12138.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 172784 Related 181577. Thanks @RomneyDa and @SMF12138.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 185541 Related 181577. Thanks @RomneyDa and @SMF12138.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 176234 Related 176220. Thanks @RomneyDa and @ndakota79.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 181206 Related 176220. Thanks @RomneyDa and @ndakota79.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 186557 Related 186527. Thanks @ericcaiwx-star and @RomneyDa and @sennyhoney.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 181257 Related 184889, 184237. Thanks @shakkernerd and @RomneyDa and @LiuwqGit and @eleqtrizit and @syxscott.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 171224 Thanks @zhangguiping-xydt and @Takhoffman and @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 171172 Thanks @ly85206559 and @RomneyDa and @obviyus.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 171092 Thanks @zhangguiping-xydt and @RomneyDa and @obviyus.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 181528 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 185692 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 179085 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 179097 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 179104 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 179125 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 179077 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 179112 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 179109 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 179083 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 179093 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 179079 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 180250 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 180238 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 180257 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 180245 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 180249 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 185160 Related 184889. Thanks @LiuwqGit and @RomneyDa and @shakkernerd and @syxscott.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 187259 Thanks @RomneyDa and @shakkernerd.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 182010 Thanks @RomneyDa and @shakkernerd.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 184270 Related 184237. Thanks @shakkernerd and @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 185094 Thanks @eleqtrizit and @RomneyDa and @shakkernerd.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 187412 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 187430 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 187459 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 187487 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 187294 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 187496 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "npm package: https://www.npmjs.com/package/openclaw/v/2026.10.9",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "registry tarball: https://registry.npmjs.org/openclaw/-/openclaw-2026.10.9.tgz",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "integrity: sha512-KbIl0/7an0/nKBo92FnJg7LFcEpFVQyOgSRfHNE9yxELg1Ebql7BmBsdLL+1dDOLZnQtuwjt6Hy45CCrmYdJNA==",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "release SHA: 8b18b5578f66eab1501cba4cef2310d88bfb9a41",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "full release CI report: https://github.com/openclaw/releases/blob/main/evidence/2026.10.9/release-evidence.md",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "release publish: https://github.com/openclaw/openclaw/actions/runs/40896462808",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "npm preflight: https://github.com/openclaw/openclaw/actions/runs/40863629738",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "full release validation: https://github.com/openclaw/openclaw/actions/runs/40862370666",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "plugin npm publish: https://github.com/openclaw/openclaw/actions/runs/40898170961",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "plugin ClawHub submission: https://github.com/openclaw/openclaw/actions/runs/40898180399; public finalization and exact artifact verification follow terminal release-parent completion",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "plugin ClawHub bootstrap: not needed",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "OpenClaw npm publish: https://github.com/openclaw/openclaw/actions/runs/40899799314",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "npm Telegram beta E2E: not supplied",
+          "score": 5,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "telegram"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "Android APK: skipped — apps/android/version.json is 2026.8.2, release train is 2026.10.9; run pnpm android:version:pin -- --from-gateway before the next tag.",
+          "score": 12,
+          "labels": [
+            "platform",
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [
+              "gateway"
+            ],
+            "quality": []
+          }
+        }
+      ]
+    },
     {
       "tag": "v2026.10.10-beta.4",
       "version": "2026.10.10-beta.4",
