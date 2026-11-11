@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-10T17:05:39.212Z",
+  "generatedAt": "2026-11-11T17:13:21.494Z",
   "source": {
     "owner": "openclaw",
     "repo": "openclaw",
@@ -9,15 +9,15 @@
   },
   "defaults": {
     "months": 3,
-    "since": "2026-08-08T19:31:04.000Z"
+    "since": "2026-08-10T18:53:07.000Z"
   },
-  "releaseCount": 281,
-  "stableCount": 142,
+  "releaseCount": 283,
+  "stableCount": 144,
   "latest": {
-    "tag": "v2026.11.2",
-    "version": "2026.11.2",
-    "publishedAt": "2026-11-08T19:31:04Z",
-    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.11.2"
+    "tag": "v2026.11.3",
+    "version": "2026.11.3",
+    "publishedAt": "2026-11-10T18:53:07Z",
+    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.11.3"
   },
   "keywords": {
     "jacobKeywords": [
@@ -82,6 +82,2070 @@
     ]
   },
   "releases": [
+    {
+      "tag": "v2026.11.3",
+      "version": "2026.11.3",
+      "versionParts": {
+        "year": 2026,
+        "month": 11,
+        "patch": 3,
+        "suffix": ""
+      },
+      "name": "openclaw 2026.11.3",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.11.3",
+      "apiUrl": "https://api.github.com/repos/openclaw/openclaw/releases/440627284",
+      "publishedAt": "2026-11-10T18:53:07Z",
+      "createdAt": "2026-11-10T14:30:44Z",
+      "prerelease": false,
+      "draft": false,
+      "bodyExcerpt": "2026.11.3 Highlights - Private task results: Keep private subagent completions out of streamed chat replies. (188490) Thanks @fuller-stack-dev. - Reliable child-task handoffs: Allow a parent to hand off to replacement work after cancelling a child, without leaving the cancelled child's completion receipt blocking the handoff. (178893; related 178565) Thanks @brianmcguire and @letsc4. - Visible tool failures: Report unanswered tool failures instead of silently ending a user-addressed turn as a su",
+      "summary": {
+        "title": "openclaw 2026.11.3",
+        "headline": "Private task results: Keep private subagent completions out of streamed chat replies. (188490) Thanks @fuller-stack-dev.",
+        "importance": "routine",
+        "score": 195,
+        "topItems": [
+          {
+            "section": "Highlights",
+            "text": "Private task results: Keep private subagent completions out of streamed chat replies. (188490) Thanks @fuller-stack-dev.",
+            "score": 9,
+            "labels": [
+              "relevant"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [],
+              "relevant": [
+                "sessions"
+              ],
+              "quality": []
+            }
+          },
+          {
+            "section": "Highlights",
+            "text": "Reliable child-task handoffs: Allow a parent to hand off to replacement work after cancelling a child, without leaving the cancelled child's completion receipt blocking the handoff. (178893; related 178565) Thanks @brianmcguire and @letsc4.",
+            "score": 9,
+            "labels": [
+              "quality"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [],
+              "relevant": [],
+              "quality": [
+                "reliability"
+              ]
+            }
+          },
+          {
+            "section": "Highlights",
+            "text": "Visible tool failures: Report unanswered tool failures instead of silently ending a user-addressed turn as a success. (182458; related 99645) Authored by @steipete. Thanks @rdleclerc.",
+            "score": 5,
+            "labels": [],
+            "hits": {
+              "security": [],
+              "platform": [],
+              "relevant": [],
+              "quality": []
+            }
+          },
+          {
+            "section": "Highlights",
+            "text": "Bounded authentication: Stop stalled provider authentication at the run deadline and propagate cancellation through authentication work. (189144) Thanks @amittell.",
+            "score": 5,
+            "labels": [],
+            "hits": {
+              "security": [],
+              "platform": [],
+              "relevant": [],
+              "quality": []
+            }
+          }
+        ],
+        "reasons": [
+          "security-sensitive wording",
+          "matches your setup: sessions, gateway, memory, tools/exec, telegram",
+          "platform change signals: gateway/service, runtime/protocol, channel/platform",
+          "quality/reliability: reliability, performance, fix, diagnostics, fallback/retry"
+        ],
+        "filterLabels": [],
+        "labelItemCounts": {
+          "security": 2,
+          "platform": 6,
+          "relevant": 9,
+          "quality": 15
+        },
+        "hitCounts": {
+          "security": 3,
+          "platform": 3,
+          "relevant": 5,
+          "quality": 5
+        }
+      },
+      "items": [
+        {
+          "section": "Highlights",
+          "text": "Private task results: Keep private subagent completions out of streamed chat replies. (188490) Thanks @fuller-stack-dev.",
+          "score": 9,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "sessions"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Reliable child-task handoffs: Allow a parent to hand off to replacement work after cancelling a child, without leaving the cancelled child's completion receipt blocking the handoff. (178893; related 178565) Thanks @brianmcguire and @letsc4.",
+          "score": 9,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "reliability"
+            ]
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Visible tool failures: Report unanswered tool failures instead of silently ending a user-addressed turn as a success. (182458; related 99645) Authored by @steipete. Thanks @rdleclerc.",
+          "score": 5,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Bounded authentication: Stop stalled provider authentication at the run deadline and propagate cancellation through authentication work. (189144) Thanks @amittell.",
+          "score": 5,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Sandboxed image access: Keep required-sandbox image previews inside allowed folders, even in Full Access mode, while preserving explicit administrator image allowances. (176203) Thanks @shakkernerd.",
+          "score": 5,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Verified workspace connections: Preserve saved node certificate pins when an empty fingerprint is supplied, and verify workspace-transfer certificates before sending credentials or data. (125646, 190002) Thanks @wanyongstar and @avelev99.",
+          "score": 5,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Faster, responsive Gateway: Reduce startup module-file loading overhead and avoid stalls when abort-command detection encounters long punctuation runs. (192217, 184433) Thanks @karkarl, @RomneyDa, @LeizhenZhang, and @obviyus.",
+          "score": 21,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [
+              "gateway"
+            ],
+            "quality": [
+              "performance"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Credential isolation: Keep reused and cached plugin results scoped to their connection credentials, and keep other plugins' transport hooks on the provider's origin. (178444, 177974, 189423) Authored by @steipete. Thanks @obviyus.",
+          "score": 10,
+          "labels": [
+            "platform",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Search and memory credentials: Keep Firecrawl search and scrape keys with their scoped endpoints and embedding credentials with their destination. (190706, 184966) Thanks @zhangguiping-xydt and @eleqtrizit.",
+          "score": 8,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "memory"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Credential redaction: Redact inline environment credentials from configuration reads and reflected search credentials from Exa errors. (190618, 178745) Authored by @steipete. Thanks @yetval.",
+          "score": 11,
+          "labels": [
+            "security",
+            "quality"
+          ],
+          "hits": {
+            "security": [
+              "secret",
+              "redaction"
+            ],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Child-process environments: Prevent managed Signal daemons and bundled language servers from inheriting unrelated Gateway secrets. (179198, 179415) Thanks @VACInc.",
+          "score": 15,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [
+              "gateway"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Authentication errors: Surface credential-read failures rather than treating them as missing credentials, and reject explicitly selected auth profiles belonging to incompatible providers. (173970, 181597) Authored by @steipete. Thanks @vincentkoc.",
+          "score": 11,
+          "labels": [
+            "security",
+            "quality"
+          ],
+          "hits": {
+            "security": [
+              "auth",
+              "secret"
+            ],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Channel safety: Keep incoming Twitch IRC content out of parser error logs and require explicit request IDs when multiple Tlon approvals are pending. (174552, 186243) Authored by @steipete. Thanks @mmaps.",
+          "score": 16,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "channel/platform"
+            ],
+            "relevant": [
+              "tools/exec"
+            ],
+            "quality": [
+              "fix",
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Scheduled jobs: Handle queued cron storage failures without exiting the Gateway, and clear one-shot cleanup when a job becomes recurring. (175678, 168985) Authored by @steipete. Thanks @yxshee, @wangmiao0668000666, and @obviyus.",
+          "score": 15,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [
+              "gateway"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Updates: Let profile-backed updates recognize their own maintenance lock and preserve cancellation when ledger writes are deferred. (177792, 187998) Thanks @GrahamMcBain and @vincentkoc.",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Update recovery: Recover safely when the initial package-presence check times out, requiring a fresh valid directory identity before replacement and retaining rollback to the original package. (181906) Authored by @steipete.",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Anthropic usage caps: Recognize exhausted plural usage-limit errors without spending the transient rate-limit retry budget. (176186; related 176179) Thanks @sunlit-deng and @blue-dot-1.",
+          "score": 6,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix",
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Terminal sessions: Forward /reset soft to the Gateway instead of hard-resetting the session. (172431) Thanks @yetval and @obviyus.",
+          "score": 19,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [
+              "gateway",
+              "sessions"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Git recovery: Preserve uncertain command failures during Git repair rather than treating an unconfirmed operation as successful. (176006) Authored by @steipete.",
+          "score": 6,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix",
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Memory provider selection: Accept mixed-case none and auto provider values. (186310) Authored by @steipete. Thanks @sagealice2002-dotcom.",
+          "score": 8,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "memory"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 192217 Thanks @karkarl and @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 172887 Authored by @steipete.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 184433 Thanks @LeizhenZhang and @obviyus.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 125646 Thanks @wanyongstar.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 190002 Thanks @avelev99.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 176203 Thanks @shakkernerd.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 174552 Authored by @steipete.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 179198 Thanks @VACInc.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 186243 Thanks @mmaps.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 190618 Thanks @yetval.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 175678 Thanks @yxshee, @wangmiao0668000666, and @obviyus.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 168985 Authored by @steipete.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 188490 Thanks @fuller-stack-dev.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 177792 Thanks @GrahamMcBain.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 176006 Authored by @steipete.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 189423 Thanks @obviyus.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 179415 Thanks @VACInc.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 190706 Thanks @zhangguiping-xydt.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 184966 Thanks @eleqtrizit.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 186310 Authored by @steipete. Thanks @sagealice2002-dotcom.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 187998 Thanks @vincentkoc.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 172431 Thanks @yetval and @obviyus.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 178444 Authored by @steipete.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 173970 Authored by @steipete.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 181597 Thanks @vincentkoc.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 195140 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 177974 Authored by @steipete.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 178745 Authored by @steipete.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 182458 Related 99645. Authored by @steipete. Thanks @rdleclerc.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 184791 Thanks @hannesrudolph.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 189144 Thanks @amittell.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 178893 Related 178565. Thanks @brianmcguire and @letsc4.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 181906 Authored by @steipete.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 176186 Related 176179. Thanks @sunlit-deng and @blue-dot-1.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "npm package: https://www.npmjs.com/package/openclaw/v/2026.11.3",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "registry tarball: https://registry.npmjs.org/openclaw/-/openclaw-2026.11.3.tgz",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "integrity: sha512-FBq/q0TCaoA2b7qfdV0q81fHhI6RBB1zAQfJQREc1u2TlK5khVgCUsAlXskLWthyVqRz5PWEj+oOmfYgK58dHg==",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "release SHA: 847611dcaa3bf0e2783335f961dd1fd0580e4d9f",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "full release CI report: https://github.com/openclaw/releases/blob/main/evidence/2026.11.3/release-evidence.md",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "release publish: https://github.com/openclaw/openclaw/actions/runs/42873705304",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "npm preflight: https://github.com/openclaw/openclaw/actions/runs/42805216493",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "full release validation: https://github.com/openclaw/openclaw/actions/runs/42804576583",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "plugin npm publish: https://github.com/openclaw/openclaw/actions/runs/42876183245",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "plugin ClawHub publish: no normal OIDC candidates",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "plugin ClawHub bootstrap: not needed",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "OpenClaw npm publish: https://github.com/openclaw/openclaw/actions/runs/42858513909/attempts/2",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "npm Telegram beta E2E: not supplied",
+          "score": 5,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "telegram"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "Android APK: monitor the native qualification and publication jobs at https://github.com/openclaw/openclaw/actions/runs/42873705304",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        }
+      ]
+    },
+    {
+      "tag": "v2026.9.37",
+      "version": "2026.9.37",
+      "versionParts": {
+        "year": 2026,
+        "month": 9,
+        "patch": 37,
+        "suffix": ""
+      },
+      "name": "openclaw 2026.9.37",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.37",
+      "apiUrl": "https://api.github.com/repos/openclaw/openclaw/releases/440808653",
+      "publishedAt": "2026-11-10T20:42:54Z",
+      "createdAt": "2026-11-10T12:46:01Z",
+      "prerelease": false,
+      "draft": false,
+      "bodyExcerpt": "This is a gateway-only extended-stable release, published from a retired maintenance line by explicit maintainer decision. This release is OpenClaw from the end of September 2026, plus critical security updates, reliability and performance fixes, and features like new model support. The latest version of OpenClaw at the time of this release is 2026.11.2 2026.9.37 Highlights - Private inspection stays private: paired-node photos and screenshots are no longer automatically attached to replies, and",
+      "summary": {
+        "title": "openclaw 2026.9.37",
+        "headline": "Private inspection stays private: paired-node photos and screenshots are no longer automatically attached to replies, and explicit media-read denials are honored when preparing reply attachments. (174814, 184964) Thanks @eleqtrizit.",
+        "importance": "routine",
+        "score": 246,
+        "topItems": [
+          {
+            "section": "Highlights",
+            "text": "Private inspection stays private: paired-node photos and screenshots are no longer automatically attached to replies, and explicit media-read denials are honored when preparing reply attachments. (174814, 184964) Thanks @eleqtrizit.",
+            "score": 8,
+            "labels": [
+              "relevant"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [],
+              "relevant": [
+                "media/pdf"
+              ],
+              "quality": []
+            }
+          },
+          {
+            "section": "Highlights",
+            "text": "Responsive replies and pages: long zero-width Telegram table cells and malformed plugin SVG transforms no longer stall the Gateway or browser page. (183217, 182674) Thanks @LeizhenZhang, @obviyus, and @SebTardif Authored by @steipete. Thanks @LeizhenZhang, @obviyus, and @SebTardif.",
+            "score": 27,
+            "labels": [
+              "platform",
+              "relevant"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [
+                "gateway/service"
+              ],
+              "relevant": [
+                "telegram",
+                "gateway",
+                "browser"
+              ],
+              "quality": []
+            }
+          },
+          {
+            "section": "Highlights",
+            "text": "Linked accounts survive resets: sessions keep their person-linked model account through /new, /reset, and idle or daily rollover. Fixes 179432. (179433) Thanks @masatohoshino Authored by @steipete. Thanks @masatohoshino.",
+            "score": 12,
+            "labels": [
+              "relevant",
+              "quality"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [],
+              "relevant": [
+                "sessions"
+              ],
+              "quality": [
+                "fix"
+              ]
+            }
+          },
+          {
+            "section": "Highlights",
+            "text": "Safer update recovery: interrupted snapshot writes preserve the previous rollback point, and profile-backed updates and Doctor maintenance no longer trip over their own maintenance ownership. (189946, 177792, 187104) Thanks @kaguranananana, @GrahamMcBain, and @RomneyDa Authored by @steipete. Thanks @kaguranananana, @GrahamMcBain, and @RomneyDa.",
+            "score": 11,
+            "labels": [
+              "relevant",
+              "quality"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [],
+              "relevant": [
+                "config/update"
+              ],
+              "quality": [
+                "diagnostics"
+              ]
+            }
+          }
+        ],
+        "reasons": [
+          "security-sensitive wording",
+          "matches your setup: media/pdf, telegram, gateway, browser, sessions, config/update, tools/exec, memory",
+          "platform change signals: gateway/service, channel/platform, runtime/protocol, deprecation",
+          "quality/reliability: fix, diagnostics, performance, fallback/retry, ux/ui, reliability"
+        ],
+        "filterLabels": [],
+        "labelItemCounts": {
+          "security": 1,
+          "platform": 7,
+          "relevant": 15,
+          "quality": 19
+        },
+        "hitCounts": {
+          "security": 3,
+          "platform": 4,
+          "relevant": 8,
+          "quality": 6
+        }
+      },
+      "items": [
+        {
+          "section": "Highlights",
+          "text": "Private inspection stays private: paired-node photos and screenshots are no longer automatically attached to replies, and explicit media-read denials are honored when preparing reply attachments. (174814, 184964) Thanks @eleqtrizit.",
+          "score": 8,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "media/pdf"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Responsive replies and pages: long zero-width Telegram table cells and malformed plugin SVG transforms no longer stall the Gateway or browser page. (183217, 182674) Thanks @LeizhenZhang, @obviyus, and @SebTardif Authored by @steipete. Thanks @LeizhenZhang, @obviyus, and @SebTardif.",
+          "score": 27,
+          "labels": [
+            "platform",
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [
+              "telegram",
+              "gateway",
+              "browser"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Linked accounts survive resets: sessions keep their person-linked model account through /new, /reset, and idle or daily rollover. Fixes 179432. (179433) Thanks @masatohoshino Authored by @steipete. Thanks @masatohoshino.",
+          "score": 12,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "sessions"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Safer update recovery: interrupted snapshot writes preserve the previous rollback point, and profile-backed updates and Doctor maintenance no longer trip over their own maintenance ownership. (189946, 177792, 187104) Thanks @kaguranananana, @GrahamMcBain, and @RomneyDa Authored by @steipete. Thanks @kaguranananana, @GrahamMcBain, and @RomneyDa.",
+          "score": 11,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "config/update"
+            ],
+            "quality": [
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Connections recover cleanly: channel accounts can recover after a manual stop times out, and ClickClack reconnects after silent network drops. Fixes 184852. (177444, 184853) Thanks @masatohoshino, @YangManBOBO, and @obviyus.",
+          "score": 13,
+          "labels": [
+            "platform",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "channel/platform"
+            ],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Windows state access works across path aliases: equivalent Windows paths preserve the same state ownership instead of falsely reporting offline maintenance. Fixes 176163. (176174) Thanks @tjarrau-dev Authored by @steipete. Thanks @tjarrau-dev.",
+          "score": 8,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Faster plugin admission: reuse native-reference validation within the same admission capture instead of repeatedly walking companion directories, while revalidating replacement captures and recovery copies. Fixes 162047. (162254) Thanks @WG-Mojo Authored by @steipete. Thanks @WG-Mojo.",
+          "score": 7,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix",
+              "performance"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Private diagnostics: omit suppressed reply text and background command contents from verbose diagnostics while retaining status metadata. Thanks @steipete.",
+          "score": 9,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "config/update"
+            ],
+            "quality": [
+              "fix",
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Media boundaries: keep paired-node inspection photos and screenshots private by default, and honor explicit read denials for reply attachments without blocking authorized managed outputs. (174814, 184964) Thanks @eleqtrizit.",
+          "score": 6,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "media/pdf"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Restrictive group policies: Doctor preserves explicitly empty group allowlists, inherited settings, and disabled group policies instead of populating fallback senders. Fixes 173826. (174787) Thanks @lockhartheavyindustries Authored by @steipete. Thanks @lockhartheavyindustries.",
+          "score": 12,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "config/update"
+            ],
+            "quality": [
+              "fix",
+              "diagnostics",
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Discovery output: escape terminal control characters in untrusted Gateway discovery fields. (183355) Thanks @Alix-007.",
+          "score": 15,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [
+              "gateway"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "State and write outcomes: recognize committed SQLite writes whose worker result cannot be serialized, avoiding unsafe replay, and preserve Windows ownership across equivalent path spellings. Fixes 176163. (177321, 176174) Thanks @tjarrau-dev Authored by @steipete. Thanks @tjarrau-dev.",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Session accounts: retain linked model-account selections and their provenance through explicit resets and automatic rollover. Fixes 179432. (179433) Thanks @masatohoshino Authored by @steipete. Thanks @masatohoshino.",
+          "score": 7,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "sessions"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Channel recovery: recover channel accounts after timed-out manual stops and restore ClickClack message reception after silent network drops. Fixes 184852. (177444, 184853) Thanks @masatohoshino, @YangManBOBO, and @obviyus.",
+          "score": 8,
+          "labels": [
+            "platform",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "channel/platform"
+            ],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Local tool connections: replace unexpectedly closed MCP loopback listeners and retain their cleanup work for shutdown rather than leaving later tool calls permanently disconnected. Fixes 139340. (183352) Thanks @SC-10749 and @eli-pavlov Authored by @steipete. Thanks @eli-pavlov and @SC-10749.",
+          "score": 15,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [
+              "tools/exec"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Telegram and Control UI: bound the processing of long zero-width table cells and malformed SVG transform strings without changing valid table or icon rendering. (183217, 182674) Thanks @LeizhenZhang, @obviyus, and @SebTardif Authored by @steipete. Thanks @LeizhenZhang, @obviyus, and @SebTardif.",
+          "score": 10,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "telegram"
+            ],
+            "quality": [
+              "fix",
+              "ux/ui"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Command results and temporary files: preserve a completed command's exit result when detached-descendant cleanup is uncertain, retain a visible cleanup warning, and remove temporary MCP configuration directories when writing fails. Fixes 179555. (185636, 179603) Thanks @xiaopan-xydt and @Yolo521-bot Authored by @steipete. Thanks @Yolo521-bot and @xiaopan-xydt.",
+          "score": 20,
+          "labels": [
+            "platform",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "deprecation",
+              "runtime/protocol"
+            ],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Gateway credentials: keep local password SecretRefs active when a separate remote token is configured, and retain a saved node TLS pin when the fingerprint option is empty or whitespace-only. (128175, 125646) Thanks @TheAngryPit, @CassieMei, @obviyus, @RomneyDa, and @wanyongstar.",
+          "score": 26,
+          "labels": [
+            "security",
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [
+              "token",
+              "secret",
+              "tls/encryption"
+            ],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [
+              "gateway"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Update and restart reliability: preserve rollback snapshots after interrupted writes, release completed maintenance before reopening requester policy, confirm predecessor stop receipts during Doctor maintenance, and prepare configuration restarts outside the restart-signal fence. (189946, 177792, 187104, 172777) Thanks @kaguranananana, @GrahamMcBain, and @RomneyDa Authored by @steipete. Thanks @RomneyDa, @kaguranananana, and @GrahamMcBain.",
+          "score": 13,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "config/update"
+            ],
+            "quality": [
+              "fix",
+              "reliability",
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Memory jobs and imports: leave stopped or failure-disabled dreaming jobs disabled, and refresh imported ChatGPT transcript examples without overwriting real Notes sections. Fixes 180655, 193161. (180694, 193173) Thanks @Yun-0000, @lisandromachado, @KhanCold, and @obviyus Authored by @steipete. Thanks @lisandromachado, @KhanCold, @Yun-0000, and @obviyus.",
+          "score": 8,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "memory"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Release artifact verification: qualify the candidate's exact plugin artifacts, route validation through the admitted verifier, and accept successful admission jobs that omit step details while preserving run, attempt, artifact, and authority checks. (164464, 173437, 188597) Thanks @RomneyDa.",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 162254 Related 162047. Authored by @steipete. Thanks @WG-Mojo.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 183355 Thanks @Alix-007.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 183217 Thanks @LeizhenZhang and @obviyus.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 182674 Authored by @steipete. Thanks @SebTardif.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 128175 Related 128171. Thanks @TheAngryPit, @CassieMei, @obviyus, and @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 188597 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 187104 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 193173 Related 193161. Thanks @KhanCold and @obviyus.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 185636 Authored by @steipete.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 179603 Related 179555. Authored by @steipete. Thanks @xiaopan-xydt and @Yolo521-bot.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 179433 Related 179432. Authored by @steipete. Thanks @masatohoshino.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 167356 Thanks @vincentkoc.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 173437 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 180694 Related 180655. Authored by @steipete. Thanks @Yun-0000 and @lisandromachado.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 177792 Thanks @GrahamMcBain.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 184853 Related 184852. Thanks @masatohoshino.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 164464 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 183352 Related 139340. Authored by @steipete. Thanks @SC-10749 and @eli-pavlov.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 189946 Authored by @steipete. Thanks @kaguranananana.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 174787 Related 173826. Authored by @steipete. Thanks @lockhartheavyindustries.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 125646 Thanks @wanyongstar.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 174814 Thanks @eleqtrizit.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 177321 Authored by @steipete.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 172777 Thanks @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 184964 Thanks @eleqtrizit.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 172669 Authored by @steipete.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 177444 Thanks @YangManBOBO and @obviyus.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Pull requests",
+          "text": "PR 176174 Related 176163. Authored by @steipete. Thanks @tjarrau-dev.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "npm package: https://www.npmjs.com/package/openclaw/v/2026.9.37",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "registry tarball: https://registry.npmjs.org/openclaw/-/openclaw-2026.9.37.tgz",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "integrity: sha512-ETRzzF0mllvQrzKJp8meZ2iTVytTaPDfEc5Oh7qh8FK8c5bcJWcKH+sYxyruAqkEzb8CaB6oTlc38eZf1ufRVw==",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "release SHA: 81da850122080b7187816ab70f145f3bc9e5efff",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "full release CI report: https://github.com/openclaw/releases/blob/main/evidence/2026.9.37/release-evidence.md",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "release publish: https://github.com/openclaw/openclaw/actions/runs/42866233501",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "npm preflight: https://github.com/openclaw/openclaw/actions/runs/42782571264",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "full release validation: https://github.com/openclaw/openclaw/actions/runs/42782249510",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "plugin npm publish: https://github.com/openclaw/openclaw/actions/runs/42883284005",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "plugin ClawHub publish: no normal OIDC candidates",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "plugin ClawHub bootstrap: not needed",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "OpenClaw npm publish: https://github.com/openclaw/openclaw/actions/runs/42885900163",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "npm Telegram beta E2E: not supplied",
+          "score": 5,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "telegram"
+            ],
+            "quality": []
+          }
+        }
+      ]
+    },
     {
       "tag": "v2026.11.2",
       "version": "2026.11.2",
