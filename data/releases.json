@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-17T18:37:16.995Z",
+  "generatedAt": "2026-11-18T18:08:39.066Z",
   "source": {
     "owner": "openclaw",
     "repo": "openclaw",
@@ -9,15 +9,15 @@
   },
   "defaults": {
     "months": 3,
-    "since": "2026-08-17T10:47:56.000Z"
+    "since": "2026-08-18T04:15:53.000Z"
   },
-  "releaseCount": 288,
-  "stableCount": 146,
+  "releaseCount": 289,
+  "stableCount": 147,
   "latest": {
-    "tag": "v2026.11.5",
-    "version": "2026.11.5",
-    "publishedAt": "2026-11-17T10:47:56Z",
-    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.11.5"
+    "tag": "v2026.10.33",
+    "version": "2026.10.33",
+    "publishedAt": "2026-11-18T04:15:53Z",
+    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.33"
   },
   "keywords": {
     "jacobKeywords": [
@@ -82,6 +82,1376 @@
     ]
   },
   "releases": [
+    {
+      "tag": "v2026.10.33",
+      "version": "2026.10.33",
+      "versionParts": {
+        "year": 2026,
+        "month": 10,
+        "patch": 33,
+        "suffix": ""
+      },
+      "name": "openclaw 2026.10.33",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.33",
+      "apiUrl": "https://api.github.com/repos/openclaw/openclaw/releases/449438362",
+      "publishedAt": "2026-11-18T04:15:53Z",
+      "createdAt": "2026-11-18T01:01:13Z",
+      "prerelease": false,
+      "draft": false,
+      "bodyExcerpt": "This is a gateway-only extended-stable release, which is our current equivalent to LTS. This release is OpenClaw from the end of October 2026, plus critical security updates, reliability and performance fixes, and features like new model support. The latest version of OpenClaw at the time of this release is 2026.11.5 2026.10.33 This extended-stable release brings cumulative Gateway and core-plugin improvements since 2026.9.37, plus the selected maintenance fixes on the approved 2026.11.4 product",
+      "summary": {
+        "title": "openclaw 2026.10.33",
+        "headline": "Long conversations and large session stores use bounded export and recovery work, reducing out-of-memory failures during chat, memory export, Doctor repair, and Gateway startup. (194066, 196158, 195459, 196480, 176737, 181289) Authored by @steipete. Thanks @RomneyDa, @vincentkoc, @ericcaiwx-star, @obviyus, @garrytan, and @oxen-horse.",
+        "importance": "routine",
+        "score": 545,
+        "topItems": [
+          {
+            "section": "Highlights",
+            "text": "Long conversations and large session stores use bounded export and recovery work, reducing out-of-memory failures during chat, memory export, Doctor repair, and Gateway startup. (194066, 196158, 195459, 196480, 176737, 181289) Authored by @steipete. Thanks @RomneyDa, @vincentkoc, @ericcaiwx-star, @obviyus, @garrytan, and @oxen-horse.",
+            "score": 32,
+            "labels": [
+              "platform",
+              "relevant",
+              "quality"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [
+                "gateway/service"
+              ],
+              "relevant": [
+                "gateway",
+                "memory",
+                "sessions",
+                "config/update"
+              ],
+              "quality": [
+                "diagnostics"
+              ]
+            }
+          },
+          {
+            "section": "Highlights",
+            "text": "Interrupted updates recover when their executor dies instead of leaving the Gateway stuck offline, while version-skew checks protect state still used by an installed service. (181695, 186971, 187819) Authored by @steipete. Thanks @RomneyDa, @PonySlayer28, @tomdailey55, @jalehman, @fuller-stack-dev, and @vincentkoc.",
+            "score": 17,
+            "labels": [
+              "platform",
+              "relevant"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [
+                "gateway/service"
+              ],
+              "relevant": [
+                "gateway"
+              ],
+              "quality": []
+            }
+          },
+          {
+            "section": "Highlights",
+            "text": "Replies survive more restart and reconnect paths, preserving original prompts, recovering Telegram responses, and avoiding lost WhatsApp replies or skipped Signal messages. (187157, 195400, 168778, 187667) Thanks @shakkernerd, @jason-allen-oneal, @mcaxtr, @HermanZeng, and @obviyus.",
+            "score": 10,
+            "labels": [
+              "relevant"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [],
+              "relevant": [
+                "telegram"
+              ],
+              "quality": []
+            }
+          },
+          {
+            "section": "Highlights",
+            "text": "Shared-session privacy is stronger: Side chat stays private to its viewer, internal model prompts stay out of displayed output, and compaction redacts credentials in quoted summaries. (185390, 173460, 197349) Authored by @steipete. Thanks @Satoshi-Kusumoto, @RomneyDa, @zhangguiping-xydt, @Patrick-Erichsen, and @obviyus.",
+            "score": 17,
+            "labels": [
+              "security",
+              "relevant"
+            ],
+            "hits": {
+              "security": [
+                "secret",
+                "redaction"
+              ],
+              "platform": [],
+              "relevant": [
+                "sessions"
+              ],
+              "quality": []
+            }
+          }
+        ],
+        "reasons": [
+          "security-sensitive wording",
+          "matches your setup: gateway, memory, sessions, config/update, telegram, codex/acp, media/pdf, browser",
+          "platform change signals: gateway/service, runtime/protocol, migration, plugin registry, channel/platform, deprecation, config/schema",
+          "quality/reliability: diagnostics, fix, compatibility, fallback/retry, ux/ui"
+        ],
+        "filterLabels": [],
+        "labelItemCounts": {
+          "security": 3,
+          "platform": 18,
+          "relevant": 39,
+          "quality": 36
+        },
+        "hitCounts": {
+          "security": 4,
+          "platform": 7,
+          "relevant": 10,
+          "quality": 5
+        }
+      },
+      "items": [
+        {
+          "section": "Highlights",
+          "text": "Long conversations and large session stores use bounded export and recovery work, reducing out-of-memory failures during chat, memory export, Doctor repair, and Gateway startup. (194066, 196158, 195459, 196480, 176737, 181289) Authored by @steipete. Thanks @RomneyDa, @vincentkoc, @ericcaiwx-star, @obviyus, @garrytan, and @oxen-horse.",
+          "score": 32,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [
+              "gateway",
+              "memory",
+              "sessions",
+              "config/update"
+            ],
+            "quality": [
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Interrupted updates recover when their executor dies instead of leaving the Gateway stuck offline, while version-skew checks protect state still used by an installed service. (181695, 186971, 187819) Authored by @steipete. Thanks @RomneyDa, @PonySlayer28, @tomdailey55, @jalehman, @fuller-stack-dev, and @vincentkoc.",
+          "score": 17,
+          "labels": [
+            "platform",
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [
+              "gateway"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Replies survive more restart and reconnect paths, preserving original prompts, recovering Telegram responses, and avoiding lost WhatsApp replies or skipped Signal messages. (187157, 195400, 168778, 187667) Thanks @shakkernerd, @jason-allen-oneal, @mcaxtr, @HermanZeng, and @obviyus.",
+          "score": 10,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "telegram"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Shared-session privacy is stronger: Side chat stays private to its viewer, internal model prompts stay out of displayed output, and compaction redacts credentials in quoted summaries. (185390, 173460, 197349) Authored by @steipete. Thanks @Satoshi-Kusumoto, @RomneyDa, @zhangguiping-xydt, @Patrick-Erichsen, and @obviyus.",
+          "score": 17,
+          "labels": [
+            "security",
+            "relevant"
+          ],
+          "hits": {
+            "security": [
+              "secret",
+              "redaction"
+            ],
+            "platform": [],
+            "relevant": [
+              "sessions"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Automations can react to polled conditions and MCP events, run repeatable scripts, and use explicitly allowed MCP servers. (101195, 165399, 160996, 160995) Authored by @steipete. Thanks @obviyus.",
+          "score": 12,
+          "labels": [
+            "platform"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Installed skills can be searched and read on demand, helping agents find relevant instructions without putting every installed skill into the prompt. (158089, 158090, 158091, 160538) Authored by @steipete. Thanks @RomneyDa and @vincentkoc.",
+          "score": 5,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Highlights",
+          "text": "Sessions can import existing Claude Code or Codex transcripts and move between local and cloud environments, with repository recipes and clearer cloud-startup progress. (161955, 171690, 170862, 170895) Authored by @steipete. Thanks @joshavant and @RomneyDa.",
+          "score": 14,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "sessions",
+              "codex/acp"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Additional maintenance fixes",
+          "text": "Provider continuity: preserve server compaction checkpoints across credential or model changes on the same provider API and endpoint, avoiding unnecessary history replay. (200063, 200208) Thanks @obviyus.",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Additional maintenance fixes",
+          "text": "macOS installation: preserve the controlling terminal during shell installation so onboarding can install plugins without detached Node subprocesses aborting. (200247) Thanks @miguelbranco80.",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Additional maintenance fixes",
+          "text": "Update recovery: record successful Gateway startup writes for the next Doctor run without accepting changes that predate startup. (200260) Thanks @RomneyDa.",
+          "score": 21,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [
+              "gateway",
+              "config/update"
+            ],
+            "quality": [
+              "fix",
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Additional maintenance fixes",
+          "text": "Existing device folders: recognize models using the implicit OpenClaw runtime without turning that default into an explicit session override. (190065) Thanks @obviyus.",
+          "score": 14,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [
+              "sessions"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Additional maintenance fixes",
+          "text": "Plugin compatibility: retain the signed 2026.11.4 source baseline as this release's compatibility identity without changing its displayed version or lowering plugin API requirements. (200302) Thanks @RomneyDa.",
+          "score": 6,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix",
+              "compatibility"
+            ]
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Session organization: snooze conversations, choose a custom wake time, and explicitly organize or archive nested conversations. (161960, 171255, 168076) Authored by @steipete. Thanks @jacobtomlinson.",
+          "score": 4,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "sessions"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Session context: show task progress in Details, indicate when a chat is waiting on helpers, and open the Subagents panel from the chat's helper count. (161674, 164190, 166142) Authored by @steipete. Thanks @RomneyDa, @ceckert, @obviyus, @vyctorbrzezowski, and @shakkernerd.",
+          "score": 4,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "sessions"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Shared conversations: add emoji reactions to prompts and replies and configure when sessions may send or receive messages. (161053, 162316) Authored by @steipete.",
+          "score": 4,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "sessions"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Workspace placement: start sessions in existing folders on paired devices or select hosted workspaces when creating sessions. (169722, 168259) Authored by @steipete. Thanks @obviyus.",
+          "score": 4,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "sessions"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "First-run setup: automatically choose inference and offer optional memory-embedding setup, including non-interactive embedding-only local setup. (169628, 163693, 170153) Authored by @steipete. Thanks @PollyBot13 and @dh-js.",
+          "score": 5,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "memory"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Memory providers: use a provider-neutral memory runtime with host-resolved audiences and provider-owned pre-compaction flushes. (162175, 162176, 162177) Authored by @steipete. Thanks @RomneyDa, @vincentkoc, and @jalehman.",
+          "score": 12,
+          "labels": [
+            "platform",
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [
+              "memory"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Context management: use provider-native compaction on supported OpenAI and Anthropic API-key routes, server-side compaction for ChatGPT sign-in sessions, and model fallback after context-overflow recovery. (168164, 168401, 170141) Authored by @steipete. Thanks @joshavant, @RomneyDa, @ceckert, @obviyus, @goslingmanagment, @dmsrg399, @aniketkrs, and @amirarenco-create.",
+          "score": 7,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "sessions"
+            ],
+            "quality": [
+              "fallback/retry"
+            ]
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Model setup: support endpoint-resolved custom aliases, show provider recommendations first, and display active authentication subscription blocks. (170009, 167370, 133087) Authored by @steipete. Thanks @RomneyDa, @ceckert, @obviyus, @xyrolle, @Leon-SK668, and @vincentkoc.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Provider integrations: add Particle and Muse Code runtime support, including Muse sign-in through Model Setup. (187135, 170487, 171526) Authored by @steipete. Thanks @RomneyDa and @obviyus.",
+          "score": 7,
+          "labels": [
+            "platform"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Voice calls: add per-call briefs, reports, live steering, callbacks, and voicemail detection; OpenAI realtime voice can use a custom endpoint. (165716, 165632) Authored by @steipete. Thanks @jacobtomlinson and @mbelinky.",
+          "score": 3,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "media/pdf"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Microsoft Teams: support multiple bot accounts. (112811) Authored by @steipete. Thanks @jimmypuckett.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "X integration: add mentions, GitHub-verified repository writers, guest repository questions, and daily/monthly API cost limits. (165138, 168071, 165354, 165351) Authored by @steipete.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "MCP apps: use apps across conversations and workspace files, keep an app's tool access while its view is open, and connect through a principal-bound relay. (161747, 164496, 168233) Authored by @steipete.",
+          "score": 7,
+          "labels": [
+            "platform"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Plugin interfaces: let plugins dock conversations, open session panels, and supply Solid-based Control UI views. (161957, 163428, 168408) Authored by @steipete. Thanks @jalehman.",
+          "score": 6,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "sessions"
+            ],
+            "quality": [
+              "ux/ui"
+            ]
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Plugin-assisted conversations: fork live context for background side questions and steer an active session through supported plugin operations. (170146, 170152) Authored by @steipete. Thanks @RomneyDa, @ceckert, and @obviyus.",
+          "score": 4,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "sessions"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Code Mode: retain store/load values across cells, replies, and restarts, and return wrapped browser observations for programmatic use. (164086, 164833) Authored by @steipete. Thanks @RomneyDa, @alkor2000, and @potterdigital.",
+          "score": 5,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "browser"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Backups: support external-disk and Cloudflare R2 destinations and preserve PostgreSQL-backed stores through backups and updates. (161913, 170828) Authored by @steipete. Thanks @joshavant and @RomneyDa.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Database administration: add verified offline database-port operations with interrupted-port protection and replacement verification. (170518, 171265, 171368) Authored by @steipete.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Cloud environments: group environments by repository, save suggested profiles on first use, and provision verified Node toolchains. (170892, 170875, 170796) Authored by @steipete.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Control UI: customize branding and session backgrounds, play YouTube videos inline, fold code in diffs, and use terminal fonts with Nerd Font icons. (168027, 168301, 164576, 172350, 166180) Authored by @steipete. Thanks @vyctorbrzezowski and @jacobtomlinson.",
+          "score": 6,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "sessions"
+            ],
+            "quality": [
+              "ux/ui"
+            ]
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Navigation and language: use a compact personal sidebar rail, return to Discord or Slack from session headers, and use Swedish localization. (168325, 158742, 62063) Authored by @steipete. Thanks @VACInc, @Patrick-Erichsen, @yeager, and @vincentkoc.",
+          "score": 4,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "sessions"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes",
+          "text": "Installation: offer an opt-in pinned Bun runtime and standalone executables. (168832, 172384) Authored by @steipete.",
+          "score": 7,
+          "labels": [
+            "platform"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "runtime/protocol"
+            ],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Update recovery: reclaim offline maintenance after a dead update executor so the Gateway can start again without manual database repair. (181695) Authored by @steipete. Thanks @RomneyDa and @PonySlayer28.",
+          "score": 18,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [
+              "gateway"
+            ],
+            "quality": [
+              "fix",
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Update compatibility: avoid premature state migrations, keep unrelated or older installed services from blocking valid configuration and Doctor operations, and retain plugin lifecycle ownership during lengthy finalization. (186971, 187870, 187886, 187966, 190194, 196474, 188404) Authored by @steipete. Thanks @RomneyDa, @vincentkoc, @tomdailey55, @shakkernerd, and @Satoshi-Kusumoto.",
+          "score": 24,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "migration"
+            ],
+            "relevant": [
+              "config/update"
+            ],
+            "quality": [
+              "fix",
+              "diagnostics",
+              "compatibility"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Installation diagnostics: fail clearly when Homebrew bootstrap fails, handle shell characters in private CLI install paths, start Windows setup after npm-shim installation, and use a private workspace when the system temporary directory is unsafe. (187688, 189541, 185309, 187737) Authored by @steipete. Thanks @RomneyDa, @vincentkoc, @McgAtom, @obviyus, @DonnieFi, and @Yachiyo1680.",
+          "score": 6,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix",
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Large histories: bound transcript trimming, indexing, memory export, and Doctor repair to avoid exhausting worker or Gateway memory. (194066, 196158, 195459, 196480) Authored by @steipete. Thanks @RomneyDa, @vincentkoc, @ericcaiwx-star, @obviyus, and @garrytan.",
+          "score": 26,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [
+              "gateway",
+              "memory",
+              "config/update"
+            ],
+            "quality": [
+              "fix",
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Startup responsiveness: narrow session recovery reads and avoid delaying plugin startup on large session stores. (176737, 181289) Authored by @steipete. Thanks @oxen-horse.",
+          "score": 7,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "sessions"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Persistent state: preserve PostgreSQL commit durability, settle staged authority at physical commit, and recover chats after database connection loss. (180821, 193842, 181661) Authored by @steipete. Thanks @joshavant, @RomneyDa, and @vincentkoc.",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Files: reject stale saves after the workspace has been replaced instead of writing into the wrong workspace state. (178336) Authored by @steipete. Thanks @RomneyDa and @shakkernerd.",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Shared-session privacy: keep another viewer's Side chat and private model prompt projections out of displayed content. (185390, 173460) Authored by @steipete. Thanks @Patrick-Erichsen and @obviyus.",
+          "score": 7,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "sessions"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Secrets: redact credentials in quoted compaction output and keep Skills-page key saves from replacing SecretRefs with plaintext. (197349, 197319) Authored by @steipete. Thanks @obviyus and @mmaps.",
+          "score": 11,
+          "labels": [
+            "security",
+            "quality"
+          ],
+          "hits": {
+            "security": [
+              "secret",
+              "redaction"
+            ],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Configuration safety: reject reserved assignment keys, preserve restrictive allowlists after filtering, keep disabled mixed-case plugins disabled, and avoid catalog imports beside stored SecretRefs. (191389, 190068, 188846, 179802) Authored by @steipete. Thanks @RomneyDa, @obviyus, @vincentkoc, @wangmiao0668000666, @yetval, @masatohoshino, and @ensignwesley.",
+          "score": 10,
+          "labels": [
+            "platform",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "plugin registry"
+            ],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Tool authority: require effective approval for delegated changes, check prepared images through input-policy hooks, and reject late or ambiguous capability-scoped attachment requests. (196984, 196337, 159106, 190863) Authored by @steipete. Thanks @joshavant, @montrellcruse, @RomneyDa, @vincentkoc, @sallyom, and @arpe1618.",
+          "score": 8,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "tools/exec"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Sandbox upgrades: protect writable ancestors of nested skill mounts, prepare protected mount sources at first launch, and resume turns after mount additions. (180840, 182412, 182789) Authored by @steipete. Thanks @RomneyDa, @eleqtrizit, @momothemage, and @akang1798.",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Repository and ingestion boundaries: restrict limited roles to public repositories and reject special files during memory-wiki ingestion. (194830, 187621) Thanks @vyctorbrzezowski, @Leon-SK668, and @obviyus.",
+          "score": 8,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "memory"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Restart delivery: preserve original prompts, recover Telegram final replies, and keep WhatsApp responses and Signal inbound messages across reloads or reconnects. (187157, 195400, 168778, 187667) Authored by @steipete. Thanks @RomneyDa, @vincentkoc, @shakkernerd, @jason-allen-oneal, @mcaxtr, @HermanZeng, and @obviyus.",
+          "score": 8,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "telegram"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Telegram and IRC: deliver agent inline-button taps before expiry and honor explicitly empty IRC channel sender lists. (196217, 196293) Authored by @steipete. Thanks @goslingmanagment, @dmsrg399, @obviyus, @kkernan, and @mmaps.",
+          "score": 13,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "channel/platform"
+            ],
+            "relevant": [
+              "telegram"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Streaming responsiveness: prevent long non-streaming Slack reasoning and deeply nested progress-label paths from freezing the Gateway. (196250, 196282) Authored by @steipete. Thanks @RomneyDa, @ptu-gh, @obviyus, and @LeizhenZhang.",
+          "score": 15,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [
+              "gateway"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Automation completion: retain session-targeted cron and system-event replies, prepare completion permissions before loading requester state, and release suspended helper completions correctly. (196750, 197434, 197323) Authored by @steipete. Thanks @vincentkoc, @jlapenna, @RomneyDa, @1052326311, @masatohoshino, @obviyus, @holgergruenhagen, and @wr-web.",
+          "score": 7,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "sessions"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Code Mode execution: settle failed calls, bound silent streams, retain process results at suspended-run capacity, and stop cleanly after reply-decoding memory exhaustion. (196435, 196927, 188023) Authored by @steipete. Thanks @RomneyDa and @vincentkoc.",
+          "score": 8,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "memory"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Claude sessions: avoid startup deadlocks and first-turn failures following cancelled login checks during token refresh. (173011, 197032) Authored by @steipete. Thanks @RomneyDa, @ericcaiwx-star, @sopa-gpters, @obviyus, and @kir1ll.",
+          "score": 7,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "sessions"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Provider recovery: retain quota recovery across concurrent sessions, accept retained Z.AI Coding Plan models, remove invalid Gemini schema enums, and bound silent native-session startup. (176602, 195390, 196742, 196517) Authored by @steipete. Thanks @montrellcruse, @RomneyDa, @vincentkoc, @jason-allen-oneal, @obviyus, and @yixiaoer-520.",
+          "score": 25,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "deprecation",
+              "config/schema"
+            ],
+            "relevant": [
+              "sessions"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Conversation continuity: keep active turns running across automatic rollover, preserve canonical reconstructed context, and release memory after non-announcing helpers finish. (197345, 194362, 196672) Authored by @steipete. Thanks @RomneyDa, @ceckert, @obviyus, @gloss-dandelion-cult, @sunlit-deng, @maxdjohnson, @vincentkoc, @Jo2234, @abacha, @rabsef-bicrym, and @jalehman.",
+          "score": 8,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "memory"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Plugin lifecycle: avoid holding the state writer during initial admission, prevent configuration-only restarts from hanging reloads, and keep official plugin selectors on the stable channel. (182117, 182331, 194812) Authored by @steipete. Thanks @RomneyDa, @vincentkoc, and @DonnieFi.",
+          "score": 8,
+          "labels": [
+            "platform",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "channel/platform"
+            ],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Cloud preparation: bootstrap private QA builds correctly and avoid falsely reporting unsaved work during fresh guest PR preparation. (181824, 185777) Authored by @steipete. Thanks @RomneyDa and @shakkernerd.",
+          "score": 3,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Doctor and recovery: support startup with conflicting legacy exec approvals, avoid read-only database copies on full disks, reject incomplete database-port success, and skip missing sanitized config companions when nothing remains to import. (196401, 196346, 194595, 186998) Authored by @steipete. Thanks @RomneyDa, @vincentkoc, @fuller-stack-dev, @ylcn91, @reisball, and @AlyaKoni.",
+          "score": 22,
+          "labels": [
+            "security",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [
+              "approval",
+              "sanitize"
+            ],
+            "platform": [],
+            "relevant": [
+              "tools/exec",
+              "config/update"
+            ],
+            "quality": [
+              "fix",
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Workspace readiness: do not mistake sandbox-written files for Gateway readiness, and preserve command outcomes when shutdown fails. (197248, 188891) Authored by @steipete. Thanks @RomneyDa, @masatohoshino, @obviyus, and @mmaps.",
+          "score": 15,
+          "labels": [
+            "platform",
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [
+              "gateway"
+            ],
+            "quality": [
+              "fix"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Session navigation: keep touch links clear of row actions and prevent Doctor repairs from renaming the main session to an internal heartbeat marker. (194840, 179219) Authored by @steipete. Thanks @VACInc, @Satoshi-Kusumoto, @RomneyDa, @najef1979-code, and @vyctorbrzezowski.",
+          "score": 18,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "sessions",
+              "heartbeat",
+              "config/update"
+            ],
+            "quality": [
+              "fix",
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Fixes",
+          "text": "Rescue commands: retain useful diagnostic findings when a command exits nonzero instead of losing the response. (195451) Authored by @steipete. Thanks @wr-web and @mdarapour.",
+          "score": 6,
+          "labels": [
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": [
+              "fix",
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "npm package: https://www.npmjs.com/package/openclaw/v/2026.10.33",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "registry tarball: https://registry.npmjs.org/openclaw/-/openclaw-2026.10.33.tgz",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "integrity: sha512-OMJvs7fSwBPBENfeghTDKo2uxQ2r6zkIH1KcYevSEY6Ca3DTEunbfuPlSE+lmvOZFmyLLefeQgcoVExqEV7IeQ==",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "release SHA: 5196fbbf89838939b0c2e29c09b8829afbc0d415",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "full release CI report: https://github.com/openclaw/releases/blob/main/evidence/2026.10.33/release-evidence.md",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "release publish: https://github.com/openclaw/openclaw/actions/runs/44230483761",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "npm preflight: https://github.com/openclaw/openclaw/actions/runs/44172949544",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "full release validation: https://github.com/openclaw/openclaw/actions/runs/44172195898",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "plugin npm publish: https://github.com/openclaw/openclaw/actions/runs/44231830783",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "ClawHub: not published for extended-stable releases.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "OpenClaw npm publish: https://github.com/openclaw/openclaw/actions/runs/44222774608/attempts/1",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "npm Telegram beta E2E: not supplied",
+          "score": 5,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "telegram"
+            ],
+            "quality": []
+          }
+        }
+      ]
+    },
     {
       "tag": "v2026.11.5",
       "version": "2026.11.5",
