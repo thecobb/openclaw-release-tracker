@@ -1,3 +1,5 @@
+import { escapeHtml, httpUrl, releaseLink } from './html.js';
+
 const state = {
   data: null,
   releases: [],
@@ -98,7 +100,7 @@ function renderDigest() {
     item.className = 'digest-item';
     const reasons = rel.summary?.reasons?.slice(0, 2).join(' · ') || 'Notable release activity';
     item.innerHTML = `
-      <h3><a href="${rel.url}">${rel.tag}</a></h3>
+      <h3>${releaseLink(rel)}</h3>
       <p><strong>${labelForImportance(rel.summary?.importance)}</strong> · ${formatDate(rel.publishedAt)}</p>
       <p>${escapeHtml(rel.summary?.headline || '')}</p>
       <p>${escapeHtml(reasons)}</p>
@@ -128,7 +130,7 @@ function renderReleaseList() {
     const reasons = node.querySelector('.reason-list');
     const topItems = node.querySelector('.top-items');
 
-    link.href = rel.url;
+    link.href = httpUrl(rel.url);
     link.textContent = rel.tag;
     badge.className = `importance-badge ${rel.summary?.importance || 'routine'}`;
     badge.textContent = labelForImportance(rel.summary?.importance);
@@ -188,8 +190,8 @@ function renderCompare() {
   const security = span.filter(r => r.summary?.filterLabels?.includes('security')).length;
   const relevant = span.filter(isRelevant).length;
   output.innerHTML = `
-    <p><strong>${span.length}</strong> stable releases included, from <strong>${stable[older].tag}</strong> through <strong>${stable[newer].tag}</strong>. ${security} security-sensitive, ${relevant} likely relevant to Jacob's setup.</p>
-    <ul>${top.map(r => `<li><a href="${r.url}">${r.tag}</a>: ${escapeHtml(r.summary?.headline || '')}</li>`).join('')}</ul>
+    <p><strong>${span.length}</strong> stable releases included, from <strong>${escapeHtml(stable[older].tag)}</strong> through <strong>${escapeHtml(stable[newer].tag)}</strong>. ${security} security-sensitive, ${relevant} likely relevant to Jacob's setup.</p>
+    <ul>${top.map(r => `<li>${releaseLink(r)}: ${escapeHtml(r.summary?.headline || '')}</li>`).join('')}</ul>
   `;
 }
 
@@ -202,10 +204,6 @@ function render() {
 
 function showApp() {
   for (const id of ['summary-grid', 'controls', 'digest', 'compare', 'release-list']) $(id).hidden = false;
-}
-
-function escapeHtml(s) {
-  return String(s).replace(/[&<>'"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[c]));
 }
 
 async function loadLocalData() {

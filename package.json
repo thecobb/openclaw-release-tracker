@@ -5,6 +5,6 @@
   "type": "module",
   "scripts": {
     "build:data": "node scripts/build-data.mjs",
-    "test": "node scripts/test-data.mjs"
+    "test": "node scripts/test-data.mjs && node scripts/test-render.mjs"
   }
 }
