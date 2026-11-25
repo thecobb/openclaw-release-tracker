@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-24T20:12:01.964Z",
+  "generatedAt": "2026-11-25T19:22:06.617Z",
   "source": {
     "owner": "openclaw",
     "repo": "openclaw",
@@ -9,15 +9,15 @@
   },
   "defaults": {
     "months": 3,
-    "since": "2026-08-24T03:28:03.000Z"
+    "since": "2026-08-25T05:42:47.000Z"
   },
-  "releaseCount": 295,
-  "stableCount": 150,
+  "releaseCount": 297,
+  "stableCount": 152,
   "latest": {
-    "tag": "v2026.11.10-beta.3",
-    "version": "2026.11.10-beta.3",
-    "publishedAt": "2026-11-24T03:28:03Z",
-    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.11.10-beta.3"
+    "tag": "v2026.11.10",
+    "version": "2026.11.10",
+    "publishedAt": "2026-11-25T05:42:47Z",
+    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.11.10"
   },
   "keywords": {
     "jacobKeywords": [
@@ -82,6 +82,328 @@
     ]
   },
   "releases": [
+    {
+      "tag": "v2026.11.10",
+      "version": "2026.11.10",
+      "versionParts": {
+        "year": 2026,
+        "month": 11,
+        "patch": 10,
+        "suffix": ""
+      },
+      "name": "openclaw 2026.11.10",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.11.10",
+      "apiUrl": "https://api.github.com/repos/openclaw/openclaw/releases/457607409",
+      "publishedAt": "2026-11-25T05:42:47Z",
+      "createdAt": "2026-11-25T02:41:55Z",
+      "prerelease": false,
+      "draft": false,
+      "bodyExcerpt": "<!-- openclaw-release-publication:docs-v1 -- OpenClaw v2026.11.10 8,309 commits · 7,671 pull requests · 349 contributors Changes included in this release The release notes and changelog contain the same content, presented in two formats: - Release notes — formatted for people. - Changelog — plain Markdown for AI agents and tools. Thanks @0xNagato @1052326311 @555aaditya @651juan @A-Raphie @aashish254 @Abinithishkumarprabakaran @AgentXenAI @airbing11 @Airyn-Axyl @aishwary-dongre @akshitkhokhani @",
+      "summary": {
+        "title": "openclaw 2026.11.10",
+        "headline": "Android APK: skipped — Android releases are independent of Gateway releases.",
+        "importance": "routine",
+        "score": 23,
+        "topItems": [
+          {
+            "section": "Release verification",
+            "text": "Android APK: skipped — Android releases are independent of Gateway releases.",
+            "score": 12,
+            "labels": [
+              "platform",
+              "relevant"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [
+                "gateway/service"
+              ],
+              "relevant": [
+                "gateway"
+              ],
+              "quality": []
+            }
+          },
+          {
+            "section": "Release verification",
+            "text": "ClawHub registry update: independent publication; see the release publish run summary for its status.",
+            "score": 6,
+            "labels": [
+              "relevant",
+              "quality"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [],
+              "relevant": [
+                "config/update"
+              ],
+              "quality": [
+                "diagnostics"
+              ]
+            }
+          },
+          {
+            "section": "Release verification",
+            "text": "npm Telegram beta E2E: not supplied",
+            "score": 5,
+            "labels": [
+              "relevant"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [],
+              "relevant": [
+                "telegram"
+              ],
+              "quality": []
+            }
+          },
+          {
+            "section": "Changes included in this release",
+            "text": "Release notes — formatted for people.",
+            "score": 0,
+            "labels": [],
+            "hits": {
+              "security": [],
+              "platform": [],
+              "relevant": [],
+              "quality": []
+            }
+          },
+          {
+            "section": "Changes included in this release",
+            "text": "Changelog — plain Markdown for AI agents and tools.",
+            "score": 0,
+            "labels": [],
+            "hits": {
+              "security": [],
+              "platform": [],
+              "relevant": [],
+              "quality": []
+            }
+          }
+        ],
+        "reasons": [
+          "matches your setup: config/update, telegram, gateway",
+          "platform change signals: gateway/service",
+          "quality/reliability: diagnostics"
+        ],
+        "filterLabels": [],
+        "labelItemCounts": {
+          "security": 0,
+          "platform": 1,
+          "relevant": 3,
+          "quality": 1
+        },
+        "hitCounts": {
+          "security": 0,
+          "platform": 1,
+          "relevant": 3,
+          "quality": 1
+        }
+      },
+      "items": [
+        {
+          "section": "Changes included in this release",
+          "text": "Release notes — formatted for people.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes included in this release",
+          "text": "Changelog — plain Markdown for AI agents and tools.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "npm package: https://www.npmjs.com/package/openclaw/v/2026.11.10",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "registry tarball: https://registry.npmjs.org/openclaw/-/openclaw-2026.11.10.tgz",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "integrity: sha512-/FKDjxY1ZdUSXHx1a9b4EUpPRZywM3uv4181g22XImJfp/5+h+fFUZ7B7HthNrdYzq//05zH0Yf7mefzIlWFaQ==",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "release SHA: 6ea542fd97e2876aa4c871ccc494ed5419a03c5c",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "full release CI report: https://github.com/openclaw/releases/blob/main/evidence/2026.11.10/release-evidence.md",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "release publish: https://github.com/openclaw/openclaw/actions/runs/45552361510",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "npm preflight: https://github.com/openclaw/openclaw/actions/runs/45508446536",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "full release validation: https://github.com/openclaw/openclaw/actions/runs/45520996022",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "plugin npm publish: https://github.com/openclaw/openclaw/actions/runs/45553473072",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "ClawHub registry update: independent publication; see the release publish run summary for its status.",
+          "score": 6,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "config/update"
+            ],
+            "quality": [
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "OpenClaw npm publish: https://github.com/openclaw/openclaw/actions/runs/45547244653/attempts/1",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "npm Telegram beta E2E: not supplied",
+          "score": 5,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "telegram"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "Android APK: skipped — Android releases are independent of Gateway releases.",
+          "score": 12,
+          "labels": [
+            "platform",
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [
+              "gateway"
+            ],
+            "quality": []
+          }
+        }
+      ]
+    },
     {
       "tag": "v2026.11.10-beta.3",
       "version": "2026.11.10-beta.3",
@@ -9490,6 +9812,328 @@
             "platform": [],
             "relevant": [
               "telegram"
+            ],
+            "quality": []
+          }
+        }
+      ]
+    },
+    {
+      "tag": "v2026.11.9",
+      "version": "2026.11.9",
+      "versionParts": {
+        "year": 2026,
+        "month": 11,
+        "patch": 9,
+        "suffix": ""
+      },
+      "name": "openclaw 2026.11.9",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.11.9",
+      "apiUrl": "https://api.github.com/repos/openclaw/openclaw/releases/457476003",
+      "publishedAt": "2026-11-25T00:47:32Z",
+      "createdAt": "2026-11-24T17:48:19Z",
+      "prerelease": false,
+      "draft": false,
+      "bodyExcerpt": "<!-- openclaw-release-publication:docs-v1 -- OpenClaw v2026.11.9 13 commits · 15 pull requests · 14 contributors Changes included in this release The release notes and changelog contain the same content, presented in two formats: - Release notes — formatted for people. - Changelog — plain Markdown for AI agents and tools. Thanks @Caitoz @drobison00 @ericcaiwx-star @gorendac @MertBasar0 @obviyus @paulsimmondsplato @pgondhi987 @RomneyDa @scotthuang @shakkernerd @solavrc @steipete @titan550 Release",
+      "summary": {
+        "title": "openclaw 2026.11.9",
+        "headline": "Android APK: skipped — Android releases are independent of Gateway releases.",
+        "importance": "routine",
+        "score": 23,
+        "topItems": [
+          {
+            "section": "Release verification",
+            "text": "Android APK: skipped — Android releases are independent of Gateway releases.",
+            "score": 12,
+            "labels": [
+              "platform",
+              "relevant"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [
+                "gateway/service"
+              ],
+              "relevant": [
+                "gateway"
+              ],
+              "quality": []
+            }
+          },
+          {
+            "section": "Release verification",
+            "text": "ClawHub registry update: independent publication; see the release publish run summary for its status.",
+            "score": 6,
+            "labels": [
+              "relevant",
+              "quality"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [],
+              "relevant": [
+                "config/update"
+              ],
+              "quality": [
+                "diagnostics"
+              ]
+            }
+          },
+          {
+            "section": "Release verification",
+            "text": "npm Telegram beta E2E: not supplied",
+            "score": 5,
+            "labels": [
+              "relevant"
+            ],
+            "hits": {
+              "security": [],
+              "platform": [],
+              "relevant": [
+                "telegram"
+              ],
+              "quality": []
+            }
+          },
+          {
+            "section": "Changes included in this release",
+            "text": "Release notes — formatted for people.",
+            "score": 0,
+            "labels": [],
+            "hits": {
+              "security": [],
+              "platform": [],
+              "relevant": [],
+              "quality": []
+            }
+          },
+          {
+            "section": "Changes included in this release",
+            "text": "Changelog — plain Markdown for AI agents and tools.",
+            "score": 0,
+            "labels": [],
+            "hits": {
+              "security": [],
+              "platform": [],
+              "relevant": [],
+              "quality": []
+            }
+          }
+        ],
+        "reasons": [
+          "matches your setup: config/update, telegram, gateway",
+          "platform change signals: gateway/service",
+          "quality/reliability: diagnostics"
+        ],
+        "filterLabels": [],
+        "labelItemCounts": {
+          "security": 0,
+          "platform": 1,
+          "relevant": 3,
+          "quality": 1
+        },
+        "hitCounts": {
+          "security": 0,
+          "platform": 1,
+          "relevant": 3,
+          "quality": 1
+        }
+      },
+      "items": [
+        {
+          "section": "Changes included in this release",
+          "text": "Release notes — formatted for people.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Changes included in this release",
+          "text": "Changelog — plain Markdown for AI agents and tools.",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "npm package: https://www.npmjs.com/package/openclaw/v/2026.11.9",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "registry tarball: https://registry.npmjs.org/openclaw/-/openclaw-2026.11.9.tgz",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "integrity: sha512-Yr0UWw8GHmMywkhAYAs/ltDqvcIp8oEFfffhiaPlCmIQr+O6bRifHiLImpdffQv3/SvdmSLMgbcWPiv1fqyH3w==",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "release SHA: 0032b1d7ffd0a59afdf7d2223d8df3250df9057e",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "full release CI report: https://github.com/openclaw/releases/blob/main/evidence/2026.11.9/release-evidence.md",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "release publish: https://github.com/openclaw/openclaw/actions/runs/45504260935",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "npm preflight: https://github.com/openclaw/openclaw/actions/runs/45494093023",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "full release validation: https://github.com/openclaw/openclaw/actions/runs/45493628110",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "plugin npm publish: https://github.com/openclaw/openclaw/actions/runs/45509361419",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "ClawHub registry update: independent publication; see the release publish run summary for its status.",
+          "score": 6,
+          "labels": [
+            "relevant",
+            "quality"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "config/update"
+            ],
+            "quality": [
+              "diagnostics"
+            ]
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "OpenClaw npm publish: https://github.com/openclaw/openclaw/actions/runs/45514365648",
+          "score": 0,
+          "labels": [],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "npm Telegram beta E2E: not supplied",
+          "score": 5,
+          "labels": [
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [],
+            "relevant": [
+              "telegram"
+            ],
+            "quality": []
+          }
+        },
+        {
+          "section": "Release verification",
+          "text": "Android APK: skipped — Android releases are independent of Gateway releases.",
+          "score": 12,
+          "labels": [
+            "platform",
+            "relevant"
+          ],
+          "hits": {
+            "security": [],
+            "platform": [
+              "gateway/service"
+            ],
+            "relevant": [
+              "gateway"
             ],
             "quality": []
           }
@@ -131857,7 +132501,7 @@
       "createdAt": "2026-09-18T18:40:28Z",
       "prerelease": true,
       "draft": false,
-      "bodyExcerpt": "Latest published Linux companion: v2026.11.7 - AppImage - Debian package",
+      "bodyExcerpt": "Latest published Linux companion: v2026.11.10 - AppImage - Debian package",
       "summary": {
         "title": "OpenClaw Linux update channel",
         "headline": "AppImage",
